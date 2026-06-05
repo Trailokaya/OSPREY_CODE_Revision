@@ -36,7 +36,7 @@ tree.
 | 15 | `chicago_network_with_reference_monitors.pdf` | `maps/scripts/build_exploratory_maps.py` (`chicago_aqs_lcs_combined`) | `data/geo/Chicago_*`, `data/locations/Chicago_{AQS,LCS_corrected,LCS_raw}` | re-run ✓ |
 | 16 | `regional_locator.pdf` | `maps/scripts/build_manuscript_map_package.py` (`build_locator_map`) | none (hardcoded city coords; Natural Earth via cartopy) | re-run ✓ |
 | 17 | `finite_population_size_sensitivity_chicago.pdf` + `..._lucknow_vs_dhaka.pdf` | `monte_carlo/scripts/run_finite_population_experiment.py` (`--phase 2` / `--phase 3`) | phase envelope CSVs + `data/pm/*` (full Monte Carlo) | provenance ✓ (compute-heavy) |
-| 18 | `reference_target_sensitivity_selected_vs_full.pdf` + `..._delta.pdf` | `analysis/scripts/build_dual_reference_monte_carlo_and_audit.py` | phase4 + phase3 + reference_target_sensitivity `*.parquet` | re-run ✓ |
+| 18 | `reference_target_sensitivity_selected_vs_full.pdf` + `..._delta.pdf` | `analysis/scripts/build_dual_reference_monte_carlo_and_audit.py` | phase4 draw tables + phase3 `selected_reference_draw_summaries_n50.parquet` + reference_target_sensitivity `*.parquet` | re-run ✓ |
 | 19 | `seed_stability_phase4_strategy_mdape_n10.pdf` + `..._random_population_mdape_n10.pdf` | `analysis/scripts/run_finite_population_seed_stability.py --plot-only` | `analysis/results/finite_population_experiments/seed_stability_2026-05-29/aggregated/seed_level_metrics.csv` | re-run ✓ |
 | 20 | `three_city_mdape_vs_cv_slope.pdf` | `analysis/scripts/build_mdape_vs_cv_slope.py` | canonical June 2 Monte Carlo summary + `preprocessed/*_daily_sensor_means.parquet` | re-run ✓ |
 

@@ -24,12 +24,12 @@ Permutation Moran's I uses 199 deterministic permutations per sampled time windo
 | Lucknow | daily_ge_18h_record_uptime_ge_75pct | 34 | 37 | 365 | 30.000 | 2.889 | -2.648 |
 | Lucknow | drop_hourly_gap_gt_30d | 34 | 37 | 365 | 31.000 | 2.199 | -1.809 |
 | Lucknow | daily_ge_50pct_gap_le_90d | 57 | 14 | 365 | 49.000 | 0.431 | -0.088 |
-| Chicago | baseline_ge_1h | 277 | 0 | 243 | 272.000 | 0.000 | 0.000 |
-| Chicago | daily_ge_18h | 277 | 0 | 242 | 270.000 | 0.013 | -0.010 |
-| Chicago | record_uptime_ge_75pct | 269 | 8 | 243 | 268.000 | 0.011 | 0.006 |
-| Chicago | daily_ge_18h_record_uptime_ge_75pct | 269 | 8 | 242 | 266.000 | 0.018 | -0.005 |
-| Chicago | drop_hourly_gap_gt_30d | 267 | 10 | 243 | 266.000 | 0.010 | 0.003 |
-| Chicago | daily_ge_50pct_gap_le_90d | 273 | 4 | 243 | 270.000 | 0.003 | -0.000 |
+| Chicago | baseline_ge_1h | 277 | 0 | 274 | 272.000 | 0.000 | 0.000 |
+| Chicago | daily_ge_18h | 277 | 0 | 273 | 270.000 | 0.008 | -0.004 |
+| Chicago | record_uptime_ge_75pct | 269 | 8 | 274 | 268.000 | 0.009 | 0.007 |
+| Chicago | daily_ge_18h_record_uptime_ge_75pct | 269 | 8 | 273 | 267.000 | 0.012 | 0.002 |
+| Chicago | drop_hourly_gap_gt_30d | 266 | 11 | 274 | 265.000 | 0.012 | 0.007 |
+| Chicago | daily_ge_50pct_gap_le_90d | 272 | 5 | 274 | 270.000 | 0.006 | 0.004 |
 
 ## Daily Moran Sensitivity
 
@@ -59,18 +59,18 @@ Permutation Moran's I uses 199 deterministic permutations per sampled time windo
 | Lucknow | drop_hourly_gap_gt_30d | knn_5 | 240 | -0.024 | 9.583 | 5.000 | 3.750 |
 | Lucknow | daily_ge_50pct_gap_le_90d | band_5km | 240 | -0.007 | 7.917 | 5.833 | -3.750 |
 | Lucknow | daily_ge_50pct_gap_le_90d | knn_5 | 240 | -0.039 | 3.333 | 3.333 | -2.500 |
-| Chicago | baseline_ge_1h | band_5km | 240 | 0.080 | 81.667 | 77.500 | 0.000 |
-| Chicago | baseline_ge_1h | knn_5 | 240 | 0.116 | 74.583 | 69.583 | 0.000 |
-| Chicago | daily_ge_18h | band_5km | 240 | 0.087 | 85.417 | 79.167 | 3.750 |
-| Chicago | daily_ge_18h | knn_5 | 240 | 0.117 | 73.750 | 70.000 | -0.833 |
-| Chicago | record_uptime_ge_75pct | band_5km | 240 | 0.077 | 80.417 | 76.250 | -1.250 |
-| Chicago | record_uptime_ge_75pct | knn_5 | 240 | 0.115 | 75.000 | 68.333 | 0.417 |
-| Chicago | daily_ge_18h_record_uptime_ge_75pct | band_5km | 240 | 0.088 | 83.333 | 79.167 | 1.667 |
-| Chicago | daily_ge_18h_record_uptime_ge_75pct | knn_5 | 240 | 0.120 | 74.583 | 69.583 | 0.000 |
-| Chicago | drop_hourly_gap_gt_30d | band_5km | 240 | 0.078 | 81.667 | 77.083 | 0.000 |
-| Chicago | drop_hourly_gap_gt_30d | knn_5 | 240 | 0.117 | 73.333 | 68.333 | -1.250 |
-| Chicago | daily_ge_50pct_gap_le_90d | band_5km | 240 | 0.079 | 80.833 | 78.333 | -0.833 |
-| Chicago | daily_ge_50pct_gap_le_90d | knn_5 | 240 | 0.121 | 75.000 | 69.583 | 0.417 |
+| Chicago | baseline_ge_1h | band_5km | 240 | 0.083 | 82.917 | 79.583 | 0.000 |
+| Chicago | baseline_ge_1h | knn_5 | 240 | 0.128 | 78.333 | 70.833 | 0.000 |
+| Chicago | daily_ge_18h | band_5km | 240 | 0.083 | 83.750 | 78.750 | 0.833 |
+| Chicago | daily_ge_18h | knn_5 | 240 | 0.124 | 76.667 | 68.750 | -1.667 |
+| Chicago | record_uptime_ge_75pct | band_5km | 240 | 0.083 | 83.333 | 78.333 | 0.417 |
+| Chicago | record_uptime_ge_75pct | knn_5 | 240 | 0.125 | 76.667 | 74.167 | -1.667 |
+| Chicago | daily_ge_18h_record_uptime_ge_75pct | band_5km | 240 | 0.084 | 83.333 | 78.333 | 0.417 |
+| Chicago | daily_ge_18h_record_uptime_ge_75pct | knn_5 | 240 | 0.121 | 77.917 | 72.917 | -0.417 |
+| Chicago | drop_hourly_gap_gt_30d | band_5km | 240 | 0.083 | 82.500 | 78.750 | -0.417 |
+| Chicago | drop_hourly_gap_gt_30d | knn_5 | 240 | 0.126 | 77.500 | 71.250 | -0.833 |
+| Chicago | daily_ge_50pct_gap_le_90d | band_5km | 240 | 0.084 | 83.750 | 77.917 | 0.833 |
+| Chicago | daily_ge_50pct_gap_le_90d | knn_5 | 240 | 0.126 | 76.667 | 72.500 | -1.667 |
 
 ## Highest-Hourly Sensor-Retention Sensitivity
 
@@ -84,10 +84,10 @@ Permutation Moran's I uses 199 deterministic permutations per sampled time windo
 | Lucknow | daily_ge_50pct_gap_le_90d | 120 | 0.034 | 19.167 | 15.000 | -8.333 |
 | Lucknow | drop_hourly_gap_gt_30d | 120 | 0.018 | 17.500 | 13.333 | -10.000 |
 | Lucknow | record_uptime_ge_75pct | 120 | 0.029 | 20.000 | 11.667 | -7.500 |
-| Chicago | baseline_ge_1h | 120 | 0.178 | 74.167 | 72.500 | 0.000 |
-| Chicago | daily_ge_50pct_gap_le_90d | 120 | 0.183 | 76.667 | 72.500 | 2.500 |
-| Chicago | drop_hourly_gap_gt_30d | 120 | 0.179 | 75.000 | 71.667 | 0.833 |
-| Chicago | record_uptime_ge_75pct | 120 | 0.177 | 78.333 | 71.667 | 4.167 |
+| Chicago | baseline_ge_1h | 120 | 0.212 | 80.833 | 74.167 | 0.000 |
+| Chicago | daily_ge_50pct_gap_le_90d | 120 | 0.217 | 79.167 | 74.167 | -1.667 |
+| Chicago | drop_hourly_gap_gt_30d | 120 | 0.207 | 80.000 | 74.167 | -0.833 |
+| Chicago | record_uptime_ge_75pct | 120 | 0.217 | 80.833 | 74.167 | 0.000 |
 
 ## Interpretation
 

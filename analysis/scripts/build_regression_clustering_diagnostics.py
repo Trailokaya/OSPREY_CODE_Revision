@@ -83,6 +83,13 @@ def finite_frame(frame: pd.DataFrame, columns: list[str]) -> pd.DataFrame:
 
 def zscore(values: np.ndarray, mean: np.ndarray | None = None, std: np.ndarray | None = None) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
     arr = np.asarray(values, dtype=float)
+    if arr.size == 0:
+        n_columns = arr.shape[1] if arr.ndim == 2 else 0
+        if mean is None:
+            mean = np.zeros(n_columns, dtype=float)
+        if std is None:
+            std = np.ones(n_columns, dtype=float)
+        return arr, mean, std
     if mean is None:
         mean = np.nanmean(arr, axis=0)
     if std is None:
@@ -606,7 +613,9 @@ def run_global_daily_clustering(daily_model: pd.DataFrame) -> tuple[pd.DataFrame
             profile["k"] = k
             profile["selection"] = "best_silhouette" if k == best_k else "k_equals_city_count"
             profile_frames.append(profile)
-    return pd.DataFrame(score_rows), pd.concat(assignment_frames, ignore_index=True), pd.concat(profile_frames, ignore_index=True)
+    assignments = pd.concat(assignment_frames, ignore_index=True) if assignment_frames else pd.DataFrame()
+    profiles = pd.concat(profile_frames, ignore_index=True) if profile_frames else pd.DataFrame()
+    return pd.DataFrame(score_rows), assignments, profiles
 
 
 def run_per_city_daily_clustering(daily_model: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
@@ -625,7 +634,25 @@ def run_per_city_daily_clustering(daily_model: pd.DataFrame) -> tuple[pd.DataFra
     profile_frames: list[pd.DataFrame] = []
     for dataset_key, city_frame in n10.groupby("dataset_key", sort=True):
         clean, x = prepare_cluster_matrix(city_frame, features)
+        city_name = str(city_frame["city"].dropna().iloc[0]) if city_frame["city"].notna().any() else str(dataset_key)
         max_k = min(8, len(clean) - 1)
+        if max_k < 2:
+            score_rows.append(
+                {
+                    "scope": "per_city_daily",
+                    "dataset_key": dataset_key,
+                    "city": city_name,
+                    "feature_set": "daily_environment_plus_error_n10",
+                    "k": np.nan,
+                    "n_rows": int(len(clean)),
+                    "inertia": np.nan,
+                    "silhouette": np.nan,
+                    "seed_used": np.nan,
+                    "iterations": 0,
+                    "skip_reason": "fewer_than_three_complete_rows",
+                }
+            )
+            continue
         results_by_k: dict[int, KMeansResult] = {}
         for k in range(2, max_k + 1):
             result = run_kmeans(x, k=k, seed=CLUSTER_SEED + 1000 + k + stable_int_hash(dataset_key, 10000))
@@ -642,9 +669,18 @@ def run_per_city_daily_clustering(daily_model: pd.DataFrame) -> tuple[pd.DataFra
                     "silhouette": silhouette_score(x, result.labels),
                     "seed_used": result.seed,
                     "iterations": result.iterations,
+                    "skip_reason": "",
                 }
             )
-        city_scores = pd.DataFrame([row for row in score_rows if row["dataset_key"] == dataset_key])
+        city_scores = pd.DataFrame(
+            [
+                row
+                for row in score_rows
+                if row["dataset_key"] == dataset_key and row["scope"] == "per_city_daily"
+            ]
+        ).dropna(subset=["silhouette"])
+        if city_scores.empty:
+            continue
         best_k = int(city_scores.sort_values("silhouette", ascending=False).iloc[0]["k"])
         result = results_by_k[best_k]
         assignment = clean[
@@ -685,7 +721,9 @@ def run_per_city_daily_clustering(daily_model: pd.DataFrame) -> tuple[pd.DataFra
         profile["feature_set"] = "daily_environment_plus_error_n10"
         profile["optimal_k"] = best_k
         profile_frames.append(profile)
-    return pd.DataFrame(score_rows), pd.concat(assignment_frames, ignore_index=True), pd.concat(profile_frames, ignore_index=True)
+    assignments = pd.concat(assignment_frames, ignore_index=True) if assignment_frames else pd.DataFrame()
+    profiles = pd.concat(profile_frames, ignore_index=True) if profile_frames else pd.DataFrame()
+    return pd.DataFrame(score_rows), assignments, profiles
 
 
 def build_sensor_frame() -> pd.DataFrame:
@@ -722,7 +760,25 @@ def run_sensor_clustering(sensor_frame: pd.DataFrame) -> tuple[pd.DataFrame, pd.
     profile_frames: list[pd.DataFrame] = []
     for dataset_key, city_frame in sensor_frame.groupby("dataset_key", sort=True):
         clean, x = prepare_cluster_matrix(city_frame, features)
+        city_name = str(city_frame["city"].dropna().iloc[0]) if city_frame["city"].notna().any() else str(dataset_key)
         max_k = min(8, len(clean) - 1)
+        if max_k < 2:
+            score_rows.append(
+                {
+                    "scope": "sensor_level",
+                    "dataset_key": dataset_key,
+                    "city": city_name,
+                    "feature_set": "location_pm_uptime_density",
+                    "k": np.nan,
+                    "n_rows": int(len(clean)),
+                    "inertia": np.nan,
+                    "silhouette": np.nan,
+                    "seed_used": np.nan,
+                    "iterations": 0,
+                    "skip_reason": "fewer_than_three_complete_rows",
+                }
+            )
+            continue
         results_by_k: dict[int, KMeansResult] = {}
         for k in range(2, max_k + 1):
             result = run_kmeans(x, k=k, seed=CLUSTER_SEED + 2000 + k + stable_int_hash(dataset_key, 10000))
@@ -739,9 +795,18 @@ def run_sensor_clustering(sensor_frame: pd.DataFrame) -> tuple[pd.DataFrame, pd.
                     "silhouette": silhouette_score(x, result.labels),
                     "seed_used": result.seed,
                     "iterations": result.iterations,
+                    "skip_reason": "",
                 }
             )
-        city_scores = pd.DataFrame([row for row in score_rows if row["dataset_key"] == dataset_key])
+        city_scores = pd.DataFrame(
+            [
+                row
+                for row in score_rows
+                if row["dataset_key"] == dataset_key and row["scope"] == "sensor_level"
+            ]
+        ).dropna(subset=["silhouette"])
+        if city_scores.empty:
+            continue
         best_k = int(city_scores.sort_values("silhouette", ascending=False).iloc[0]["k"])
         result = results_by_k[best_k]
         assignment = clean[

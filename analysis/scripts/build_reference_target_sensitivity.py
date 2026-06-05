@@ -335,7 +335,16 @@ def summarize_selected_reference(
     target_n_star: int,
     strategy_column: bool,
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
-    all_rows = pd.read_parquet(phase_dir / "aggregated" / "all_draw_summaries.parquet")
+    all_draw_path = phase_dir / "aggregated" / "all_draw_summaries.parquet"
+    compact_path = phase_dir / "aggregated" / f"selected_reference_draw_summaries_n{target_n_star}.parquet"
+    selected_path = all_draw_path if all_draw_path.exists() else compact_path
+    if not selected_path.exists():
+        raise FileNotFoundError(
+            "Missing selected-reference draw summaries. Expected "
+            f"{compact_path.relative_to(REPO_ROOT)} in the review package, or the full "
+            f"{all_draw_path.relative_to(REPO_ROOT)} from a full phase recomputation."
+        )
+    all_rows = pd.read_parquet(selected_path)
     subset = all_rows[(all_rows["target_N_star"] == target_n_star) & (all_rows["sample_size"] == 10)].copy()
     if not strategy_column:
         subset["selection_strategy"] = "random"

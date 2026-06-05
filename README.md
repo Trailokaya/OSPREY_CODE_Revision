@@ -7,7 +7,7 @@ Code and retained analysis outputs for:
 This repository is the cleaned review-facing code package. It contains the runnable analysis scripts, direct
 input data, generated plots, retained result tables, and final manuscript/SI figure assets needed to reproduce
 the manuscript-facing outputs. The original working tree was about 46 GB; this GitHub-ready package is about
-552 MB.
+650 MiB.
 
 For figure and table provenance, see `FIGURE_TO_SCRIPT_MAP.md`.
 
@@ -105,6 +105,8 @@ The finite-population phase runs are compute-heavy because they use 10,000 inner
 keeps the phase configs, seed files, compact summaries, final plots, and compact selected/full-reference
 tables needed by the manuscript-facing outputs. The largest draw-level aggregate files are not included in the
 GitHub repository because they exceed GitHub's normal-file size limit and Git LFS was not used here.
+For SI 18, the retained `selected_reference_draw_summaries_n50.parquet` file provides the Lucknow N*=50
+selected-reference rows needed by the dual-reference plot without restoring the full phase-3 draw table.
 
 The retained plot-only and compact-reference steps can be run with:
 

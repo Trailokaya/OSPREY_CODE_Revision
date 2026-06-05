@@ -365,7 +365,7 @@ def run(args: argparse.Namespace) -> None:
     args.results_root = resolve_repo_path(args.results_root)
     phase_dir = args.results_root / "phase5_mdape_vs_cv_slope"
     if phase_dir.exists() and not args.overwrite:
-        raise SystemExit(f"Phase directory already exists: {phase_dir}")
+        print(f"Updating existing phase directory: {phase_dir}")
     for subdir in ["config", "aggregated", "plots"]:
         (phase_dir / subdir).mkdir(parents=True, exist_ok=True)
 

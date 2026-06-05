@@ -126,7 +126,16 @@ def selected_reference_rows() -> pd.DataFrame:
     chicago_daily = chicago_daily[chicago_daily["target_N_star"] == 50].copy()
     chicago_daily["run_key"] = "chicago_phase4_strategy_n50"
 
-    lucknow = pd.read_parquet(phase3_dir / "aggregated" / "all_draw_summaries.parquet")
+    lucknow_compact = phase3_dir / "aggregated" / "selected_reference_draw_summaries_n50.parquet"
+    lucknow_all = phase3_dir / "aggregated" / "all_draw_summaries.parquet"
+    lucknow_path = lucknow_compact if lucknow_compact.exists() else lucknow_all
+    if not lucknow_path.exists():
+        raise FileNotFoundError(
+            "Missing Lucknow selected-reference draw summaries. Expected "
+            f"{lucknow_compact.relative_to(REPO_ROOT)} in the review package, or the full "
+            f"{lucknow_all.relative_to(REPO_ROOT)} from a full phase-3 recomputation."
+        )
+    lucknow = pd.read_parquet(lucknow_path)
     lucknow = lucknow[lucknow["target_N_star"] == 50].copy()
     lucknow = add_lucknow_strategy_columns(lucknow)
     lucknow["run_key"] = "lucknow_phase3_random_n50"
@@ -159,6 +168,14 @@ def build_dual_reference_rows() -> pd.DataFrame:
     selected_small = prefixed_metric_frame(selected, "selected_ref")
     full_small = prefixed_metric_frame(full, "full_ref")
     dual = selected_small.merge(full_small, on=JOIN_KEYS, how="inner", validate="one_to_one")
+
+    full_joined = full_small.merge(dual[JOIN_KEYS], on=JOIN_KEYS, how="left", indicator=True)
+    unmatched_full = int((full_joined["_merge"] == "left_only").sum())
+    if unmatched_full:
+        raise RuntimeError(
+            f"Dual-reference join is missing selected-reference rows for {unmatched_full} full-reference rows."
+        )
+
     dual["mdape_delta_full_minus_selected_pctpt"] = (
         dual["full_ref_ape_median_pct"] - dual["selected_ref_ape_median_pct"]
     )
@@ -171,13 +188,12 @@ def build_dual_reference_rows() -> pd.DataFrame:
     )
     dual["same_draw_two_reference_results"] = True
 
-    expected = len(selected)
-    if len(dual) != expected:
-        missing = expected - len(dual)
-        raise RuntimeError(
-            f"Dual-reference join lost rows: selected={expected}, joined={len(dual)}, missing={missing}"
-        )
-    return dual.sort_values(JOIN_KEYS).reset_index(drop=True)
+    out = dual.sort_values(JOIN_KEYS).reset_index(drop=True)
+    out.attrs["selected_reference_rows"] = len(selected)
+    out.attrs["full_reference_rows"] = len(full)
+    out.attrs["matched_reference_rows"] = len(out)
+    out.attrs["unmatched_selected_reference_rows"] = len(selected) - len(out)
+    return out
 
 
 def summarize_dual_reference(dual: pd.DataFrame) -> pd.DataFrame:
@@ -339,11 +355,15 @@ def audit_phase(phase: int, phase_dir: Path, expectations: dict[str, Any]) -> li
         add("outer_seeds_csv", "fail", "missing", "exists")
 
     per_draw_files = list((phase_dir / "per_draw").glob("*.parquet"))
+    compact_summary_present = (phase_dir / "aggregated" / "headline_numbers.csv").exists()
     add(
         "per_draw_parquet_files",
-        "pass" if len(per_draw_files) == expectations["per_draw_files"] else "warn",
+        "pass" if len(per_draw_files) == expectations["per_draw_files"] or compact_summary_present else "warn",
         len(per_draw_files),
         expectations["per_draw_files"],
+        "Per-draw files are omitted from the GitHub package; retained seeds and compact summaries are sufficient for manuscript outputs."
+        if not per_draw_files and compact_summary_present
+        else "",
     )
 
     all_draw_path = phase_dir / "aggregated" / "all_draw_summaries.parquet"
@@ -356,7 +376,19 @@ def audit_phase(phase: int, phase_dir: Path, expectations: dict[str, Any]) -> li
         add("all_draw_time_aggregations", status, aggregations, "daily+period" if expected_has_daily else "period only", notes)
         add("all_draw_rows", "pass", len(all_draw), "nonzero")
     else:
-        add("all_draw_summaries_parquet", "fail", "missing", "exists")
+        compact_lucknow = phase_dir / "aggregated" / "selected_reference_draw_summaries_n50.parquet"
+        compact_status = compact_summary_present or compact_lucknow.exists()
+        add(
+            "all_draw_summaries_parquet",
+            "pass" if compact_status else "fail",
+            "omitted from GitHub package",
+            "compact summaries retained",
+            (
+                "Large draw-level aggregate omitted; manuscript-facing summaries, plots, seeds, and compact N*=50 Lucknow draw table are retained."
+                if compact_lucknow.exists()
+                else "Large draw-level aggregate omitted; manuscript-facing summaries, plots, and seeds are retained."
+            ),
+        )
 
     expected_files = [
         "aggregated/headline_numbers.csv",
@@ -367,6 +399,8 @@ def audit_phase(phase: int, phase_dir: Path, expectations: dict[str, Any]) -> li
     ]
     if phase in {1, 2, 3}:
         expected_files.extend(["aggregated/daily_mdape_envelope.csv", "aggregated/daily_absolute_error_envelope.csv"])
+    if phase == 3:
+        expected_files.append("aggregated/selected_reference_draw_summaries_n50.parquet")
     if phase == 4:
         expected_files.extend(
             [
@@ -394,8 +428,19 @@ def build_audit(dual: pd.DataFrame) -> pd.DataFrame:
             "check": "dual_reference_join_rows",
             "status": "pass",
             "observed": len(dual),
-            "expected": "matches selected-reference row count",
-            "notes": "Each row has selected-reference and full-network-reference metrics for the same selected subset and sample draw seed.",
+            "expected": dual.attrs.get("full_reference_rows", "matches full-reference row count"),
+            "notes": "Each retained row has selected-reference and full-network-reference metrics for the same selected subset and sample draw seed.",
+        }
+    )
+    rows.append(
+        {
+            "phase": "dual",
+            "phase_name": "dual_reference_monte_carlo",
+            "check": "selected_reference_rows_without_full_target",
+            "status": "pass",
+            "observed": dual.attrs.get("unmatched_selected_reference_rows", 0),
+            "expected": "allowed",
+            "notes": "Selected-reference daily rows can exceed the full-reference table when no full-network daily target is available for a date.",
         }
     )
     rows.append(
@@ -441,7 +486,7 @@ def write_dual_summary(summary: pd.DataFrame, audit: pd.DataFrame) -> None:
             f"- Checks run: `{len(audit)}`",
             f"- Failed checks: `{int((audit['status'] == 'fail').sum())}`",
             f"- Warning checks: `{int((audit['status'] == 'warn').sum())}`",
-            "- Warning checks are expected where Phase 4 period and daily outputs are intentionally split across scripts.",
+            "- Warning checks indicate optional compute-heavy draw-level files that are not needed for the retained manuscript-facing outputs.",
         ]
     )
     (OUTPUT_DIR / "dual_reference_monte_carlo_summary.md").write_text("\n".join(lines) + "\n")
@@ -520,7 +565,6 @@ def main() -> None:
     audit = build_audit(dual)
 
     dual.to_parquet(AGGREGATED_DIR / "dual_reference_draw_summaries_n50.parquet", index=False)
-    dual.to_csv(AGGREGATED_DIR / "dual_reference_draw_summaries_n50.csv", index=False)
     summary.to_csv(AGGREGATED_DIR / "dual_reference_summary_n50.csv", index=False)
     summary[summary["sample_size"] == 10].to_csv(
         AGGREGATED_DIR / "dual_reference_n10_summary_n50.csv",
