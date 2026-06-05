@@ -1,0 +1,62 @@
+{
+  "purpose": "Search multiple Lucknow filters for effects on temporal and spatial missingness factors.",
+  "min_sensors_retained": 30,
+  "remove_k_values": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    10,
+    12,
+    15,
+    20,
+    25,
+    30,
+    35,
+    40
+  ],
+  "presence_thresholds": [
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.75,
+    0.8,
+    0.85,
+    0.9
+  ],
+  "max_gap_thresholds": [
+    30,
+    45,
+    60,
+    90,
+    120,
+    150,
+    180,
+    240
+  ],
+  "targeted_rho_thresholds": [
+    0.1,
+    0.2,
+    0.3,
+    0.4
+  ],
+  "candidate_count": 167,
+  "outputs": [
+    "lucknow_missingness_filter_search.md",
+    "lucknow_missingness_filter_search_all_results.csv",
+    "lucknow_missingness_filter_search_top_joint_all.csv",
+    "lucknow_missingness_filter_search_top_joint_practical.csv",
+    "lucknow_missingness_filter_search_top_joint_practical_ref_mae_le_0p5.csv",
+    "lucknow_missingness_filter_search_top_spatial_cv_all.csv",
+    "lucknow_missingness_filter_search_top_spatial_cv_practical.csv",
+    "lucknow_missingness_filter_search_top_targeted_joint_low_distortion.csv",
+    "lucknow_missingness_filter_search_top_temporal_all.csv",
+    "lucknow_missingness_filter_search_top_temporal_practical.csv"
+  ]
+}

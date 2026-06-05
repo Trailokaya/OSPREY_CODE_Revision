@@ -1,0 +1,39 @@
+{
+  "generated_at": "2026-06-05T18:52:20",
+  "script": "analysis/scripts/build_threshold_classification_analysis.py",
+  "baseline_run": "monte_carlo/results/runs/p0_baseline_updated_chicago_may31_plus_madhwal_10000_20260602",
+  "master_seed": 20260526,
+  "draws": 10000,
+  "near_margins_ugm3": [
+    1.0,
+    2.0,
+    5.0
+  ],
+  "datasets": [
+    "dhaka_lcs",
+    "lucknow_lcs",
+    "chicago_lcs_corrected_no_collocation"
+  ],
+  "threshold_source_urls": {
+    "us_epa_pm_naaqs": "https://www.epa.gov/pm-pollution/national-ambient-air-quality-standards-naaqs-pm",
+    "who_2021_aqg": "https://www.who.int/publications/i/item/9789240034228/",
+    "who_threshold_table_reference": "https://www.ncbi.nlm.nih.gov/books/NBK574582/table/fm-ch1.tab1/"
+  },
+  "resource_policy": {
+    "n_jobs": 3,
+    "cpu_count": 12,
+    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+    "blas_thread_env": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1"
+    }
+  },
+  "inventory_rows": 3,
+  "daily_summary_rows": 2256,
+  "daily_near_summary_rows": 3375,
+  "daily_by_day_rows": 631656,
+  "period_summary_rows": 2298
+}

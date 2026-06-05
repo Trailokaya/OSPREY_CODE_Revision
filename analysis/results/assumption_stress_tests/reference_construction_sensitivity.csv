@@ -1,0 +1,19 @@
+dataset_key,city,estimand_variant,period_mean_pm25_ugm3,delta_vs_primary_ugm3,delta_vs_primary_pct,note
+dhaka_lcs,Dhaka,sensor_equal_source_period,55.14721850399361,0.0,0.0,Primary finite-population estimand
+dhaka_lcs,Dhaka,source_observation_weighted,55.277567600324836,0.13034909633122993,0.23636567694124122,Each valid sensor-time cell has equal weight
+dhaka_lcs,Dhaka,source_time_equal_network_mean,54.030486372057354,-1.1167321319362529,-2.025001735772734,Each source timestamp has equal weight
+dhaka_lcs,Dhaka,sensor_equal_daily_period,55.181605355387944,0.034386851394337725,0.06235464331142563,Sensor-equal mean after daily aggregation
+dhaka_lcs,Dhaka,day_equal_daily_network_mean,54.33822625409849,-0.8089922498951196,-1.466968365478913,Each daily network mean has equal weight
+dhaka_lcs,Dhaka,daily_observation_weighted,55.190752543692156,0.04353403969854952,0.07894149674184729,Each valid daily sensor-day has equal weight
+lucknow_lcs,Lucknow,sensor_equal_source_period,61.802242631595966,0.0,0.0,Primary finite-population estimand
+lucknow_lcs,Lucknow,source_observation_weighted,61.876586588405814,0.07434395680984807,0.12029329947298746,Each valid sensor-time cell has equal weight
+lucknow_lcs,Lucknow,source_time_equal_network_mean,61.51012788508348,-0.2921147465124889,-0.47266043119792434,Each source timestamp has equal weight
+lucknow_lcs,Lucknow,sensor_equal_daily_period,60.81825372608965,-0.9839889055063153,-1.592157280394964,Sensor-equal mean after daily aggregation
+lucknow_lcs,Lucknow,day_equal_daily_network_mean,62.046879412326305,0.2446367807303389,0.39583803162066816,Each daily network mean has equal weight
+lucknow_lcs,Lucknow,daily_observation_weighted,61.55571831385451,-0.24652431774145356,-0.3988921877980844,Each valid daily sensor-day has equal weight
+chicago_lcs_corrected_no_collocation,Chicago,sensor_equal_source_period,10.564665761550287,0.0,0.0,Primary finite-population estimand
+chicago_lcs_corrected_no_collocation,Chicago,source_observation_weighted,10.563891967396811,-0.000773794153476004,-0.007324360002871074,Each valid sensor-time cell has equal weight
+chicago_lcs_corrected_no_collocation,Chicago,source_time_equal_network_mean,10.561311276636104,-0.003354484914183331,-0.03175192656252179,Each source timestamp has equal weight
+chicago_lcs_corrected_no_collocation,Chicago,sensor_equal_daily_period,10.564665761550287,0.0,0.0,Sensor-equal mean after daily aggregation
+chicago_lcs_corrected_no_collocation,Chicago,day_equal_daily_network_mean,10.561311276636106,-0.0033544849141815547,-0.03175192656250498,Each daily network mean has equal weight
+chicago_lcs_corrected_no_collocation,Chicago,daily_observation_weighted,10.56389196739681,-0.0007737941534777804,-0.007324360002887888,Each valid daily sensor-day has equal weight

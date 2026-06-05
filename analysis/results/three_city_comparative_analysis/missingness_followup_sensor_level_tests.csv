@@ -1,0 +1,37 @@
+city,domain,x_variable,y_variable,n_sensors,pearson_r,spearman_rho,permutation_p_value,effect_strength,p_value_flag
+Chicago,sensor_level_pm25,sensor_period_mean_pm25,sensor_record_missing_pct,277,0.006979278243929592,0.07487610759065938,0.21237876212378762,little evidence,not statistically distinguishable at 0.05
+Chicago,sensor_level_variability,sensor_daily_pm25_sd,sensor_record_missing_pct,277,-0.0960311444423871,-0.024424208597916188,0.6805319468053195,little evidence,not statistically distinguishable at 0.05
+Chicago,sensor_location,sensor_latitude,sensor_record_missing_pct,277,0.004941192544177946,-0.02355325706422361,0.7002299770022997,little evidence,not statistically distinguishable at 0.05
+Chicago,sensor_location,sensor_longitude,sensor_record_missing_pct,277,0.03397416404473295,0.02474678324002455,0.6801319868013199,little evidence,not statistically distinguishable at 0.05
+Chicago,sensor_level_pm25,sensor_period_mean_pm25,sensor_daily_missing_pct,277,0.006979278243929592,0.07487610759065938,0.21257874212578742,little evidence,not statistically distinguishable at 0.05
+Chicago,sensor_level_variability,sensor_daily_pm25_sd,sensor_daily_missing_pct,277,-0.0960311444423871,-0.024424208597916188,0.6855314468553144,little evidence,not statistically distinguishable at 0.05
+Chicago,sensor_location,sensor_latitude,sensor_daily_missing_pct,277,0.004941192544177946,-0.02355325706422361,0.6957304269573042,little evidence,not statistically distinguishable at 0.05
+Chicago,sensor_location,sensor_longitude,sensor_daily_missing_pct,277,0.03397416404473295,0.02474678324002455,0.6867313268673133,little evidence,not statistically distinguishable at 0.05
+Chicago,sensor_level_pm25,sensor_period_mean_pm25,sensor_longest_missing_gap_days,277,-0.08457865314483069,-0.013949420308886695,0.813018698130187,little evidence,not statistically distinguishable at 0.05
+Chicago,sensor_level_variability,sensor_daily_pm25_sd,sensor_longest_missing_gap_days,277,-0.15622387857564027,-0.10927045908627911,0.06919308069193081,weak evidence,not statistically distinguishable at 0.05
+Chicago,sensor_location,sensor_latitude,sensor_longest_missing_gap_days,277,-0.028947484785291275,-0.0032449975049477545,0.957004299570043,little evidence,not statistically distinguishable at 0.05
+Chicago,sensor_location,sensor_longitude,sensor_longest_missing_gap_days,277,0.07426944829831712,-0.04924563454922437,0.40645935406459355,little evidence,not statistically distinguishable at 0.05
+Dhaka,sensor_level_pm25,sensor_period_mean_pm25,sensor_record_missing_pct,35,-0.10436865154813606,-0.02296918767507003,0.8959104089591041,little evidence,not statistically distinguishable at 0.05
+Dhaka,sensor_level_variability,sensor_daily_pm25_sd,sensor_record_missing_pct,35,-0.1328563316325097,-0.04201680672268908,0.8074192580741926,little evidence,not statistically distinguishable at 0.05
+Dhaka,sensor_location,sensor_latitude,sensor_record_missing_pct,35,0.5964324646638819,0.49131652661064423,0.0032996700329967,moderate evidence,p<0.01
+Dhaka,sensor_location,sensor_longitude,sensor_record_missing_pct,35,-0.014712561737631143,0.06946778711484594,0.690930906909309,little evidence,not statistically distinguishable at 0.05
+Dhaka,sensor_level_pm25,sensor_period_mean_pm25,sensor_daily_missing_pct,35,-0.050317111782856194,0.06517170485999876,0.7051294870512949,little evidence,not statistically distinguishable at 0.05
+Dhaka,sensor_level_variability,sensor_daily_pm25_sd,sensor_daily_missing_pct,35,-0.045807698409225335,0.0797477420759985,0.6507349265073493,little evidence,not statistically distinguishable at 0.05
+Dhaka,sensor_location,sensor_latitude,sensor_daily_missing_pct,35,0.5018770078093742,0.3637001593799931,0.030296970302969704,moderate evidence,p<0.05
+Dhaka,sensor_location,sensor_longitude,sensor_daily_missing_pct,35,-0.10940561365360188,-0.06236862077999882,0.7114288571142886,little evidence,not statistically distinguishable at 0.05
+Dhaka,sensor_level_pm25,sensor_period_mean_pm25,sensor_longest_missing_gap_days,35,-0.14177718206086962,-0.029253582314364902,0.8675132486751325,little evidence,not statistically distinguishable at 0.05
+Dhaka,sensor_level_variability,sensor_daily_pm25_sd,sensor_longest_missing_gap_days,35,-0.14383697840688286,-0.02505381059596598,0.8841115888411158,little evidence,not statistically distinguishable at 0.05
+Dhaka,sensor_location,sensor_latitude,sensor_longest_missing_gap_days,35,0.22189863742764387,0.06661706863667255,0.7018298170182982,little evidence,not statistically distinguishable at 0.05
+Dhaka,sensor_location,sensor_longitude,sensor_longest_missing_gap_days,35,-0.19471574998082872,-0.18768634989810354,0.2816718328167183,weak evidence,not statistically distinguishable at 0.05
+Lucknow,sensor_level_pm25,sensor_period_mean_pm25,sensor_record_missing_pct,71,-0.014316964650665337,-0.06103286384976526,0.6118388161183882,little evidence,not statistically distinguishable at 0.05
+Lucknow,sensor_level_variability,sensor_daily_pm25_sd,sensor_record_missing_pct,71,-0.08870951611440846,-0.007176391683433937,0.9514048595140486,little evidence,not statistically distinguishable at 0.05
+Lucknow,sensor_location,sensor_latitude,sensor_record_missing_pct,71,-0.18324927354546752,-0.16361502347417842,0.17128287171282872,weak evidence,not statistically distinguishable at 0.05
+Lucknow,sensor_location,sensor_longitude,sensor_record_missing_pct,71,0.06538237013106761,0.03192488262910798,0.7911208879112088,little evidence,not statistically distinguishable at 0.05
+Lucknow,sensor_level_pm25,sensor_period_mean_pm25,sensor_daily_missing_pct,71,-0.15498702645382106,-0.09367596131532625,0.43665633436656337,little evidence,not statistically distinguishable at 0.05
+Lucknow,sensor_level_variability,sensor_daily_pm25_sd,sensor_daily_missing_pct,71,-0.16757819724695552,-0.022339018946360773,0.8491150884911509,little evidence,not statistically distinguishable at 0.05
+Lucknow,sensor_location,sensor_latitude,sensor_daily_missing_pct,71,-0.0911220417307773,-0.12006592350177202,0.31826817318268175,weak evidence,not statistically distinguishable at 0.05
+Lucknow,sensor_location,sensor_longitude,sensor_daily_missing_pct,71,0.07846700234426456,0.0736901874046995,0.5273472652734726,little evidence,not statistically distinguishable at 0.05
+Lucknow,sensor_level_pm25,sensor_period_mean_pm25,sensor_longest_missing_gap_days,71,-0.2889072632147471,-0.10524850284720731,0.37546245375462456,weak evidence,not statistically distinguishable at 0.05
+Lucknow,sensor_level_variability,sensor_daily_pm25_sd,sensor_longest_missing_gap_days,71,-0.29637667678742574,-0.06711693663994434,0.5757424257574243,little evidence,not statistically distinguishable at 0.05
+Lucknow,sensor_location,sensor_latitude,sensor_longest_missing_gap_days,71,0.01740164087362842,-0.007313594047689326,0.9491050894910509,little evidence,not statistically distinguishable at 0.05
+Lucknow,sensor_location,sensor_longitude,sensor_longest_missing_gap_days,71,-0.049045303710379344,-0.013063592126562313,0.9153084691530847,little evidence,not statistically distinguishable at 0.05

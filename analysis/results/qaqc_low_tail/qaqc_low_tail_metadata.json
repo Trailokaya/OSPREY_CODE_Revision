@@ -1,0 +1,82 @@
+{
+  "generated_at": "2026-05-28T13:27:07",
+  "thresholds_ugm3": [
+    1.0,
+    2.0,
+    5.0
+  ],
+  "relative_ratio_threshold": 0.2,
+  "relative_reference_median_min_ugm3": 10.0,
+  "min_valid_peers": 5,
+  "datasets": {
+    "dhaka_lcs": {
+      "city": "Dhaka",
+      "network": "LCS",
+      "source_frequency": "hourly",
+      "pm_path": "data/pm/Dhaka_hourly_PM25.csv",
+      "location_path": "data/locations/Dhaka_sensor_locations.csv",
+      "input_hashes": {
+        "pm_matrix": "790d47a334e027d73c90f529d0d850218ebee0265f0a98c7db1a29bcd3700a95",
+        "locations": "188717bb29805009fdbee4a1c24f5f89ee39b94ba9d5616fecb7710d0868b230"
+      },
+      "preprocessing": {
+        "source_rows": 8760,
+        "source_sensor_columns": 35,
+        "retained_sensor_count": 35,
+        "dropped_all_nan_sensor_count": 0,
+        "dropped_all_nan_sensors": [],
+        "date_count": 365,
+        "date_min": "2022-04-01",
+        "date_max": "2023-03-31",
+        "source_frequency": "hourly",
+        "exclude_collocated": false
+      }
+    },
+    "lucknow_lcs": {
+      "city": "Lucknow",
+      "network": "LCS",
+      "source_frequency": "hourly",
+      "pm_path": "data/pm/Lucknow_hourly_PM25.csv",
+      "location_path": "data/locations/Lucknow_sensor_locations.csv",
+      "input_hashes": {
+        "pm_matrix": "74e3d7265f97f1f33bdc22cc02016470c0592683d753dedf2e0dc0dbefa9b13e",
+        "locations": "a9219a95bcc2d43b5fd5495adbe08a6895616b4502654411c5d624f85325a61e"
+      },
+      "preprocessing": {
+        "source_rows": 8760,
+        "source_sensor_columns": 71,
+        "retained_sensor_count": 71,
+        "dropped_all_nan_sensor_count": 0,
+        "dropped_all_nan_sensors": [],
+        "date_count": 365,
+        "date_min": "2022-04-01",
+        "date_max": "2023-03-31",
+        "source_frequency": "hourly",
+        "exclude_collocated": false
+      }
+    },
+    "chicago_lcs_corrected_no_collocation": {
+      "city": "Chicago",
+      "network": "LCS corrected",
+      "source_frequency": "official_daily",
+      "pm_path": "data/pm/Chicago_LCS_corrected_daily_PM25.csv",
+      "location_path": "data/locations/Chicago_LCS_corrected_sensor_locations.csv",
+      "input_hashes": {
+        "pm_matrix": "db36e91b5d43e932e2f20717c11e784b6a39866cdd0535aae0cb23ce1aa6f90a",
+        "locations": "6e2da44a1d3b7ea9225afa3fd4f09854de3fa589112d28d31b492d7b730d4e6c"
+      },
+      "preprocessing": {
+        "source_rows": 242,
+        "source_sensor_columns": 277,
+        "retained_sensor_count": 277,
+        "dropped_all_nan_sensor_count": 0,
+        "dropped_all_nan_sensors": [],
+        "date_count": 242,
+        "date_min": "2025-09-01",
+        "date_max": "2026-04-30",
+        "source_frequency": "official_daily",
+        "exclude_collocated": true
+      }
+    }
+  }
+}

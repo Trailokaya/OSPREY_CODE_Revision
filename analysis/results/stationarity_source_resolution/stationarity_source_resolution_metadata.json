@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-05-28T13:29:04",
+  "bonferroni_alpha": 0.05,
+  "method": "source-resolution AR(1) effective-n Bonferroni normal CI",
+  "datasets": {
+    "dhaka_lcs": {
+      "city": "Dhaka",
+      "source_frequency": "hourly",
+      "pm_path": "data/pm/Dhaka_hourly_PM25.csv",
+      "location_path": "data/locations/Dhaka_sensor_locations.csv",
+      "input_hashes": {
+        "pm_matrix": "790d47a334e027d73c90f529d0d850218ebee0265f0a98c7db1a29bcd3700a95",
+        "locations": "188717bb29805009fdbee4a1c24f5f89ee39b94ba9d5616fecb7710d0868b230"
+      }
+    },
+    "lucknow_lcs": {
+      "city": "Lucknow",
+      "source_frequency": "hourly",
+      "pm_path": "data/pm/Lucknow_hourly_PM25.csv",
+      "location_path": "data/locations/Lucknow_sensor_locations.csv",
+      "input_hashes": {
+        "pm_matrix": "74e3d7265f97f1f33bdc22cc02016470c0592683d753dedf2e0dc0dbefa9b13e",
+        "locations": "a9219a95bcc2d43b5fd5495adbe08a6895616b4502654411c5d624f85325a61e"
+      }
+    },
+    "chicago_lcs_corrected_no_collocation": {
+      "city": "Chicago",
+      "source_frequency": "official_daily",
+      "pm_path": "data/pm/Chicago_LCS_corrected_daily_PM25.csv",
+      "location_path": "data/locations/Chicago_LCS_corrected_sensor_locations.csv",
+      "input_hashes": {
+        "pm_matrix": "db36e91b5d43e932e2f20717c11e784b6a39866cdd0535aae0cb23ce1aa6f90a",
+        "locations": "6e2da44a1d3b7ea9225afa3fd4f09854de3fa589112d28d31b492d7b730d4e6c"
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "available_cpu_count": 12,
+  "daily_sources": {
+    "chicago_lcs_corrected_no_collocation": {
+      "exclude_collocated": true,
+      "location_path": "data/locations/Chicago_LCS_corrected_sensor_locations.csv",
+      "pm_path": "data/pm/Chicago_LCS_corrected_daily_PM25.csv",
+      "source_frequency": "official_daily"
+    },
+    "dhaka_lcs": {
+      "exclude_collocated": false,
+      "location_path": "data/locations/Dhaka_sensor_locations.csv",
+      "pm_path": "data/pm/Dhaka_hourly_PM25.csv",
+      "source_frequency": "hourly"
+    },
+    "lucknow_lcs": {
+      "exclude_collocated": false,
+      "location_path": "data/locations/Lucknow_sensor_locations.csv",
+      "pm_path": "data/pm/Lucknow_hourly_PM25.csv",
+      "source_frequency": "hourly"
+    }
+  },
+  "draws": 10000,
+  "effective_jobs": 12,
+  "generated_at": "2026-05-28T07:42:07.072436+00:00",
+  "git_commit": "bc064f2caba43e9a7d6ec2a6cb2b8a2ca026a018",
+  "hourly_sources": {
+    "chicago_lcs_corrected_no_collocation": {
+      "dropped_all_nan_sensor_count": 0,
+      "dropped_all_nan_sensors": [],
+      "locations_hash": "6e2da44a1d3b7ea9225afa3fd4f09854de3fa589112d28d31b492d7b730d4e6c",
+      "pm_matrix_hash": "89c3de4b17a6383ec726bdbcc6493ff730bf38dc023f69bbb6ea3f9a59c4be2d",
+      "retained_sensor_count": 277,
+      "source_rows": 5808,
+      "source_sensor_columns": 277,
+      "timestamp_max": "2026-04-30 18:00:00",
+      "timestamp_min": "2025-08-31 19:00:00",
+      "valid_timestamp_rows": 5808
+    },
+    "dhaka_lcs": {
+      "dropped_all_nan_sensor_count": 0,
+      "dropped_all_nan_sensors": [],
+      "locations_hash": "188717bb29805009fdbee4a1c24f5f89ee39b94ba9d5616fecb7710d0868b230",
+      "pm_matrix_hash": "790d47a334e027d73c90f529d0d850218ebee0265f0a98c7db1a29bcd3700a95",
+      "retained_sensor_count": 35,
+      "source_rows": 8760,
+      "source_sensor_columns": 35,
+      "timestamp_max": "2023-03-31 23:00:00",
+      "timestamp_min": "2022-04-01 00:00:00",
+      "valid_timestamp_rows": 8760
+    },
+    "lucknow_lcs": {
+      "dropped_all_nan_sensor_count": 0,
+      "dropped_all_nan_sensors": [],
+      "locations_hash": "a9219a95bcc2d43b5fd5495adbe08a6895616b4502654411c5d624f85325a61e",
+      "pm_matrix_hash": "74e3d7265f97f1f33bdc22cc02016470c0592683d753dedf2e0dc0dbefa9b13e",
+      "retained_sensor_count": 71,
+      "source_rows": 8760,
+      "source_sensor_columns": 71,
+      "timestamp_max": "2023-03-31 23:00:00",
+      "timestamp_min": "2022-04-01 00:00:00",
+      "valid_timestamp_rows": 8760
+    }
+  },
+  "master_seed": 20260522,
+  "max_n": 30,
+  "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+  "requested_jobs": 0,
+  "runtime_seconds": 4.11,
+  "script": "analysis/scripts/build_temporal_diagnostics.py",
+  "total_memory_gb": 24.0
+}

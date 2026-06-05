@@ -1,0 +1,28 @@
+\begin{table}[ht]
+\centering
+\small
+\begin{tabular}{clrrrrrr}
+\toprule
+\textbf{City} & $n$ & \multicolumn{2}{c}{68\%} & \multicolumn{2}{c}{90\%} & \multicolumn{2}{c}{95\%} \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}\cmidrule(lr){7-8}
+ &  & $\mathcal{N}$ & $\log \mathcal{N}$ & $\mathcal{N}$ & $\log \mathcal{N}$ & $\mathcal{N}$ & $\log \mathcal{N}$ \\
+\midrule
+\multirow{4}{*}{\city{Dhaka}} & 5 & \textbf{2.0} & 3.4 & \textbf{2.3} & 2.5 & 2.1 & \textbf{1.9} \\
+ & 10 & \textbf{1.5} & 4.3 & \textbf{1.3} & 2.3 & \textbf{1.5} & 1.6 \\
+ & 15 & \textbf{1.1} & 4.6 & \textbf{1.1} & 2.6 & \textbf{1.1} & 1.6 \\
+ & 20 & \textbf{0.7} & 4.6 & \textbf{0.7} & 2.5 & \textbf{0.9} & 1.6 \\
+\addlinespace[0.25em]
+\multirow{4}{*}{\city{Lucknow}} & 5 & \textbf{1.5} & 2.1 & 1.3 & \textbf{1.2} & 1.1 & \textbf{0.9} \\
+ & 10 & \textbf{1.1} & 2.5 & \textbf{1.0} & 1.4 & 1.0 & \textbf{0.9} \\
+ & 15 & \textbf{0.8} & 2.5 & \textbf{0.7} & 1.5 & \textbf{0.8} & 1.0 \\
+ & 20 & \textbf{0.7} & 2.6 & \textbf{0.6} & 1.6 & \textbf{0.5} & 1.1 \\
+\addlinespace[0.25em]
+\multirow{4}{*}{\city{Chicago}} & 5 & \textbf{0.8} & 1.0 & \textbf{0.7} & 0.8 & \textbf{0.5} & 0.5 \\
+ & 10 & \textbf{1.4} & 1.7 & \textbf{0.6} & 0.8 & \textbf{0.5} & 0.6 \\
+ & 15 & \textbf{1.6} & 2.1 & \textbf{0.5} & 0.9 & \textbf{0.5} & 0.6 \\
+ & 20 & \textbf{1.6} & 2.4 & \textbf{0.6} & 1.1 & \textbf{0.5} & 0.7 \\
+\bottomrule
+\end{tabular}
+\caption{Quantile coverage error for 68\%, 90\%, and 95\% confidence intervals at various sample sizes $n$ for all three networks. $\mathcal{N}$ indicates the standard arithmetic-mean normal-theory interval, and $\log \mathcal{N}$ the lognormal interval. Values are median daily quantile coverage error in percentage points; the lower value in each estimator pair is bolded.}
+\label{tab:ci}
+\end{table}

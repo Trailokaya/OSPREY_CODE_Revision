@@ -1,0 +1,5 @@
+phase,city,metric_name,target_N_star,aggregation,value_median,value_p5,value_p95,value_mean,value_sd,n_outer_draws,n_inner_draws,notes
+1,Chicago,n_for_mdape_le_5pct,40,period,2.0,2.0,2.0,2.04,0.1979486637221574,50,10000,First n where period MdAPE <= 5% within each outer finite-population draw.
+1,Chicago,n_for_mdape_le_10pct,40,period,2.0,2.0,2.0,2.0,0.0,50,10000,First n where period MdAPE <= 10% within each outer finite-population draw.
+1,Chicago,mdape_at_n10,40,period,1.6668167524604178,1.286932739332742,3.1056080193080806,1.9281222127431312,0.6429649877094906,50,10000,Period MdAPE at n=10 across outer finite-population draws.
+1,Chicago,absolute_error_at_n10_ugm3,40,period,0.17139462892931734,0.13288182686545325,0.32279959303415323,0.19852507485246737,0.06786579212652222,50,10000,Period median absolute error at n=10 across outer finite-population draws.

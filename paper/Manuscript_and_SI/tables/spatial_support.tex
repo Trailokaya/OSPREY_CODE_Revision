@@ -1,0 +1,23 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Spatial support of the three reference networks. Network area is the convex hull of sensor locations; administrative area is provided for context but is not the estimation target. Density and pairwise distances describe the realized spatial sampling. For Chicago, the primary network excludes nine sensors collocated with EPA AQS regulatory sites.}
+\label{tab:spatial_support}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrr}
+\toprule
+ & \textbf{Lucknow} & \textbf{Dhaka} & \textbf{Chicago} \\
+\midrule
+Sensors in finite population ($N$) & 71 & 35 & 277 \\
+Convex-hull area (km$^2$) & 1{,}505 & 343 & 696 \\
+Administrative area (km$^2$) & 2{,}528 (district) & 2{,}570 (metro) & 606 (city) / 4{,}235 (county) \\
+Sensor density (per 100 km$^2$ hull) & 4.7 & 10.2 & 39.8 \\
+Median pairwise distance (km) & 13.1 & 7.9 & 13.9 \\
+Median nearest-neighbor (km) & 1.9 & 1.6 & 1.4 \\
+Study window & Apr 2022 -- Mar 2023 & Apr 2022 -- Mar 2023 & Sep 2025 -- May 2026 \\
+Window length & 12 months & 12 months & 9 months \\
+Estimation target & Deployed LCS mean & Deployed LCS mean & Deployed LCS mean \\
+Reference monitor context & CAAQM (regional) & U.S.\ Embassy BAM & 10 EPA AQS sites \\
+\bottomrule
+\end{tabular}}
+\end{table}

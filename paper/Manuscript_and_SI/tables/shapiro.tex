@@ -1,0 +1,19 @@
+\begin{table}[ht]
+\centering
+\small
+\begin{tabular}{lrrrrrr}
+\toprule
+ & \multicolumn{2}{c}{Dhaka} & \multicolumn{2}{c}{Lucknow} & \multicolumn{2}{c}{Chicago} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+ & $\mathcal{N}$ & $\log \mathcal{N}$ & $\mathcal{N}$ & $\log \mathcal{N}$ & $\mathcal{N}$ & $\log \mathcal{N}$ \\
+\midrule
+$p <0.01$ & 204 & 167 & 209 & 130 & 262 & 264 \\
+$0.01 \leq p < 0.05$ & 52 & 58 & 49 & 37 & 5 & 2 \\
+$0.05 \leq p < 0.10$ & 15 & 24 & 27 & 24 & 4 & 0 \\
+$p \geq 0.10$ & 94 & 116 & 80 & 174 & 1 & 6 \\
+Not tested & 0 & 0 & 0 & 0 & 1 & 1 \\
+\bottomrule
+\end{tabular}
+\caption{Exact Shapiro--Wilk $p$-value counts for daily cross-sensor distributions under the normal distribution ($\mathcal{N}$) and the lognormal distribution ($\log \mathcal{N}$). Counts cover 365 daily distributions in \city{Dhaka} and \city{Lucknow}, and the nine-month \city{Chicago} window; the ``Not tested'' row records dates with too few valid values for the test.}
+\label{tab:shapiro}
+\end{table}

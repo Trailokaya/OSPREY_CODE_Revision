@@ -1,0 +1,29 @@
+{
+  "target_date": "2026-01-01",
+  "illustrative_seed": 20260531,
+  "subnetwork_n": 10,
+  "lcs_full_period": {
+    "start_date": "2025-09-01",
+    "end_date": "2026-05-31",
+    "n_dates": 273
+  },
+  "aqs_full_period": {
+    "start_date": "2025-09-01",
+    "end_date": "2026-04-30",
+    "n_dates": 242
+  },
+  "shared_lcs_aqs_period": {
+    "start_date": "2025-09-01",
+    "end_date": "2026-03-31",
+    "n_dates": 212
+  },
+  "period_panel_uses": "shared_lcs_aqs_period",
+  "outputs": {
+    "figure_pdf": "manuscript/overleaf_projects/01_manuscript_revision_tracked_working/Plots/Supporting_Information/Figure_SI_1/si1_continuous_field_sampling_chicago.pdf",
+    "figure_png": "manuscript/overleaf_projects/01_manuscript_revision_tracked_working/Plots/Supporting_Information/Figure_SI_1/si1_continuous_field_sampling_chicago.png",
+    "actual_data_csv": "analysis/results/si1_continuous_field_sampling/si1_chicago_actual_daily_period_values.csv",
+    "concept_data_csv": "analysis/results/si1_continuous_field_sampling/si1_conceptual_sampling_sensor_values.csv",
+    "summary_csv": "analysis/results/si1_continuous_field_sampling/si1_continuous_field_sampling_summary.csv",
+    "note": "analysis/results/si1_continuous_field_sampling/si1_continuous_field_sampling_note.md"
+  }
+}

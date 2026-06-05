@@ -1,0 +1,16 @@
+dataset_key,city,x_variable,y_variable,n_days,pearson_r,spearman_rho,abs_spearman_rho,evidence_strength,direction
+dhaka_lcs,Dhaka,daily_mean_pm25,daily_missing_fraction,365,-0.18524569753682701,-0.12667023432522395,0.12667023432522395,weak evidence,negative
+dhaka_lcs,Dhaka,daily_median_pm25,daily_missing_fraction,365,-0.1799698777828199,-0.11966805633134565,0.11966805633134565,weak evidence,negative
+dhaka_lcs,Dhaka,daily_spatial_sd,daily_missing_fraction,365,-0.18290614832208593,-0.13317910298354724,0.13317910298354724,weak evidence,negative
+dhaka_lcs,Dhaka,daily_spatial_cv,daily_missing_fraction,365,-0.0931784230067537,0.03895783080353444,0.03895783080353444,little evidence,positive
+dhaka_lcs,Dhaka,daily_valid_sensor_count,daily_missing_fraction,365,-0.9543952332897603,-0.8410008994320516,0.8410008994320516,strong evidence,negative
+lucknow_lcs,Lucknow,daily_mean_pm25,daily_missing_fraction,365,-0.04885151935448712,0.06175669156921032,0.06175669156921032,little evidence,positive
+lucknow_lcs,Lucknow,daily_median_pm25,daily_missing_fraction,365,-0.04650146770976184,0.062009762928240036,0.062009762928240036,little evidence,positive
+lucknow_lcs,Lucknow,daily_spatial_sd,daily_missing_fraction,365,0.025480784134446367,0.15388194622198664,0.15388194622198664,weak evidence,positive
+lucknow_lcs,Lucknow,daily_spatial_cv,daily_missing_fraction,365,0.1888162363583865,0.2982067778103084,0.2982067778103084,weak evidence,positive
+lucknow_lcs,Lucknow,daily_valid_sensor_count,daily_missing_fraction,365,-0.9492715921397498,-0.9160013711781277,0.9160013711781277,strong evidence,negative
+chicago_lcs_corrected_no_collocation,Chicago,daily_mean_pm25,daily_missing_fraction,272,-0.08673253448728518,-0.06735264852282813,0.06735264852282813,little evidence,negative
+chicago_lcs_corrected_no_collocation,Chicago,daily_median_pm25,daily_missing_fraction,272,-0.08753529521607509,-0.06866551261099897,0.06866551261099897,little evidence,negative
+chicago_lcs_corrected_no_collocation,Chicago,daily_spatial_sd,daily_missing_fraction,272,-0.08356284474132265,-0.03633257902686157,0.03633257902686157,little evidence,negative
+chicago_lcs_corrected_no_collocation,Chicago,daily_spatial_cv,daily_missing_fraction,272,0.07827544959465611,-0.014889948784526158,0.014889948784526158,little evidence,negative
+chicago_lcs_corrected_no_collocation,Chicago,daily_valid_sensor_count,daily_missing_fraction,273,-1.0,-1.0,1.0,strong evidence,negative

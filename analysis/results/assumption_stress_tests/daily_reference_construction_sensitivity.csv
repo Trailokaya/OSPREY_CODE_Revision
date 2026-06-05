@@ -1,0 +1,4 @@
+dataset_key,city,daily_comparison,daily_days_compared,daily_mean_diff_ugm3,daily_median_diff_ugm3,daily_mae_ugm3,daily_p95_abs_diff_ugm3,daily_max_abs_diff_ugm3
+dhaka_lcs,Dhaka,pooled_valid_observations_minus_two_step_sensor_mean,365,-0.2380271287877532,-0.06075473002692178,0.48852613504432796,1.5540437575458992,14.572250665461553
+lucknow_lcs,Lucknow,pooled_valid_observations_minus_two_step_sensor_mean,365,-0.43562063724121375,-0.11024031484975083,0.6978866930460202,2.1850408030795263,19.828939757574517
+chicago_lcs_corrected_no_collocation,Chicago,pooled_valid_observations_minus_two_step_sensor_mean,241,0.0,0.0,0.0,0.0,0.0

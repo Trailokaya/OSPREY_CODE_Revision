@@ -1,0 +1,10 @@
+dataset_key,city,metric,k_nearest_neighbors,morans_i,permutation_p_two_sided,permutation_p_positive_clustering
+dhaka_lcs,Dhaka,record_missing_pct,5,0.20050560583853375,0.018196360727854428,0.011197760447910418
+dhaka_lcs,Dhaka,daily_missing_pct,5,-0.007871334994757014,0.9308138372325535,0.35532893421315737
+dhaka_lcs,Dhaka,longest_missing_gap_days,5,-0.07906062487068072,0.41611677664467106,0.6914617076584683
+lucknow_lcs,Lucknow,record_missing_pct,5,0.007735574492275989,0.905618876224755,0.34513097380523894
+lucknow_lcs,Lucknow,daily_missing_pct,5,0.0030065282707478235,0.9594081183763248,0.3697260547890422
+lucknow_lcs,Lucknow,longest_missing_gap_days,5,-0.059845124683024616,0.35112977404519097,0.7654469106178764
+chicago_lcs_corrected_no_collocation,Chicago,record_missing_pct,5,0.06487023581145288,0.04599080183963208,0.04599080183963208
+chicago_lcs_corrected_no_collocation,Chicago,daily_missing_pct,5,0.06487023581145288,0.04819036192761448,0.04819036192761448
+chicago_lcs_corrected_no_collocation,Chicago,longest_missing_gap_days,5,0.056295385144464145,0.05898820235952809,0.05898820235952809

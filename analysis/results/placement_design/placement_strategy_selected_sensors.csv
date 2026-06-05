@@ -1,0 +1,421 @@
+dataset_key,city,sample_size,strategy,strategy_label,selection_order,sensor_index,sensor_id,station_name,latitude,longitude
+dhaka_lcs,Dhaka,5,random_fixed,Random,1,5,81432130017,8. Vasantek,23.813502,90.390596
+dhaka_lcs,Dhaka,5,random_fixed,Random,2,11,81432130033,"14. Hemayatpur, NAAFCO",23.7951568,90.2793403
+dhaka_lcs,Dhaka,5,random_fixed,Random,3,15,81432130043,"17. Mirpur, Botanical",23.82199,90.34855
+dhaka_lcs,Dhaka,5,random_fixed,Random,4,19,81432151014,64. Satarkul,23.793826,90.448119
+dhaka_lcs,Dhaka,5,random_fixed,Random,5,27,81432151055,"61. Mugda, GMT",23.724946,90.447879
+dhaka_lcs,Dhaka,5,max_ess,Max ESS,1,3,81432130014,"16. Narayangonj, Gognogor",23.59258046,90.50221399
+dhaka_lcs,Dhaka,5,max_ess,Max ESS,2,9,81432130029,"13. Uttara, sector 10",23.8803339,90.3881508
+dhaka_lcs,Dhaka,5,max_ess,Max ESS,3,10,81432130031,22. Uttar Khan,23.880623,90.442425
+dhaka_lcs,Dhaka,5,max_ess,Max ESS,4,11,81432130033,"14. Hemayatpur, NAAFCO",23.7951568,90.2793403
+dhaka_lcs,Dhaka,5,max_ess,Max ESS,5,34,81432152018,27. Mouchak,23.69853,90.49446
+dhaka_lcs,Dhaka,5,min_pred_var,Min Pred. Var.,1,6,81432130021,"11. Cantonment, Balurghat",23.834905,90.388527
+dhaka_lcs,Dhaka,5,min_pred_var,Min Pred. Var.,2,14,81432130042,15. Mohammadpur,23.7554521,90.3592816
+dhaka_lcs,Dhaka,5,min_pred_var,Min Pred. Var.,3,18,81432151010,"42. Nakhalpara, bonoful ",23.767592,90.394612
+dhaka_lcs,Dhaka,5,min_pred_var,Min Pred. Var.,4,19,81432151014,64. Satarkul,23.793826,90.448119
+dhaka_lcs,Dhaka,5,min_pred_var,Min Pred. Var.,5,21,81432151018,69. Kazlarpar School,23.713381,90.441829
+dhaka_lcs,Dhaka,5,min_ess,Min ESS,1,1,81432124034,2. Dhaka University ,23.72820547,90.39852372
+dhaka_lcs,Dhaka,5,min_ess,Min ESS,2,23,81432151024,62. Curzon hall,23.727105,90.402772
+dhaka_lcs,Dhaka,5,min_ess,Min ESS,3,26,81432151051,40. Anondo Bazar,23.7241575,90.4034797
+dhaka_lcs,Dhaka,5,min_ess,Min ESS,4,28,81432151062,74. CARS,23.729204,90.398569
+dhaka_lcs,Dhaka,5,min_ess,Min ESS,5,30,81432151072,63. Khilkhet,23.72791258,90.39793792
+dhaka_lcs,Dhaka,10,random_fixed,Random,1,3,81432130014,"16. Narayangonj, Gognogor",23.59258046,90.50221399
+dhaka_lcs,Dhaka,10,random_fixed,Random,2,5,81432130017,8. Vasantek,23.813502,90.390596
+dhaka_lcs,Dhaka,10,random_fixed,Random,3,7,81432130025,21. Jagannath University,23.708545,90.410324
+dhaka_lcs,Dhaka,10,random_fixed,Random,4,17,81432150009,36. Sher-E-Bangla Nagar,23.773438,90.371157
+dhaka_lcs,Dhaka,10,random_fixed,Random,5,20,81432151017,"39. Khilgaon, Goran",23.748597,90.434691
+dhaka_lcs,Dhaka,10,random_fixed,Random,6,22,81432151022,34. Farmgate,23.754638,90.388358
+dhaka_lcs,Dhaka,10,random_fixed,Random,7,23,81432151024,62. Curzon hall,23.727105,90.402772
+dhaka_lcs,Dhaka,10,random_fixed,Random,8,24,81432151044,"75. Uttara, Rd 12",23.87293,90.389886
+dhaka_lcs,Dhaka,10,random_fixed,Random,9,32,81432152006,73. Science Lab,23.74006,90.38504
+dhaka_lcs,Dhaka,10,random_fixed,Random,10,34,81432152018,27. Mouchak,23.69853,90.49446
+dhaka_lcs,Dhaka,10,max_ess,Max ESS,1,3,81432130014,"16. Narayangonj, Gognogor",23.59258046,90.50221399
+dhaka_lcs,Dhaka,10,max_ess,Max ESS,2,7,81432130025,21. Jagannath University,23.708545,90.410324
+dhaka_lcs,Dhaka,10,max_ess,Max ESS,3,8,81432130028,7. South Nilkhet,23.72951094,90.38810817
+dhaka_lcs,Dhaka,10,max_ess,Max ESS,4,9,81432130029,"13. Uttara, sector 10",23.8803339,90.3881508
+dhaka_lcs,Dhaka,10,max_ess,Max ESS,5,10,81432130031,22. Uttar Khan,23.880623,90.442425
+dhaka_lcs,Dhaka,10,max_ess,Max ESS,6,11,81432130033,"14. Hemayatpur, NAAFCO",23.7951568,90.2793403
+dhaka_lcs,Dhaka,10,max_ess,Max ESS,7,14,81432130042,15. Mohammadpur,23.7554521,90.3592816
+dhaka_lcs,Dhaka,10,max_ess,Max ESS,8,15,81432130043,"17. Mirpur, Botanical",23.82199,90.34855
+dhaka_lcs,Dhaka,10,max_ess,Max ESS,9,19,81432151014,64. Satarkul,23.793826,90.448119
+dhaka_lcs,Dhaka,10,max_ess,Max ESS,10,34,81432152018,27. Mouchak,23.69853,90.49446
+dhaka_lcs,Dhaka,10,min_pred_var,Min Pred. Var.,1,6,81432130021,"11. Cantonment, Balurghat",23.834905,90.388527
+dhaka_lcs,Dhaka,10,min_pred_var,Min Pred. Var.,2,7,81432130025,21. Jagannath University,23.708545,90.410324
+dhaka_lcs,Dhaka,10,min_pred_var,Min Pred. Var.,3,11,81432130033,"14. Hemayatpur, NAAFCO",23.7951568,90.2793403
+dhaka_lcs,Dhaka,10,min_pred_var,Min Pred. Var.,4,12,81432130035,12. Bashundhara RA,23.8173532,90.4253786
+dhaka_lcs,Dhaka,10,min_pred_var,Min Pred. Var.,5,14,81432130042,15. Mohammadpur,23.7554521,90.3592816
+dhaka_lcs,Dhaka,10,min_pred_var,Min Pred. Var.,6,15,81432130043,"17. Mirpur, Botanical",23.82199,90.34855
+dhaka_lcs,Dhaka,10,min_pred_var,Min Pred. Var.,7,18,81432151010,"42. Nakhalpara, bonoful ",23.767592,90.394612
+dhaka_lcs,Dhaka,10,min_pred_var,Min Pred. Var.,8,19,81432151014,64. Satarkul,23.793826,90.448119
+dhaka_lcs,Dhaka,10,min_pred_var,Min Pred. Var.,9,21,81432151018,69. Kazlarpar School,23.713381,90.441829
+dhaka_lcs,Dhaka,10,min_pred_var,Min Pred. Var.,10,34,81432152018,27. Mouchak,23.69853,90.49446
+dhaka_lcs,Dhaka,10,min_ess,Min ESS,1,0,81432124031,1. Siddeshwari ,23.74354,90.40947
+dhaka_lcs,Dhaka,10,min_ess,Min ESS,2,1,81432124034,2. Dhaka University ,23.72820547,90.39852372
+dhaka_lcs,Dhaka,10,min_ess,Min ESS,3,2,81432130001,25. Shahnoori model high school,23.7507652,90.4032229
+dhaka_lcs,Dhaka,10,min_ess,Min ESS,4,8,81432130028,7. South Nilkhet,23.72951094,90.38810817
+dhaka_lcs,Dhaka,10,min_ess,Min ESS,5,23,81432151024,62. Curzon hall,23.727105,90.402772
+dhaka_lcs,Dhaka,10,min_ess,Min ESS,6,25,81432151048,33. DU Club,23.732466,90.389458
+dhaka_lcs,Dhaka,10,min_ess,Min ESS,7,26,81432151051,40. Anondo Bazar,23.7241575,90.4034797
+dhaka_lcs,Dhaka,10,min_ess,Min ESS,8,28,81432151062,74. CARS,23.729204,90.398569
+dhaka_lcs,Dhaka,10,min_ess,Min ESS,9,30,81432151072,63. Khilkhet,23.72791258,90.39793792
+dhaka_lcs,Dhaka,10,min_ess,Min ESS,10,32,81432152006,73. Science Lab,23.74006,90.38504
+dhaka_lcs,Dhaka,20,random_fixed,Random,1,1,81432124034,2. Dhaka University ,23.72820547,90.39852372
+dhaka_lcs,Dhaka,20,random_fixed,Random,2,2,81432130001,25. Shahnoori model high school,23.7507652,90.4032229
+dhaka_lcs,Dhaka,20,random_fixed,Random,3,3,81432130014,"16. Narayangonj, Gognogor",23.59258046,90.50221399
+dhaka_lcs,Dhaka,20,random_fixed,Random,4,5,81432130017,8. Vasantek,23.813502,90.390596
+dhaka_lcs,Dhaka,20,random_fixed,Random,5,7,81432130025,21. Jagannath University,23.708545,90.410324
+dhaka_lcs,Dhaka,20,random_fixed,Random,6,9,81432130029,"13. Uttara, sector 10",23.8803339,90.3881508
+dhaka_lcs,Dhaka,20,random_fixed,Random,7,10,81432130031,22. Uttar Khan,23.880623,90.442425
+dhaka_lcs,Dhaka,20,random_fixed,Random,8,11,81432130033,"14. Hemayatpur, NAAFCO",23.7951568,90.2793403
+dhaka_lcs,Dhaka,20,random_fixed,Random,9,13,81432130036,10. Dholaipar,23.70073734,90.43335436
+dhaka_lcs,Dhaka,20,random_fixed,Random,10,15,81432130043,"17. Mirpur, Botanical",23.82199,90.34855
+dhaka_lcs,Dhaka,20,random_fixed,Random,11,17,81432150009,36. Sher-E-Bangla Nagar,23.773438,90.371157
+dhaka_lcs,Dhaka,20,random_fixed,Random,12,20,81432151017,"39. Khilgaon, Goran",23.748597,90.434691
+dhaka_lcs,Dhaka,20,random_fixed,Random,13,21,81432151018,69. Kazlarpar School,23.713381,90.441829
+dhaka_lcs,Dhaka,20,random_fixed,Random,14,22,81432151022,34. Farmgate,23.754638,90.388358
+dhaka_lcs,Dhaka,20,random_fixed,Random,15,25,81432151048,33. DU Club,23.732466,90.389458
+dhaka_lcs,Dhaka,20,random_fixed,Random,16,26,81432151051,40. Anondo Bazar,23.7241575,90.4034797
+dhaka_lcs,Dhaka,20,random_fixed,Random,17,28,81432151062,74. CARS,23.729204,90.398569
+dhaka_lcs,Dhaka,20,random_fixed,Random,18,29,81432151066,41. Banani ,23.7870494,90.4036932
+dhaka_lcs,Dhaka,20,random_fixed,Random,19,31,81432151074,46. Maniknagar,23.721511,90.428814
+dhaka_lcs,Dhaka,20,random_fixed,Random,20,32,81432152006,73. Science Lab,23.74006,90.38504
+dhaka_lcs,Dhaka,20,max_ess,Max ESS,1,0,81432124031,1. Siddeshwari ,23.74354,90.40947
+dhaka_lcs,Dhaka,20,max_ess,Max ESS,2,3,81432130014,"16. Narayangonj, Gognogor",23.59258046,90.50221399
+dhaka_lcs,Dhaka,20,max_ess,Max ESS,3,4,81432130015,18. North Badda,23.786668,90.424733
+dhaka_lcs,Dhaka,20,max_ess,Max ESS,4,5,81432130017,8. Vasantek,23.813502,90.390596
+dhaka_lcs,Dhaka,20,max_ess,Max ESS,5,7,81432130025,21. Jagannath University,23.708545,90.410324
+dhaka_lcs,Dhaka,20,max_ess,Max ESS,6,8,81432130028,7. South Nilkhet,23.72951094,90.38810817
+dhaka_lcs,Dhaka,20,max_ess,Max ESS,7,9,81432130029,"13. Uttara, sector 10",23.8803339,90.3881508
+dhaka_lcs,Dhaka,20,max_ess,Max ESS,8,10,81432130031,22. Uttar Khan,23.880623,90.442425
+dhaka_lcs,Dhaka,20,max_ess,Max ESS,9,11,81432130033,"14. Hemayatpur, NAAFCO",23.7951568,90.2793403
+dhaka_lcs,Dhaka,20,max_ess,Max ESS,10,12,81432130035,12. Bashundhara RA,23.8173532,90.4253786
+dhaka_lcs,Dhaka,20,max_ess,Max ESS,11,13,81432130036,10. Dholaipar,23.70073734,90.43335436
+dhaka_lcs,Dhaka,20,max_ess,Max ESS,12,14,81432130042,15. Mohammadpur,23.7554521,90.3592816
+dhaka_lcs,Dhaka,20,max_ess,Max ESS,13,15,81432130043,"17. Mirpur, Botanical",23.82199,90.34855
+dhaka_lcs,Dhaka,20,max_ess,Max ESS,14,16,81432150006,"31. Rupnogor high school, Pallabi",23.823728,90.354919
+dhaka_lcs,Dhaka,20,max_ess,Max ESS,15,18,81432151010,"42. Nakhalpara, bonoful ",23.767592,90.394612
+dhaka_lcs,Dhaka,20,max_ess,Max ESS,16,19,81432151014,64. Satarkul,23.793826,90.448119
+dhaka_lcs,Dhaka,20,max_ess,Max ESS,17,20,81432151017,"39. Khilgaon, Goran",23.748597,90.434691
+dhaka_lcs,Dhaka,20,max_ess,Max ESS,18,27,81432151055,"61. Mugda, GMT",23.724946,90.447879
+dhaka_lcs,Dhaka,20,max_ess,Max ESS,19,31,81432151074,46. Maniknagar,23.721511,90.428814
+dhaka_lcs,Dhaka,20,max_ess,Max ESS,20,34,81432152018,27. Mouchak,23.69853,90.49446
+dhaka_lcs,Dhaka,20,min_pred_var,Min Pred. Var.,1,3,81432130014,"16. Narayangonj, Gognogor",23.59258046,90.50221399
+dhaka_lcs,Dhaka,20,min_pred_var,Min Pred. Var.,2,5,81432130017,8. Vasantek,23.813502,90.390596
+dhaka_lcs,Dhaka,20,min_pred_var,Min Pred. Var.,3,6,81432130021,"11. Cantonment, Balurghat",23.834905,90.388527
+dhaka_lcs,Dhaka,20,min_pred_var,Min Pred. Var.,4,7,81432130025,21. Jagannath University,23.708545,90.410324
+dhaka_lcs,Dhaka,20,min_pred_var,Min Pred. Var.,5,8,81432130028,7. South Nilkhet,23.72951094,90.38810817
+dhaka_lcs,Dhaka,20,min_pred_var,Min Pred. Var.,6,10,81432130031,22. Uttar Khan,23.880623,90.442425
+dhaka_lcs,Dhaka,20,min_pred_var,Min Pred. Var.,7,11,81432130033,"14. Hemayatpur, NAAFCO",23.7951568,90.2793403
+dhaka_lcs,Dhaka,20,min_pred_var,Min Pred. Var.,8,12,81432130035,12. Bashundhara RA,23.8173532,90.4253786
+dhaka_lcs,Dhaka,20,min_pred_var,Min Pred. Var.,9,13,81432130036,10. Dholaipar,23.70073734,90.43335436
+dhaka_lcs,Dhaka,20,min_pred_var,Min Pred. Var.,10,14,81432130042,15. Mohammadpur,23.7554521,90.3592816
+dhaka_lcs,Dhaka,20,min_pred_var,Min Pred. Var.,11,15,81432130043,"17. Mirpur, Botanical",23.82199,90.34855
+dhaka_lcs,Dhaka,20,min_pred_var,Min Pred. Var.,12,18,81432151010,"42. Nakhalpara, bonoful ",23.767592,90.394612
+dhaka_lcs,Dhaka,20,min_pred_var,Min Pred. Var.,13,19,81432151014,64. Satarkul,23.793826,90.448119
+dhaka_lcs,Dhaka,20,min_pred_var,Min Pred. Var.,14,20,81432151017,"39. Khilgaon, Goran",23.748597,90.434691
+dhaka_lcs,Dhaka,20,min_pred_var,Min Pred. Var.,15,21,81432151018,69. Kazlarpar School,23.713381,90.441829
+dhaka_lcs,Dhaka,20,min_pred_var,Min Pred. Var.,16,24,81432151044,"75. Uttara, Rd 12",23.87293,90.389886
+dhaka_lcs,Dhaka,20,min_pred_var,Min Pred. Var.,17,27,81432151055,"61. Mugda, GMT",23.724946,90.447879
+dhaka_lcs,Dhaka,20,min_pred_var,Min Pred. Var.,18,29,81432151066,41. Banani ,23.7870494,90.4036932
+dhaka_lcs,Dhaka,20,min_pred_var,Min Pred. Var.,19,33,81432152014,"35. Mirpur, Pirerbag",23.7915802,90.3628839
+dhaka_lcs,Dhaka,20,min_pred_var,Min Pred. Var.,20,34,81432152018,27. Mouchak,23.69853,90.49446
+dhaka_lcs,Dhaka,20,min_ess,Min ESS,1,0,81432124031,1. Siddeshwari ,23.74354,90.40947
+dhaka_lcs,Dhaka,20,min_ess,Min ESS,2,1,81432124034,2. Dhaka University ,23.72820547,90.39852372
+dhaka_lcs,Dhaka,20,min_ess,Min ESS,3,2,81432130001,25. Shahnoori model high school,23.7507652,90.4032229
+dhaka_lcs,Dhaka,20,min_ess,Min ESS,4,4,81432130015,18. North Badda,23.786668,90.424733
+dhaka_lcs,Dhaka,20,min_ess,Min ESS,5,7,81432130025,21. Jagannath University,23.708545,90.410324
+dhaka_lcs,Dhaka,20,min_ess,Min ESS,6,8,81432130028,7. South Nilkhet,23.72951094,90.38810817
+dhaka_lcs,Dhaka,20,min_ess,Min ESS,7,14,81432130042,15. Mohammadpur,23.7554521,90.3592816
+dhaka_lcs,Dhaka,20,min_ess,Min ESS,8,17,81432150009,36. Sher-E-Bangla Nagar,23.773438,90.371157
+dhaka_lcs,Dhaka,20,min_ess,Min ESS,9,18,81432151010,"42. Nakhalpara, bonoful ",23.767592,90.394612
+dhaka_lcs,Dhaka,20,min_ess,Min ESS,10,20,81432151017,"39. Khilgaon, Goran",23.748597,90.434691
+dhaka_lcs,Dhaka,20,min_ess,Min ESS,11,22,81432151022,34. Farmgate,23.754638,90.388358
+dhaka_lcs,Dhaka,20,min_ess,Min ESS,12,23,81432151024,62. Curzon hall,23.727105,90.402772
+dhaka_lcs,Dhaka,20,min_ess,Min ESS,13,25,81432151048,33. DU Club,23.732466,90.389458
+dhaka_lcs,Dhaka,20,min_ess,Min ESS,14,26,81432151051,40. Anondo Bazar,23.7241575,90.4034797
+dhaka_lcs,Dhaka,20,min_ess,Min ESS,15,28,81432151062,74. CARS,23.729204,90.398569
+dhaka_lcs,Dhaka,20,min_ess,Min ESS,16,29,81432151066,41. Banani ,23.7870494,90.4036932
+dhaka_lcs,Dhaka,20,min_ess,Min ESS,17,30,81432151072,63. Khilkhet,23.72791258,90.39793792
+dhaka_lcs,Dhaka,20,min_ess,Min ESS,18,31,81432151074,46. Maniknagar,23.721511,90.428814
+dhaka_lcs,Dhaka,20,min_ess,Min ESS,19,32,81432152006,73. Science Lab,23.74006,90.38504
+dhaka_lcs,Dhaka,20,min_ess,Min ESS,20,33,81432152014,"35. Mirpur, Pirerbag",23.7915802,90.3628839
+lucknow_lcs,Lucknow,5,random_fixed,Random,1,1,81432130004,"B R Ambedkar University, Lucknow - UPPCB",26.76643,80.9273
+lucknow_lcs,Lucknow,5,random_fixed,Random,2,19,81432144008,Chak Ganjaria,26.79835,81.02416
+lucknow_lcs,Lucknow,5,random_fixed,Random,3,29,81432144023,Mohammadpur,27.02779,80.93745
+lucknow_lcs,Lucknow,5,random_fixed,Random,4,52,81432147047,Aliganj -II,26.88364,80.93675
+lucknow_lcs,Lucknow,5,random_fixed,Random,5,63,81432147062,Tiwariganj,26.89134,81.07359
+lucknow_lcs,Lucknow,5,max_ess,Max ESS,1,18,81432144007,Dashauli,26.95845,80.99923
+lucknow_lcs,Lucknow,5,max_ess,Max ESS,2,32,81432144026,Itaunja,27.06729,80.89501
+lucknow_lcs,Lucknow,5,max_ess,Max ESS,3,39,81432147023,Piparsand,26.74666,80.81857
+lucknow_lcs,Lucknow,5,max_ess,Max ESS,4,45,81432147039,Nagram,26.61845,81.14324
+lucknow_lcs,Lucknow,5,max_ess,Max ESS,5,49,81432147044,Rahta,27.03761,80.65654
+lucknow_lcs,Lucknow,5,min_pred_var,Min Pred. Var.,1,2,81432130005,Rajendra Nagar-II,26.90434,80.76538
+lucknow_lcs,Lucknow,5,min_pred_var,Min Pred. Var.,2,9,81432131007,Charbagh,26.83767,80.9345
+lucknow_lcs,Lucknow,5,min_pred_var,Min Pred. Var.,3,19,81432144008,Chak Ganjaria,26.79835,81.02416
+lucknow_lcs,Lucknow,5,min_pred_var,Min Pred. Var.,4,25,81432144019,Mubarakpur,26.93487,80.89838
+lucknow_lcs,Lucknow,5,min_pred_var,Min Pred. Var.,5,43,81432147037,HariKansh_garhi,26.72429,80.97102
+lucknow_lcs,Lucknow,5,min_ess,Min ESS,1,2,81432130005,Rajendra Nagar-II,26.90434,80.76538
+lucknow_lcs,Lucknow,5,min_ess,Min ESS,2,5,81432131002,Dubagga,26.85468,80.85959
+lucknow_lcs,Lucknow,5,min_ess,Min ESS,3,13,81432131013,Kakori,26.9043353,80.7653765
+lucknow_lcs,Lucknow,5,min_ess,Min ESS,4,48,81432147043,Amrapali Yojna,26.88655,80.86085
+lucknow_lcs,Lucknow,5,min_ess,Min ESS,5,65,81432147065,Balaganj,26.87166,80.88209
+lucknow_lcs,Lucknow,10,random_fixed,Random,1,2,81432130005,Rajendra Nagar-II,26.90434,80.76538
+lucknow_lcs,Lucknow,10,random_fixed,Random,2,16,81432131016,Jankipuram,26.9152,80.94217
+lucknow_lcs,Lucknow,10,random_fixed,Random,3,20,81432144009,Awadh_vihar_yojna,26.76477,80.97511
+lucknow_lcs,Lucknow,10,random_fixed,Random,4,25,81432144019,Mubarakpur,26.93487,80.89838
+lucknow_lcs,Lucknow,10,random_fixed,Random,5,27,81432144021,LPS Jankipuram,26.92222,80.95233
+lucknow_lcs,Lucknow,10,random_fixed,Random,6,33,81432144027,CIMAP,26.89483,80.98249
+lucknow_lcs,Lucknow,10,random_fixed,Random,7,43,81432147037,HariKansh_garhi,26.72429,80.97102
+lucknow_lcs,Lucknow,10,random_fixed,Random,8,46,81432147040,"Amethi, jagdishpur",26.75155,81.15767
+lucknow_lcs,Lucknow,10,random_fixed,Random,9,66,81432147068,Badal Khera,26.83256,80.86087
+lucknow_lcs,Lucknow,10,random_fixed,Random,10,68,81432147070,Asharfabad,26.85687,80.89933
+lucknow_lcs,Lucknow,10,max_ess,Max ESS,1,13,81432131013,Kakori,26.9043353,80.7653765
+lucknow_lcs,Lucknow,10,max_ess,Max ESS,2,18,81432144007,Dashauli,26.95845,80.99923
+lucknow_lcs,Lucknow,10,max_ess,Max ESS,3,21,81432144014,Nigoha,26.55383,81.04667
+lucknow_lcs,Lucknow,10,max_ess,Max ESS,4,32,81432144026,Itaunja,27.06729,80.89501
+lucknow_lcs,Lucknow,10,max_ess,Max ESS,5,39,81432147023,Piparsand,26.74666,80.81857
+lucknow_lcs,Lucknow,10,max_ess,Max ESS,6,45,81432147039,Nagram,26.61845,81.14324
+lucknow_lcs,Lucknow,10,max_ess,Max ESS,7,46,81432147040,"Amethi, jagdishpur",26.75155,81.15767
+lucknow_lcs,Lucknow,10,max_ess,Max ESS,8,49,81432147044,Rahta,27.03761,80.65654
+lucknow_lcs,Lucknow,10,max_ess,Max ESS,9,56,81432147053,Ambalika,26.64055,80.9382
+lucknow_lcs,Lucknow,10,max_ess,Max ESS,10,63,81432147062,Tiwariganj,26.89134,81.07359
+lucknow_lcs,Lucknow,10,min_pred_var,Min Pred. Var.,1,2,81432130005,Rajendra Nagar-II,26.90434,80.76538
+lucknow_lcs,Lucknow,10,min_pred_var,Min Pred. Var.,2,9,81432131007,Charbagh,26.83767,80.9345
+lucknow_lcs,Lucknow,10,min_pred_var,Min Pred. Var.,3,19,81432144008,Chak Ganjaria,26.79835,81.02416
+lucknow_lcs,Lucknow,10,min_pred_var,Min Pred. Var.,4,22,81432144015,Mohanlalganj,26.65071,80.99416
+lucknow_lcs,Lucknow,10,min_pred_var,Min Pred. Var.,5,25,81432144019,Mubarakpur,26.93487,80.89838
+lucknow_lcs,Lucknow,10,min_pred_var,Min Pred. Var.,6,26,81432144020,HariharNagar,26.88341,81.01356
+lucknow_lcs,Lucknow,10,min_pred_var,Min Pred. Var.,7,31,81432144025,Baksi Ka Talab,27.00108,80.88373
+lucknow_lcs,Lucknow,10,min_pred_var,Min Pred. Var.,8,43,81432147037,HariKansh_garhi,26.72429,80.97102
+lucknow_lcs,Lucknow,10,min_pred_var,Min Pred. Var.,9,44,81432147038,Mall,27.01277,80.73623
+lucknow_lcs,Lucknow,10,min_pred_var,Min Pred. Var.,10,62,81432147061,Para,26.81434,80.86674
+lucknow_lcs,Lucknow,10,min_ess,Min ESS,1,2,81432130005,Rajendra Nagar-II,26.90434,80.76538
+lucknow_lcs,Lucknow,10,min_ess,Min ESS,2,5,81432131002,Dubagga,26.85468,80.85959
+lucknow_lcs,Lucknow,10,min_ess,Min ESS,3,7,81432131005,Husainabad,26.8702,80.90413
+lucknow_lcs,Lucknow,10,min_ess,Min ESS,4,13,81432131013,Kakori,26.9043353,80.7653765
+lucknow_lcs,Lucknow,10,min_ess,Min ESS,5,48,81432147043,Amrapali Yojna,26.88655,80.86085
+lucknow_lcs,Lucknow,10,min_ess,Min ESS,6,59,81432147056,Rajajipuram-II,26.84018,80.88633
+lucknow_lcs,Lucknow,10,min_ess,Min ESS,7,64,81432147064,Rajajipuram-I,26.84618,80.87375
+lucknow_lcs,Lucknow,10,min_ess,Min ESS,8,65,81432147065,Balaganj,26.87166,80.88209
+lucknow_lcs,Lucknow,10,min_ess,Min ESS,9,66,81432147068,Badal Khera,26.83256,80.86087
+lucknow_lcs,Lucknow,10,min_ess,Min ESS,10,68,81432147070,Asharfabad,26.85687,80.89933
+lucknow_lcs,Lucknow,20,random_fixed,Random,1,0,81432130003,Aliganj,26.90173,80.95188
+lucknow_lcs,Lucknow,20,random_fixed,Random,2,1,81432130004,"B R Ambedkar University, Lucknow - UPPCB",26.76643,80.9273
+lucknow_lcs,Lucknow,20,random_fixed,Random,3,2,81432130005,Rajendra Nagar-II,26.90434,80.76538
+lucknow_lcs,Lucknow,20,random_fixed,Random,4,4,81432131001,Transport Nagar,26.77917,80.88506
+lucknow_lcs,Lucknow,20,random_fixed,Random,5,7,81432131005,Husainabad,26.8702,80.90413
+lucknow_lcs,Lucknow,20,random_fixed,Random,6,9,81432131007,Charbagh,26.83767,80.9345
+lucknow_lcs,Lucknow,20,random_fixed,Random,7,15,81432131015,IITR-Hazratganj,26.8594,80.93071
+lucknow_lcs,Lucknow,20,random_fixed,Random,8,18,81432144007,Dashauli,26.95845,80.99923
+lucknow_lcs,Lucknow,20,random_fixed,Random,9,21,81432144014,Nigoha,26.55383,81.04667
+lucknow_lcs,Lucknow,20,random_fixed,Random,10,23,81432144016,Lohiya college,26.85114,81.03126
+lucknow_lcs,Lucknow,20,random_fixed,Random,11,24,81432144017,Aziz Nagar,26.92933,80.92733
+lucknow_lcs,Lucknow,20,random_fixed,Random,12,37,81432147004,Anand Nagar,26.82169,80.92019
+lucknow_lcs,Lucknow,20,random_fixed,Random,13,38,81432147008,CMS_Kanpur Road,26.78976,80.8943
+lucknow_lcs,Lucknow,20,random_fixed,Random,14,43,81432147037,HariKansh_garhi,26.72429,80.97102
+lucknow_lcs,Lucknow,20,random_fixed,Random,15,48,81432147043,Amrapali Yojna,26.88655,80.86085
+lucknow_lcs,Lucknow,20,random_fixed,Random,16,51,81432147046,CMS_IndNgr,26.87444,80.97576
+lucknow_lcs,Lucknow,20,random_fixed,Random,17,57,81432147054,Malhaur,26.8517,81.05057
+lucknow_lcs,Lucknow,20,random_fixed,Random,18,63,81432147062,Tiwariganj,26.89134,81.07359
+lucknow_lcs,Lucknow,20,random_fixed,Random,19,66,81432147068,Badal Khera,26.83256,80.86087
+lucknow_lcs,Lucknow,20,random_fixed,Random,20,69,81432147072,Haroiya,26.65826,81.15739
+lucknow_lcs,Lucknow,20,max_ess,Max ESS,1,5,81432131002,Dubagga,26.85468,80.85959
+lucknow_lcs,Lucknow,20,max_ess,Max ESS,2,13,81432131013,Kakori,26.9043353,80.7653765
+lucknow_lcs,Lucknow,20,max_ess,Max ESS,3,18,81432144007,Dashauli,26.95845,80.99923
+lucknow_lcs,Lucknow,20,max_ess,Max ESS,4,19,81432144008,Chak Ganjaria,26.79835,81.02416
+lucknow_lcs,Lucknow,20,max_ess,Max ESS,5,21,81432144014,Nigoha,26.55383,81.04667
+lucknow_lcs,Lucknow,20,max_ess,Max ESS,6,22,81432144015,Mohanlalganj,26.65071,80.99416
+lucknow_lcs,Lucknow,20,max_ess,Max ESS,7,25,81432144019,Mubarakpur,26.93487,80.89838
+lucknow_lcs,Lucknow,20,max_ess,Max ESS,8,29,81432144023,Mohammadpur,27.02779,80.93745
+lucknow_lcs,Lucknow,20,max_ess,Max ESS,9,32,81432144026,Itaunja,27.06729,80.89501
+lucknow_lcs,Lucknow,20,max_ess,Max ESS,10,39,81432147023,Piparsand,26.74666,80.81857
+lucknow_lcs,Lucknow,20,max_ess,Max ESS,11,42,81432147036,Telibagh,26.79017,80.95862
+lucknow_lcs,Lucknow,20,max_ess,Max ESS,12,44,81432147038,Mall,27.01277,80.73623
+lucknow_lcs,Lucknow,20,max_ess,Max ESS,13,45,81432147039,Nagram,26.61845,81.14324
+lucknow_lcs,Lucknow,20,max_ess,Max ESS,14,46,81432147040,"Amethi, jagdishpur",26.75155,81.15767
+lucknow_lcs,Lucknow,20,max_ess,Max ESS,15,49,81432147044,Rahta,27.03761,80.65654
+lucknow_lcs,Lucknow,20,max_ess,Max ESS,16,53,81432147049,Bijnor,26.73427,80.89255
+lucknow_lcs,Lucknow,20,max_ess,Max ESS,17,56,81432147053,Ambalika,26.64055,80.9382
+lucknow_lcs,Lucknow,20,max_ess,Max ESS,18,57,81432147054,Malhaur,26.8517,81.05057
+lucknow_lcs,Lucknow,20,max_ess,Max ESS,19,63,81432147062,Tiwariganj,26.89134,81.07359
+lucknow_lcs,Lucknow,20,max_ess,Max ESS,20,69,81432147072,Haroiya,26.65826,81.15739
+lucknow_lcs,Lucknow,20,min_pred_var,Min Pred. Var.,1,2,81432130005,Rajendra Nagar-II,26.90434,80.76538
+lucknow_lcs,Lucknow,20,min_pred_var,Min Pred. Var.,2,9,81432131007,Charbagh,26.83767,80.9345
+lucknow_lcs,Lucknow,20,min_pred_var,Min Pred. Var.,3,19,81432144008,Chak Ganjaria,26.79835,81.02416
+lucknow_lcs,Lucknow,20,min_pred_var,Min Pred. Var.,4,20,81432144009,Awadh_vihar_yojna,26.76477,80.97511
+lucknow_lcs,Lucknow,20,min_pred_var,Min Pred. Var.,5,21,81432144014,Nigoha,26.55383,81.04667
+lucknow_lcs,Lucknow,20,min_pred_var,Min Pred. Var.,6,22,81432144015,Mohanlalganj,26.65071,80.99416
+lucknow_lcs,Lucknow,20,min_pred_var,Min Pred. Var.,7,25,81432144019,Mubarakpur,26.93487,80.89838
+lucknow_lcs,Lucknow,20,min_pred_var,Min Pred. Var.,8,26,81432144020,HariharNagar,26.88341,81.01356
+lucknow_lcs,Lucknow,20,min_pred_var,Min Pred. Var.,9,27,81432144021,LPS Jankipuram,26.92222,80.95233
+lucknow_lcs,Lucknow,20,min_pred_var,Min Pred. Var.,10,31,81432144025,Baksi Ka Talab,27.00108,80.88373
+lucknow_lcs,Lucknow,20,min_pred_var,Min Pred. Var.,11,39,81432147023,Piparsand,26.74666,80.81857
+lucknow_lcs,Lucknow,20,min_pred_var,Min Pred. Var.,12,43,81432147037,HariKansh_garhi,26.72429,80.97102
+lucknow_lcs,Lucknow,20,min_pred_var,Min Pred. Var.,13,44,81432147038,Mall,27.01277,80.73623
+lucknow_lcs,Lucknow,20,min_pred_var,Min Pred. Var.,14,45,81432147039,Nagram,26.61845,81.14324
+lucknow_lcs,Lucknow,20,min_pred_var,Min Pred. Var.,15,46,81432147040,"Amethi, jagdishpur",26.75155,81.15767
+lucknow_lcs,Lucknow,20,min_pred_var,Min Pred. Var.,16,48,81432147043,Amrapali Yojna,26.88655,80.86085
+lucknow_lcs,Lucknow,20,min_pred_var,Min Pred. Var.,17,53,81432147049,Bijnor,26.73427,80.89255
+lucknow_lcs,Lucknow,20,min_pred_var,Min Pred. Var.,18,57,81432147054,Malhaur,26.8517,81.05057
+lucknow_lcs,Lucknow,20,min_pred_var,Min Pred. Var.,19,62,81432147061,Para,26.81434,80.86674
+lucknow_lcs,Lucknow,20,min_pred_var,Min Pred. Var.,20,69,81432147072,Haroiya,26.65826,81.15739
+lucknow_lcs,Lucknow,20,min_ess,Min ESS,1,2,81432130005,Rajendra Nagar-II,26.90434,80.76538
+lucknow_lcs,Lucknow,20,min_ess,Min ESS,2,5,81432131002,Dubagga,26.85468,80.85959
+lucknow_lcs,Lucknow,20,min_ess,Min ESS,3,7,81432131005,Husainabad,26.8702,80.90413
+lucknow_lcs,Lucknow,20,min_ess,Min ESS,4,9,81432131007,Charbagh,26.83767,80.9345
+lucknow_lcs,Lucknow,20,min_ess,Min ESS,5,11,81432131011,Aminabad,26.84833,80.92333
+lucknow_lcs,Lucknow,20,min_ess,Min ESS,6,13,81432131013,Kakori,26.9043353,80.7653765
+lucknow_lcs,Lucknow,20,min_ess,Min ESS,7,15,81432131015,IITR-Hazratganj,26.8594,80.93071
+lucknow_lcs,Lucknow,20,min_ess,Min ESS,8,37,81432147004,Anand Nagar,26.82169,80.92019
+lucknow_lcs,Lucknow,20,min_ess,Min ESS,9,41,81432147034,Talkatora_BPS,26.83298,80.90047
+lucknow_lcs,Lucknow,20,min_ess,Min ESS,10,48,81432147043,Amrapali Yojna,26.88655,80.86085
+lucknow_lcs,Lucknow,20,min_ess,Min ESS,11,50,81432147045,Qaiserbagh,26.84706,80.93305
+lucknow_lcs,Lucknow,20,min_ess,Min ESS,12,54,81432147050,RDSO,26.81192,80.88597
+lucknow_lcs,Lucknow,20,min_ess,Min ESS,13,58,81432147055,Daliganj,26.86998,80.92704
+lucknow_lcs,Lucknow,20,min_ess,Min ESS,14,59,81432147056,Rajajipuram-II,26.84018,80.88633
+lucknow_lcs,Lucknow,20,min_ess,Min ESS,15,62,81432147061,Para,26.81434,80.86674
+lucknow_lcs,Lucknow,20,min_ess,Min ESS,16,64,81432147064,Rajajipuram-I,26.84618,80.87375
+lucknow_lcs,Lucknow,20,min_ess,Min ESS,17,65,81432147065,Balaganj,26.87166,80.88209
+lucknow_lcs,Lucknow,20,min_ess,Min ESS,18,66,81432147068,Badal Khera,26.83256,80.86087
+lucknow_lcs,Lucknow,20,min_ess,Min ESS,19,67,81432147069,Hazratganj_NBRI,26.85727,80.95248
+lucknow_lcs,Lucknow,20,min_ess,Min ESS,20,68,81432147070,Asharfabad,26.85687,80.89933
+chicago_lcs_corrected_no_collocation,Chicago,5,random_fixed,Random,1,89,DHQVH8975,Near West Side 6,41.8658287,-87.66865308211
+chicago_lcs_corrected_no_collocation,Chicago,5,random_fixed,Random,2,111,DIXUN6634,Ashburn 3,41.7521062,-87.70393644313
+chicago_lcs_corrected_no_collocation,Chicago,5,random_fixed,Random,3,154,DMTRR1120,Burnside 1,41.7264486,-87.60347733402
+chicago_lcs_corrected_no_collocation,Chicago,5,random_fixed,Random,4,240,DWMLU4849,Portage Park 4,41.94171985,-87.7524262436
+chicago_lcs_corrected_no_collocation,Chicago,5,random_fixed,Random,5,270,DZFVS4727,Uptown 3,41.96208095,-87.65418214875
+chicago_lcs_corrected_no_collocation,Chicago,5,max_ess,Max ESS,1,51,DERZJ4600,Rogers Park 1,42.0162268,-87.67155255924
+chicago_lcs_corrected_no_collocation,Chicago,5,max_ess,Max ESS,2,71,DFRSA4000,Near North Side 3,41.89544165,-87.61824483303
+chicago_lcs_corrected_no_collocation,Chicago,5,max_ess,Max ESS,3,233,DWBTT8209,Edison Park 1,42.017003,-87.816509
+chicago_lcs_corrected_no_collocation,Chicago,5,max_ess,Max ESS,4,256,DYGHJ0891,Clearing 1,41.7742202,-87.799271931
+chicago_lcs_corrected_no_collocation,Chicago,5,max_ess,Max ESS,5,269,DZFFW4078,Hegewisch 3,41.6503081,-87.5365747
+chicago_lcs_corrected_no_collocation,Chicago,5,min_pred_var,Min Pred. Var.,1,9,DAPBK7657,South Lawndale 2,41.8402538,-87.70343516175
+chicago_lcs_corrected_no_collocation,Chicago,5,min_pred_var,Min Pred. Var.,2,37,DCRJT8545,Greater Grand Crossing 6,41.75146495,-87.6362956
+chicago_lcs_corrected_no_collocation,Chicago,5,min_pred_var,Min Pred. Var.,3,42,DDGHI0125,Belmont Cragin 3,41.92893015,-87.75257875182
+chicago_lcs_corrected_no_collocation,Chicago,5,min_pred_var,Min Pred. Var.,4,48,DEIDA3268,Near North Side 1,41.90808685,-87.65476058225
+chicago_lcs_corrected_no_collocation,Chicago,5,min_pred_var,Min Pred. Var.,5,210,DTCRA7818,West Lawn 1,41.7772479,-87.73660460279
+chicago_lcs_corrected_no_collocation,Chicago,5,min_ess,Min ESS,1,57,DFCTF9310,Washington Heights 4,41.70153607185,-87.65364411745
+chicago_lcs_corrected_no_collocation,Chicago,5,min_ess,Min ESS,2,136,DLNMW9381,Washington Heights 5,41.7138256,-87.65385383114
+chicago_lcs_corrected_no_collocation,Chicago,5,min_ess,Min ESS,3,162,DNFCT5518,Roseland 6,41.70134325,-87.63695104339
+chicago_lcs_corrected_no_collocation,Chicago,5,min_ess,Min ESS,4,192,DRDMU5348,Washington Heights 3,41.71400135,-87.63668979965
+chicago_lcs_corrected_no_collocation,Chicago,5,min_ess,Min ESS,5,212,DTKNM4892,Beverly 3,41.7059059,-87.65691952734
+chicago_lcs_corrected_no_collocation,Chicago,10,random_fixed,Random,1,44,DDLSL3066,West Town 2,41.90818775,-87.67277999888
+chicago_lcs_corrected_no_collocation,Chicago,10,random_fixed,Random,2,55,DFAKZ8204,New City 4,41.802323,-87.652894475
+chicago_lcs_corrected_no_collocation,Chicago,10,random_fixed,Random,3,64,DFIRX1818,Pullman 4,41.68842595,-87.60256092387
+chicago_lcs_corrected_no_collocation,Chicago,10,random_fixed,Random,4,71,DFRSA4000,Near North Side 3,41.89544165,-87.61824483303
+chicago_lcs_corrected_no_collocation,Chicago,10,random_fixed,Random,5,103,DITUM6528,Near West Side 1,41.87833905,-87.6855286518
+chicago_lcs_corrected_no_collocation,Chicago,10,random_fixed,Random,6,170,DPNPJ6846,New City 2,41.81485945,-87.6515630055
+chicago_lcs_corrected_no_collocation,Chicago,10,random_fixed,Random,7,188,DQZEA3135,South Deering 8,41.68798065,-87.58826181539
+chicago_lcs_corrected_no_collocation,Chicago,10,random_fixed,Random,8,203,DSHWY2305,Irving Park 3,41.9490356,-87.72654561437
+chicago_lcs_corrected_no_collocation,Chicago,10,random_fixed,Random,9,237,DWFRI5691,Humboldt Park 1,41.9036584,-87.7359956871
+chicago_lcs_corrected_no_collocation,Chicago,10,random_fixed,Random,10,272,DZIHS7092,Archer Heights 2,41.81532825168,-87.71997399657
+chicago_lcs_corrected_no_collocation,Chicago,10,max_ess,Max ESS,1,5,DAJHM7956,South Chicago 3,41.73775017864,-87.53549803584
+chicago_lcs_corrected_no_collocation,Chicago,10,max_ess,Max ESS,2,46,DDVZB7943,Hyde Park 2,41.79954752686,-87.58353859231
+chicago_lcs_corrected_no_collocation,Chicago,10,max_ess,Max ESS,3,51,DERZJ4600,Rogers Park 1,42.0162268,-87.67155255924
+chicago_lcs_corrected_no_collocation,Chicago,10,max_ess,Max ESS,4,68,DFNBI6922,Mount Greenwood 2,41.69236885,-87.71085274558
+chicago_lcs_corrected_no_collocation,Chicago,10,max_ess,Max ESS,5,71,DFRSA4000,Near North Side 3,41.89544165,-87.61824483303
+chicago_lcs_corrected_no_collocation,Chicago,10,max_ess,Max ESS,6,134,DLIKU5639,O'Hare 3,41.95008034764,-87.85424652587
+chicago_lcs_corrected_no_collocation,Chicago,10,max_ess,Max ESS,7,151,DMMAG3845,Riverdale 3,41.6505642,-87.6038782
+chicago_lcs_corrected_no_collocation,Chicago,10,max_ess,Max ESS,8,233,DWBTT8209,Edison Park 1,42.017003,-87.816509
+chicago_lcs_corrected_no_collocation,Chicago,10,max_ess,Max ESS,9,256,DYGHJ0891,Clearing 1,41.7742202,-87.799271931
+chicago_lcs_corrected_no_collocation,Chicago,10,max_ess,Max ESS,10,269,DZFFW4078,Hegewisch 3,41.6503081,-87.5365747
+chicago_lcs_corrected_no_collocation,Chicago,10,min_pred_var,Min Pred. Var.,1,9,DAPBK7657,South Lawndale 2,41.8402538,-87.70343516175
+chicago_lcs_corrected_no_collocation,Chicago,10,min_pred_var,Min Pred. Var.,2,28,DBYCW6873,Norwood Park 4,41.97643085,-87.79850802324
+chicago_lcs_corrected_no_collocation,Chicago,10,min_pred_var,Min Pred. Var.,3,37,DCRJT8545,Greater Grand Crossing 6,41.75146495,-87.6362956
+chicago_lcs_corrected_no_collocation,Chicago,10,min_pred_var,Min Pred. Var.,4,42,DDGHI0125,Belmont Cragin 3,41.92893015,-87.75257875182
+chicago_lcs_corrected_no_collocation,Chicago,10,min_pred_var,Min Pred. Var.,5,48,DEIDA3268,Near North Side 1,41.90808685,-87.65476058225
+chicago_lcs_corrected_no_collocation,Chicago,10,min_pred_var,Min Pred. Var.,6,59,DFDVG9143,Pullman 3,41.70084025,-87.60406122014
+chicago_lcs_corrected_no_collocation,Chicago,10,min_pred_var,Min Pred. Var.,7,121,DJWGZ0445,Grand Boulevard 1,41.81458865,-87.61885441048
+chicago_lcs_corrected_no_collocation,Chicago,10,min_pred_var,Min Pred. Var.,8,186,DQWCU6663,Austin 6,41.865808,-87.77006790729
+chicago_lcs_corrected_no_collocation,Chicago,10,min_pred_var,Min Pred. Var.,9,210,DTCRA7818,West Lawn 1,41.7772479,-87.73660460279
+chicago_lcs_corrected_no_collocation,Chicago,10,min_pred_var,Min Pred. Var.,10,241,DWMUZ3935,Lincoln Square 2,41.96231835,-87.69021417612
+chicago_lcs_corrected_no_collocation,Chicago,10,min_ess,Min ESS,1,33,DCHTB8281,Morgan Park 2,41.68959485,-87.65379678317
+chicago_lcs_corrected_no_collocation,Chicago,10,min_ess,Min ESS,2,57,DFCTF9310,Washington Heights 4,41.70153607185,-87.65364411745
+chicago_lcs_corrected_no_collocation,Chicago,10,min_ess,Min ESS,3,114,DJGDZ3688,Roseland 3,41.70133845,-87.61992013972
+chicago_lcs_corrected_no_collocation,Chicago,10,min_ess,Min ESS,4,127,DKRXT7147,Roseland 4,41.68874295,-87.62059497345
+chicago_lcs_corrected_no_collocation,Chicago,10,min_ess,Min ESS,5,136,DLNMW9381,Washington Heights 5,41.7138256,-87.65385383114
+chicago_lcs_corrected_no_collocation,Chicago,10,min_ess,Min ESS,6,162,DNFCT5518,Roseland 6,41.70134325,-87.63695104339
+chicago_lcs_corrected_no_collocation,Chicago,10,min_ess,Min ESS,7,190,DRCQU4244,Roseland 5,41.68869904102,-87.63708150084
+chicago_lcs_corrected_no_collocation,Chicago,10,min_ess,Min ESS,8,192,DRDMU5348,Washington Heights 3,41.71400135,-87.63668979965
+chicago_lcs_corrected_no_collocation,Chicago,10,min_ess,Min ESS,9,212,DTKNM4892,Beverly 3,41.7059059,-87.65691952734
+chicago_lcs_corrected_no_collocation,Chicago,10,min_ess,Min ESS,10,228,DVNGV1890,Roseland 2,41.71389143635,-87.61998237196
+chicago_lcs_corrected_no_collocation,Chicago,20,random_fixed,Random,1,3,DAHAJ0678,Ashburn 1,41.7522794,-87.73751065
+chicago_lcs_corrected_no_collocation,Chicago,20,random_fixed,Random,2,10,DAPJK7781,Near West Side 2,41.87791765,-87.6685754
+chicago_lcs_corrected_no_collocation,Chicago,20,random_fixed,Random,3,31,DCAFN1583,South Lawndale 5,41.8275454,-87.73584967759
+chicago_lcs_corrected_no_collocation,Chicago,20,random_fixed,Random,4,50,DEPLW3142,Greater Grand Crossing 3,41.7640476,-87.6024382544
+chicago_lcs_corrected_no_collocation,Chicago,20,random_fixed,Random,5,55,DFAKZ8204,New City 4,41.802323,-87.652894475
+chicago_lcs_corrected_no_collocation,Chicago,20,random_fixed,Random,6,64,DFIRX1818,Pullman 4,41.68842595,-87.60256092387
+chicago_lcs_corrected_no_collocation,Chicago,20,random_fixed,Random,7,68,DFNBI6922,Mount Greenwood 2,41.69236885,-87.71085274558
+chicago_lcs_corrected_no_collocation,Chicago,20,random_fixed,Random,8,103,DITUM6528,Near West Side 1,41.87833905,-87.6855286518
+chicago_lcs_corrected_no_collocation,Chicago,20,random_fixed,Random,9,106,DIUZJ7853,Garfield Ridge 2,41.7903843,-87.77048382046
+chicago_lcs_corrected_no_collocation,Chicago,20,random_fixed,Random,10,112,DIZEF3591,West Pullman 3,41.67596525,-87.62018065
+chicago_lcs_corrected_no_collocation,Chicago,20,random_fixed,Random,11,124,DKIJX6114,Lincoln Square 1,41.9756734,-87.69009047047
+chicago_lcs_corrected_no_collocation,Chicago,20,random_fixed,Random,12,128,DKTWP2892,East Side 3,41.7006795,-87.53620860009
+chicago_lcs_corrected_no_collocation,Chicago,20,random_fixed,Random,13,137,DLTCH1397,Woodlawn 2,41.77677010296,-87.58579570606
+chicago_lcs_corrected_no_collocation,Chicago,20,random_fixed,Random,14,144,DMFEL5431,Garfield Ridge 4,41.7873492,-87.80034666308
+chicago_lcs_corrected_no_collocation,Chicago,20,random_fixed,Random,15,170,DPNPJ6846,New City 2,41.81485945,-87.6515630055
+chicago_lcs_corrected_no_collocation,Chicago,20,random_fixed,Random,16,180,DQJVA6225,Jefferson Park 1,41.9889689,-87.76288502645
+chicago_lcs_corrected_no_collocation,Chicago,20,random_fixed,Random,17,186,DQWCU6663,Austin 6,41.865808,-87.77006790729
+chicago_lcs_corrected_no_collocation,Chicago,20,random_fixed,Random,18,190,DRCQU4244,Roseland 5,41.68869904102,-87.63708150084
+chicago_lcs_corrected_no_collocation,Chicago,20,random_fixed,Random,19,199,DRRDD3500,Hegewisch 6,41.66298535,-87.55350110056
+chicago_lcs_corrected_no_collocation,Chicago,20,random_fixed,Random,20,241,DWMUZ3935,Lincoln Square 2,41.96231835,-87.69021417612
+chicago_lcs_corrected_no_collocation,Chicago,20,max_ess,Max ESS,1,5,DAJHM7956,South Chicago 3,41.73775017864,-87.53549803584
+chicago_lcs_corrected_no_collocation,Chicago,20,max_ess,Max ESS,2,46,DDVZB7943,Hyde Park 2,41.79954752686,-87.58353859231
+chicago_lcs_corrected_no_collocation,Chicago,20,max_ess,Max ESS,3,49,DEJMD2536,O'Hare 1,41.9762844,-87.8527641
+chicago_lcs_corrected_no_collocation,Chicago,20,max_ess,Max ESS,4,51,DERZJ4600,Rogers Park 1,42.0162268,-87.67155255924
+chicago_lcs_corrected_no_collocation,Chicago,20,max_ess,Max ESS,5,68,DFNBI6922,Mount Greenwood 2,41.69236885,-87.71085274558
+chicago_lcs_corrected_no_collocation,Chicago,20,max_ess,Max ESS,6,71,DFRSA4000,Near North Side 3,41.89544165,-87.61824483303
+chicago_lcs_corrected_no_collocation,Chicago,20,max_ess,Max ESS,7,100,DIIPF3878,Edgewater 2,41.9859255,-87.65593
+chicago_lcs_corrected_no_collocation,Chicago,20,max_ess,Max ESS,8,119,DJKZD4256,Morgan Park 3,41.67869235,-87.67466474951
+chicago_lcs_corrected_no_collocation,Chicago,20,max_ess,Max ESS,9,126,DKNMF4367,Oakland 1,41.82675732205,-87.60127391431
+chicago_lcs_corrected_no_collocation,Chicago,20,max_ess,Max ESS,10,128,DKTWP2892,East Side 3,41.7006795,-87.53620860009
+chicago_lcs_corrected_no_collocation,Chicago,20,max_ess,Max ESS,11,129,DKUAZ4434,West Ridge 1,42.01665715,-87.7077947
+chicago_lcs_corrected_no_collocation,Chicago,20,max_ess,Max ESS,12,134,DLIKU5639,O'Hare 3,41.95008034764,-87.85424652587
+chicago_lcs_corrected_no_collocation,Chicago,20,max_ess,Max ESS,13,144,DMFEL5431,Garfield Ridge 4,41.7873492,-87.80034666308
+chicago_lcs_corrected_no_collocation,Chicago,20,max_ess,Max ESS,14,151,DMMAG3845,Riverdale 3,41.6505642,-87.6038782
+chicago_lcs_corrected_no_collocation,Chicago,20,max_ess,Max ESS,15,186,DQWCU6663,Austin 6,41.865808,-87.77006790729
+chicago_lcs_corrected_no_collocation,Chicago,20,max_ess,Max ESS,16,214,DTUGZ9693,Lake View 3,41.93498346759,-87.63645802882
+chicago_lcs_corrected_no_collocation,Chicago,20,max_ess,Max ESS,17,233,DWBTT8209,Edison Park 1,42.017003,-87.816509
+chicago_lcs_corrected_no_collocation,Chicago,20,max_ess,Max ESS,18,252,DXUQX7513,Ashburn 8,41.73966255,-87.73740646472
+chicago_lcs_corrected_no_collocation,Chicago,20,max_ess,Max ESS,19,256,DYGHJ0891,Clearing 1,41.7742202,-87.799271931
+chicago_lcs_corrected_no_collocation,Chicago,20,max_ess,Max ESS,20,269,DZFFW4078,Hegewisch 3,41.6503081,-87.5365747
+chicago_lcs_corrected_no_collocation,Chicago,20,min_pred_var,Min Pred. Var.,1,1,DAETQ5676,Montclare 2,41.92218035,-87.79864272546
+chicago_lcs_corrected_no_collocation,Chicago,20,min_pred_var,Min Pred. Var.,2,9,DAPBK7657,South Lawndale 2,41.8402538,-87.70343516175
+chicago_lcs_corrected_no_collocation,Chicago,20,min_pred_var,Min Pred. Var.,3,28,DBYCW6873,Norwood Park 4,41.97643085,-87.79850802324
+chicago_lcs_corrected_no_collocation,Chicago,20,min_pred_var,Min Pred. Var.,4,31,DCAFN1583,South Lawndale 5,41.8275454,-87.73584967759
+chicago_lcs_corrected_no_collocation,Chicago,20,min_pred_var,Min Pred. Var.,5,37,DCRJT8545,Greater Grand Crossing 6,41.75146495,-87.6362956
+chicago_lcs_corrected_no_collocation,Chicago,20,min_pred_var,Min Pred. Var.,6,42,DDGHI0125,Belmont Cragin 3,41.92893015,-87.75257875182
+chicago_lcs_corrected_no_collocation,Chicago,20,min_pred_var,Min Pred. Var.,7,43,DDHVZ6546,Near West Side 5,41.86559955,-87.6517851304
+chicago_lcs_corrected_no_collocation,Chicago,20,min_pred_var,Min Pred. Var.,8,48,DEIDA3268,Near North Side 1,41.90808685,-87.65476058225
+chicago_lcs_corrected_no_collocation,Chicago,20,min_pred_var,Min Pred. Var.,9,59,DFDVG9143,Pullman 3,41.70084025,-87.60406122014
+chicago_lcs_corrected_no_collocation,Chicago,20,min_pred_var,Min Pred. Var.,10,80,DGTDZ6242,Forest Glen 3,41.98958085,-87.74435264432
+chicago_lcs_corrected_no_collocation,Chicago,20,min_pred_var,Min Pred. Var.,11,121,DJWGZ0445,Grand Boulevard 1,41.81458865,-87.61885441048
+chicago_lcs_corrected_no_collocation,Chicago,20,min_pred_var,Min Pred. Var.,12,169,DPMWW4120,Garfield Ridge 3,41.7872597,-87.78189702338
+chicago_lcs_corrected_no_collocation,Chicago,20,min_pred_var,Min Pred. Var.,13,177,DQGPJ5322,Beverly 5,41.70266025,-87.69255586271
+chicago_lcs_corrected_no_collocation,Chicago,20,min_pred_var,Min Pred. Var.,14,186,DQWCU6663,Austin 6,41.865808,-87.77006790729
+chicago_lcs_corrected_no_collocation,Chicago,20,min_pred_var,Min Pred. Var.,15,210,DTCRA7818,West Lawn 1,41.7772479,-87.73660460279
+chicago_lcs_corrected_no_collocation,Chicago,20,min_pred_var,Min Pred. Var.,16,211,DTFVD6048,Riverdale 1,41.67589005,-87.60362888146
+chicago_lcs_corrected_no_collocation,Chicago,20,min_pred_var,Min Pred. Var.,17,232,DVWMK9661,Humboldt Park 4,41.89083265,-87.71959863711
+chicago_lcs_corrected_no_collocation,Chicago,20,min_pred_var,Min Pred. Var.,18,241,DWMUZ3935,Lincoln Square 2,41.96231835,-87.69021417612
+chicago_lcs_corrected_no_collocation,Chicago,20,min_pred_var,Min Pred. Var.,19,242,DWRMS8182,South Chicago 1,41.7514325,-87.56903725191
+chicago_lcs_corrected_no_collocation,Chicago,20,min_pred_var,Min Pred. Var.,20,260,DYSHC8669,Chicago Lawn 2,41.7772231,-87.68679669713
+chicago_lcs_corrected_no_collocation,Chicago,20,min_ess,Min ESS,1,33,DCHTB8281,Morgan Park 2,41.68959485,-87.65379678317
+chicago_lcs_corrected_no_collocation,Chicago,20,min_ess,Min ESS,2,57,DFCTF9310,Washington Heights 4,41.70153607185,-87.65364411745
+chicago_lcs_corrected_no_collocation,Chicago,20,min_ess,Min ESS,3,59,DFDVG9143,Pullman 3,41.70084025,-87.60406122014
+chicago_lcs_corrected_no_collocation,Chicago,20,min_ess,Min ESS,4,64,DFIRX1818,Pullman 4,41.68842595,-87.60256092387
+chicago_lcs_corrected_no_collocation,Chicago,20,min_ess,Min ESS,5,90,DHSIJ5379,Washington Heights 1,41.72668335,-87.6533731
+chicago_lcs_corrected_no_collocation,Chicago,20,min_ess,Min ESS,6,93,DHZTI7858,Pullman 1,41.71416735,-87.60386913021
+chicago_lcs_corrected_no_collocation,Chicago,20,min_ess,Min ESS,7,114,DJGDZ3688,Roseland 3,41.70133845,-87.61992013972
+chicago_lcs_corrected_no_collocation,Chicago,20,min_ess,Min ESS,8,122,DKDJK5693,Roseland 1,41.726565,-87.61949170539
+chicago_lcs_corrected_no_collocation,Chicago,20,min_ess,Min ESS,9,127,DKRXT7147,Roseland 4,41.68874295,-87.62059497345
+chicago_lcs_corrected_no_collocation,Chicago,20,min_ess,Min ESS,10,136,DLNMW9381,Washington Heights 5,41.7138256,-87.65385383114
+chicago_lcs_corrected_no_collocation,Chicago,20,min_ess,Min ESS,11,141,DMAEX1156,South Deering 9,41.7003247,-87.58631302026
+chicago_lcs_corrected_no_collocation,Chicago,20,min_ess,Min ESS,12,149,DMLFU0523,Pullman 2,41.7130402,-87.5843047413
+chicago_lcs_corrected_no_collocation,Chicago,20,min_ess,Min ESS,13,154,DMTRR1120,Burnside 1,41.7264486,-87.60347733402
+chicago_lcs_corrected_no_collocation,Chicago,20,min_ess,Min ESS,14,162,DNFCT5518,Roseland 6,41.70134325,-87.63695104339
+chicago_lcs_corrected_no_collocation,Chicago,20,min_ess,Min ESS,15,188,DQZEA3135,South Deering 8,41.68798065,-87.58826181539
+chicago_lcs_corrected_no_collocation,Chicago,20,min_ess,Min ESS,16,190,DRCQU4244,Roseland 5,41.68869904102,-87.63708150084
+chicago_lcs_corrected_no_collocation,Chicago,20,min_ess,Min ESS,17,192,DRDMU5348,Washington Heights 3,41.71400135,-87.63668979965
+chicago_lcs_corrected_no_collocation,Chicago,20,min_ess,Min ESS,18,206,DSKEW3707,Washington Heights 2,41.72629795,-87.63656666475
+chicago_lcs_corrected_no_collocation,Chicago,20,min_ess,Min ESS,19,212,DTKNM4892,Beverly 3,41.7059059,-87.65691952734
+chicago_lcs_corrected_no_collocation,Chicago,20,min_ess,Min ESS,20,228,DVNGV1890,Roseland 2,41.71389143635,-87.61998237196

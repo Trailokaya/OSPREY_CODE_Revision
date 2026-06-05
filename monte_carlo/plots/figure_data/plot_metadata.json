@@ -1,0 +1,28 @@
+{
+  "source_run_id": "p0_baseline_updated_chicago_may31_plus_madhwal_10000_20260602",
+  "source_run_dir": "monte_carlo/results/runs/p0_baseline_updated_chicago_may31_plus_madhwal_10000_20260602",
+  "draws": 10000,
+  "master_seed": 20260522,
+  "scenario": "S0_baseline",
+  "estimator": "arithmetic_mean",
+  "placement": "random_srswor",
+  "plot_style": {
+    "module": "analysis/src/plot_style.py",
+    "output_dpi": 600,
+    "city_colors": "shared across maps, Monte Carlo, and missingness plots",
+    "period_interval": "period panels show median and 95th percentile only; IQR is intentionally omitted",
+    "daily_nstar": "right-axis N*(d) is a dashed dark-gray trace compressed into the upper band of each panel; right-axis tick labels give native valid-sensor counts"
+  },
+  "figures": [
+    "F2A_period_mdape_common_n2_30.png",
+    "F2B_period_absolute_error_common_n2_30.png",
+    "SI_period_relative_error_full_range.png",
+    "SI_period_absolute_error_full_range.png",
+    "F3_daily_mdape_timeseries_with_nstar.png",
+    "NEW_G2_daily_absolute_error_timeseries_with_nstar.png"
+  ],
+  "notes": [
+    "Chicago period curve is a nine-month aggregate, not a 12-month annual mean.",
+    "Daily plots mark n=10 days at or above the city-specific 95th percentile of the plotted error metric; mechanism labels are pending event classification."
+  ]
+}

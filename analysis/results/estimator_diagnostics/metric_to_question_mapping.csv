@@ -1,0 +1,7 @@
+metric,question_answered,current_output,interpretation
+MdAPE,What is the typical subnetwork error under random sensor selection?,F2/F3 and Monte Carlo summary,Median absolute percentage error across Monte Carlo draws.
+95th percentile APE,How bad is the high-error tail for random subnetworks?,F2 dashed/95Q and best-worst diagnostics,"Risk-aware upper-tail error, not a typical case."
+Absolute error (µg/m³),How large is the error on the exposure scale?,NEW-G1/NEW-G2,Policy/intervention interpretability across cities with different baseline PM2.5.
+RSE,How many sensors are needed for expected relative uncertainty under a distributional model?,SI-F6/SI-F7/SI-F8 diagnostics,Parametric expected-error calculation; separate from Monte Carlo MdAPE.
+QCE,Do nominal confidence intervals actually cover the reference mean?,Table 1 coverage diagnostics,Lower values mean better interval calibration.
+Relative bias,Does an estimator systematically over- or underestimate the reference mean?,Lognormal estimator diagnostics,Bias-variance tradeoff for distributional estimators.

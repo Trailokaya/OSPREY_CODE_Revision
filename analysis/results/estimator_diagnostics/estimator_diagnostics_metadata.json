@@ -1,0 +1,127 @@
+{
+  "created_at": "2026-06-02T14:36:09",
+  "completed_at": "2026-06-02T14:36:22",
+  "duration_seconds": 12.749205290994723,
+  "draws": 10000,
+  "master_seed": 20260522,
+  "qce_sample_sizes": [
+    5,
+    10,
+    15,
+    20
+  ],
+  "coverage_levels": [
+    0.68,
+    0.9,
+    0.95
+  ],
+  "rse_target": 0.1,
+  "bonferroni_alpha": 0.05,
+  "requested_jobs": 0,
+  "effective_jobs": 12,
+  "compute_resources": {
+    "requested_jobs": 0,
+    "effective_jobs": 12,
+    "available_cpu_count": 12,
+    "total_memory_gb": 24.0,
+    "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+    "blas_thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1"
+    },
+    "blas_thread_policy": "one BLAS/native thread per worker process to avoid oversubscription"
+  },
+  "critical_value_method": "Cornish-Fisher Student-t approximation",
+  "lognormal_ci_method": "delta method on lognormal mean with finite-population correction",
+  "si_f11_ci_method": "Bonferroni normal critical value on daily sensor means with AR(1) effective sample size",
+  "datasets": {
+    "dhaka_lcs": {
+      "spec": {
+        "key": "dhaka_lcs",
+        "city": "Dhaka",
+        "network": "LCS",
+        "pm_path": "data/pm/Dhaka_hourly_PM25.csv",
+        "location_path": "data/locations/Dhaka_sensor_locations.csv",
+        "source_frequency": "hourly",
+        "pm_value": "inherited_calibrated_pm25",
+        "exclude_collocated": false
+      },
+      "input_hashes": {
+        "pm_matrix": "790d47a334e027d73c90f529d0d850218ebee0265f0a98c7db1a29bcd3700a95",
+        "locations": "188717bb29805009fdbee4a1c24f5f89ee39b94ba9d5616fecb7710d0868b230"
+      },
+      "preprocessing": {
+        "source_rows": 8760,
+        "source_sensor_columns": 35,
+        "retained_sensor_count": 35,
+        "dropped_all_nan_sensor_count": 0,
+        "dropped_all_nan_sensors": [],
+        "date_count": 365,
+        "date_min": "2022-04-01",
+        "date_max": "2023-03-31",
+        "source_frequency": "hourly",
+        "exclude_collocated": false
+      }
+    },
+    "lucknow_lcs": {
+      "spec": {
+        "key": "lucknow_lcs",
+        "city": "Lucknow",
+        "network": "LCS",
+        "pm_path": "data/pm/Lucknow_hourly_PM25.csv",
+        "location_path": "data/locations/Lucknow_sensor_locations.csv",
+        "source_frequency": "hourly",
+        "pm_value": "inherited_calibrated_pm25",
+        "exclude_collocated": false
+      },
+      "input_hashes": {
+        "pm_matrix": "74e3d7265f97f1f33bdc22cc02016470c0592683d753dedf2e0dc0dbefa9b13e",
+        "locations": "a9219a95bcc2d43b5fd5495adbe08a6895616b4502654411c5d624f85325a61e"
+      },
+      "preprocessing": {
+        "source_rows": 8760,
+        "source_sensor_columns": 71,
+        "retained_sensor_count": 71,
+        "dropped_all_nan_sensor_count": 0,
+        "dropped_all_nan_sensors": [],
+        "date_count": 365,
+        "date_min": "2022-04-01",
+        "date_max": "2023-03-31",
+        "source_frequency": "hourly",
+        "exclude_collocated": false
+      }
+    },
+    "chicago_lcs_corrected_no_collocation": {
+      "spec": {
+        "key": "chicago_lcs_corrected_no_collocation",
+        "city": "Chicago",
+        "network": "LCS corrected",
+        "pm_path": "data/pm/Chicago_LCS_corrected_daily_PM25.csv",
+        "location_path": "data/locations/Chicago_LCS_corrected_sensor_locations.csv",
+        "source_frequency": "official_daily",
+        "pm_value": "corrected_pm25",
+        "exclude_collocated": true
+      },
+      "input_hashes": {
+        "pm_matrix": "3ee4e821cb90da5ca9b1a5c5079c34a4a3f486f699ada94f061f727b0a75e2e0",
+        "locations": "67d4ecc273939ca8f1af56b39f4098d2ed19c2a177577b58bda2eecb44d3d89b"
+      },
+      "preprocessing": {
+        "source_rows": 273,
+        "source_sensor_columns": 277,
+        "retained_sensor_count": 277,
+        "dropped_all_nan_sensor_count": 0,
+        "dropped_all_nan_sensors": [],
+        "date_count": 273,
+        "date_min": "2025-09-01",
+        "date_max": "2026-05-31",
+        "source_frequency": "official_daily",
+        "exclude_collocated": true
+      }
+    }
+  },
+  "git_commit": "bc064f2caba43e9a7d6ec2a6cb2b8a2ca026a018"
+}

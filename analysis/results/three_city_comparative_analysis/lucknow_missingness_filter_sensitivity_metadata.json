@@ -1,0 +1,16 @@
+{
+  "purpose": "Lucknow sensitivity for removing most-missing sensors and applying 50% presence thresholds.",
+  "random_seed": 20260525,
+  "n_bootstraps": 10000,
+  "primary_50pct_rule": "record_presence_ge_50pct",
+  "note": "Daily-presence >=50% is also included because partial-day sensors can have low hourly presence but many valid daily means.",
+  "outputs": [
+    "lucknow_missingness_filter_correlations.csv",
+    "lucknow_missingness_filter_daily_metrics.csv",
+    "lucknow_missingness_filter_high_missing_episodes.csv",
+    "lucknow_missingness_filter_mar_factor_delta.csv",
+    "lucknow_missingness_filter_removed_sensors.csv",
+    "lucknow_missingness_filter_sensitivity.md",
+    "lucknow_missingness_filter_sensitivity_summary.csv"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "purpose": "Deep missingness/data-quality diagnostics across Dhaka, Lucknow, and Chicago.",
+  "random_seed": 20260524,
+  "n_permutations": 5000,
+  "high_missing_thresholds": [
+    0.1,
+    0.25,
+    0.5
+  ],
+  "outputs": [
+    "missingness_deep_dive_audit.md",
+    "missingness_deep_hourly_profile.csv",
+    "missingness_deep_hourly_summary.csv",
+    "missingness_deep_lag_correlations.csv",
+    "missingness_deep_multivariable_daily_models.csv",
+    "missingness_deep_network_episodes.csv",
+    "missingness_deep_peak_lag_summary.csv",
+    "missingness_deep_reference_mean_sensitivity.csv",
+    "missingness_deep_sensor_concentration.csv",
+    "missingness_deep_sensor_gap_episodes_top.csv",
+    "missingness_deep_sensor_spatial_moran.csv"
+  ],
+  "limitation": "Diagnostics use observed data only and cannot prove formal MCAR/MAR/MNAR mechanisms."
+}

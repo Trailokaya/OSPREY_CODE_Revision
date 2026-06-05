@@ -1,0 +1,48 @@
+{
+  "purpose": "Three-city comparative QA/QC, missingness, MAR-screening, PM2.5, and spatial-support analysis.",
+  "primary_networks": [
+    {
+      "dataset_key": "dhaka_lcs",
+      "city": "Dhaka",
+      "display_name": "Dhaka LCS",
+      "pm_path": "data/pm/Dhaka_hourly_PM25.csv",
+      "location_path": "data/locations/Dhaka_sensor_locations.csv",
+      "source_frequency": "hourly",
+      "pm_value": "inherited_calibrated_pm25",
+      "exclude_collocated": false
+    },
+    {
+      "dataset_key": "lucknow_lcs",
+      "city": "Lucknow",
+      "display_name": "Lucknow LCS",
+      "pm_path": "data/pm/Lucknow_hourly_PM25.csv",
+      "location_path": "data/locations/Lucknow_sensor_locations.csv",
+      "source_frequency": "hourly",
+      "pm_value": "inherited_calibrated_pm25",
+      "exclude_collocated": false
+    },
+    {
+      "dataset_key": "chicago_lcs_corrected_no_collocation",
+      "city": "Chicago",
+      "display_name": "Chicago corrected LCS (collocation excluded)",
+      "pm_path": "data/pm/Chicago_LCS_corrected_daily_PM25.csv",
+      "location_path": "data/locations/Chicago_LCS_corrected_sensor_locations.csv",
+      "source_frequency": "official_daily",
+      "pm_value": "corrected_pm25",
+      "exclude_collocated": true
+    }
+  ],
+  "outputs": [
+    "comparative_chicago_lcs_aqs_context.csv",
+    "comparative_daily_city_metrics.csv",
+    "comparative_missingness_correlation_screen.csv",
+    "comparative_missingness_summary.csv",
+    "comparative_overall_summary.csv",
+    "comparative_pm25_summary.csv",
+    "comparative_qaqc_summary.csv",
+    "comparative_sensor_level_summary.csv",
+    "comparative_sensor_long_gap_extremes.csv",
+    "comparative_spatial_support_summary.csv"
+  ],
+  "note": "MAR screening is based on observed correlations only; it is not a formal proof of missing-at-random."
+}

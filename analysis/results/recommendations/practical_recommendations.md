@@ -1,0 +1,17 @@
+# Practical Recommendations
+
+Generated: 2026-05-28T13:27:08
+
+| decision_context | recommendation | rationale | manuscript_location | caveat |
+| --- | --- | --- | --- | --- |
+| Primary claim | Frame results as deployed reference-network mean reproducibility. | All Monte Carlo targets are arithmetic means of observed network sensors, not population- or area-weighted city means. | Title/abstract/methods/discussion | Do not call this true city-wide exposure or regulatory compliance. |
+| Primary Chicago analysis | Use Chicago corrected LCS with collocation sensors excluded. | Corrected LCS is the intended calibrated LCS product; collocation exclusion avoids overweighting one deployment site. | Main Chicago methods and SI sensitivity | Raw LCS and AQS should remain context/sensitivity outputs. |
+| Missingness language | Use weak/inconsistent evidence language rather than claiming MCAR or MAR. | Observed associations with PM2.5 and spatial variability are present but not strong enough for formal missing-at-random claims. | SI missingness and response letter | Filtering missing sensors can change the finite-population estimand. |
+| Completeness sensitivity | Show threshold and data-driven filters as sensitivity analyses, not as new defaults. | Lucknow filters alter retained sensors and reference means most; Chicago filters barely alter conclusions. | SI robustness | Report both improved completeness and reference-mean distortion. |
+| Estimator choice | Keep arithmetic mean as primary and lognormal/robust estimators as sensitivity checks. | The arithmetic mean is aligned with the finite-population estimand; lognormal and robust median variants target related but not identical quantities. | Methods and SI estimator section | Do not present lognormal improvement as assumption-free. |
+| Spatial placement | Frame placement-design results as empirical design sensitivity. | Minimum predictive variance performs most consistently among deterministic designs, while max ESS is not reliably better. | Discussion/SI placement | Spatial structure is not uniformly strong across cities/scales. |
+| Operations and maintenance | Prioritize uptime monitoring, gap detection, and calibration checks before adding advanced estimators. | Long gaps and missingness filters change Lucknow more than estimator choice in several diagnostics. | Practical recommendations | Maintenance guidance is conditional on the deployed-network support and instrument QA/QC. |
+
+## Short Discussion Paragraph Draft
+
+For planning, these results should be read as guidance on how many sensors are needed to reproduce a deployed reference-network mean under observed missingness and spatial support, not as a direct estimate of a population- or area-weighted city exposure. The most defensible operational use is therefore staged: maintain calibration and uptime first, report completeness and reference-mean sensitivity, then use the MdAPE and absolute-error curves to choose a subnetwork size matched to the temporal target. Chicago supports transferability to a lower-concentration setting, but only as a nine-month corrected-LCS study-period analysis with regulatory monitors used as context.

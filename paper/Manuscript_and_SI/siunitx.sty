@@ -1,0 +1,38 @@
+% Minimal siunitx compatibility shim.
+% Replaces only the macros the manuscript actually uses:
+%   \sisetup{...}  -> no-op
+%   \si{...}       -> typeset the unit expression in math mode
+%   \num{...}      -> typeset the number argument as-is
+%   \qty{n}{unit}  -> typeset "n unit"
+% Real siunitx is used at Overleaf / journal compile.
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{siunitx}[2026/05/29 Minimal siunitx shim]
+
+\providecommand{\sisetup}[1]{}
+\providecommand{\num}[1]{#1}
+\providecommand{\qty}[2]{#1\,#2}
+
+% \upmu fallback (upgreek) — use math italic mu
+\providecommand{\upmu}{\ensuremath{\mu}}
+
+% Unit primitives used by the manuscript
+\providecommand{\micro}{\ensuremath{\upmu}}
+\providecommand{\milli}{\textrm{m}}
+\providecommand{\centi}{\textrm{c}}
+\providecommand{\kilo}{\textrm{k}}
+\providecommand{\gram}{\textrm{g}}
+\providecommand{\metre}{\textrm{m}}
+\providecommand{\meter}{\textrm{m}}
+\providecommand{\second}{\textrm{s}}
+\providecommand{\percent}{\%}
+\providecommand{\per}{/}
+\providecommand{\cubic}[1]{#1\textsuperscript{3}}
+\providecommand{\squared}{\textsuperscript{2}}
+\providecommand{\cubed}{\textsuperscript{3}}
+
+% \si{...} expands its argument as text (the \per / \micro / \gram etc.
+% commands above already expand to text-mode glyphs)
+\providecommand{\si}[1]{\ensuremath{#1}}
+
+\endinput

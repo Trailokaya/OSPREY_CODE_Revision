@@ -1,0 +1,21 @@
+phase,city,metric_name,target_N_star,aggregation,value_median,value_p5,value_p95,value_mean,value_sd,n_outer_draws,n_inner_draws,notes
+3,Lucknow,n_for_mdape_le_5pct,31,period,10.0,8.0,12.0,10.23,1.347313076182565,100,10000,First n where period MdAPE <= 5% within each outer finite-population draw.
+3,Lucknow,n_for_mdape_le_10pct,31,period,3.0,3.0,4.0,3.5,0.6276459144608478,100,10000,First n where period MdAPE <= 10% within each outer finite-population draw.
+3,Lucknow,mdape_at_n10,31,period,4.905200494359712,4.126941937016832,5.536995825412455,4.902829649463623,0.4649804678254566,100,10000,Period MdAPE at n=10 across outer finite-population draws.
+3,Lucknow,n_for_mdape_le_5pct,40,period,11.0,9.0,13.0,11.03,1.4595903673305193,100,10000,First n where period MdAPE <= 5% within each outer finite-population draw.
+3,Lucknow,n_for_mdape_le_10pct,40,period,4.0,3.0,5.0,3.64,0.6893123494842632,100,10000,First n where period MdAPE <= 10% within each outer finite-population draw.
+3,Lucknow,mdape_at_n10,40,period,5.1995842601125,4.324893469903186,5.926689238291803,5.173125975264026,0.4828045650581422,100,10000,Period MdAPE at n=10 across outer finite-population draws.
+3,Lucknow,n_for_mdape_le_5pct,50,period,12.0,10.0,13.0,11.78,1.0207939077111512,100,10000,First n where period MdAPE <= 5% within each outer finite-population draw.
+3,Lucknow,n_for_mdape_le_10pct,50,period,4.0,3.0,4.0,3.83,0.4277023415055065,100,10000,First n where period MdAPE <= 10% within each outer finite-population draw.
+3,Lucknow,mdape_at_n10,50,period,5.439313220501225,4.926333714968107,5.846133218196183,5.407700746264129,0.3074304938917023,100,10000,Period MdAPE at n=10 across outer finite-population draws.
+3,Lucknow,n_for_mdape_le_5pct,60,period,12.0,11.0,13.0,12.12,0.8075402232218604,100,10000,First n where period MdAPE <= 5% within each outer finite-population draw.
+3,Lucknow,n_for_mdape_le_10pct,60,period,4.0,3.0,4.0,3.85,0.3588702812826367,100,10000,First n where period MdAPE <= 10% within each outer finite-population draw.
+3,Lucknow,mdape_at_n10,60,period,5.494260157402568,5.075074069519898,5.839779761583059,5.487125706661426,0.2390654463259834,100,10000,Period MdAPE at n=10 across outer finite-population draws.
+3,Lucknow,n_for_mdape_le_5pct,71,period,12.0,12.0,13.0,12.3,0.4605661864718382,100,10000,First n where period MdAPE <= 5% within each outer finite-population draw.
+3,Lucknow,n_for_mdape_le_10pct,71,period,4.0,4.0,4.0,4.0,0.0,100,10000,First n where period MdAPE <= 10% within each outer finite-population draw.
+3,Lucknow,mdape_at_n10,71,period,5.520030566555397,5.43191156479051,5.639002723089867,5.52275972861524,0.0632277573246751,100,10000,Period MdAPE at n=10 across outer finite-population draws.
+3,Lucknow,absolute_error_at_n10_ugm3,31,period,2.9933226250299967,2.5286340547170645,3.448764320061532,3.025565760330467,0.30856020950869156,100,10000,Period median absolute error at n=10 across outer finite-population draws.
+3,Lucknow,absolute_error_at_n10_ugm3,40,period,3.224380265313769,2.6884295304479844,3.683079893626334,3.195008670843035,0.30284468523806596,100,10000,Period median absolute error at n=10 across outer finite-population draws.
+3,Lucknow,absolute_error_at_n10_ugm3,50,period,3.371131054657946,3.0170808224605676,3.6133237273389156,3.3417182195233597,0.2023108682646292,100,10000,Period median absolute error at n=10 across outer finite-population draws.
+3,Lucknow,absolute_error_at_n10_ugm3,60,period,3.430675382042997,3.094552510124685,3.604876554800731,3.3880962483301347,0.16030196526807122,100,10000,Period median absolute error at n=10 across outer finite-population draws.
+3,Lucknow,absolute_error_at_n10_ugm3,71,period,3.411502684080828,3.357043164805552,3.4850301449263035,3.413189367438862,0.039076171992312426,100,10000,Period median absolute error at n=10 across outer finite-population draws.

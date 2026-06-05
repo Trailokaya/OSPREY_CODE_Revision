@@ -1,0 +1,13 @@
+{
+  "phase": 5,
+  "phase_name": "phase5_mdape_vs_cv_slope",
+  "master_seed": 20260528,
+  "sample_sizes": [
+    5,
+    10,
+    20
+  ],
+  "baseline_run": "monte_carlo/results/runs/p0_baseline_updated_chicago_may31_plus_madhwal_10000_20260602",
+  "git_commit": null,
+  "created_at": "2026-06-05T18:51:42"
+}

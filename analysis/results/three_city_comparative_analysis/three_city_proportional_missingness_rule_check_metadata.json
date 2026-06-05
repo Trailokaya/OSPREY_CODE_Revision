@@ -1,0 +1,11 @@
+{
+  "purpose": "Check whether Lucknow-style missingness filters apply proportionally to Dhaka and Chicago.",
+  "lucknow_strong_remove_count": 15,
+  "lucknow_sensor_count": 71,
+  "proportional_remove_fraction": 0.2112676056338028,
+  "proportional_gap_fraction": 0.2465753424657534,
+  "outputs": [
+    "three_city_proportional_missingness_rule_check.csv",
+    "three_city_proportional_missingness_rule_check.md"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "script": "analysis/scripts/build_estimator_comparison.py",
+  "master_seed": 20260525,
+  "draws": 10000,
+  "sample_sizes": [
+    5,
+    10,
+    15,
+    20
+  ],
+  "estimators": {
+    "arithmetic_mean": "Arithmetic mean",
+    "robust_arithmetic_median": "Robust median",
+    "lognormal_mean": "Lognormal mean",
+    "robust_lognormal_median_mad": "Robust lognormal"
+  },
+  "outputs": {
+    "results_dir": "analysis/results/estimator_comparison",
+    "plots_dir": "analysis/plots/estimator_comparison"
+  },
+  "caveats": [
+    "Robust median-based estimators are sensitivity estimators and do not target the arithmetic reference-network mean exactly.",
+    "Lognormal estimators require positive sampled values; nonpositive values are treated as missing for the log-scale calculations."
+  ]
+}

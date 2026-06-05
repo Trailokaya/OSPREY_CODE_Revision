@@ -1,0 +1,17 @@
+{
+  "purpose": "Follow-up observed-data missingness diagnostics for Dhaka, Lucknow, and Chicago.",
+  "random_seed": 20260524,
+  "n_permutations": 10000,
+  "n_bootstraps": 2000,
+  "input_dir": "analysis/results/three_city_comparative_analysis",
+  "outputs": [
+    "missingness_followup_city_summary.csv",
+    "missingness_followup_daily_permutation_tests.csv",
+    "missingness_followup_high_low_contrasts.csv",
+    "missingness_followup_monthly_range.csv",
+    "missingness_followup_monthly_summary.csv",
+    "missingness_followup_sensor_level_tests.csv",
+    "missingness_followup_tests.md"
+  ],
+  "important_limitation": "These are observed-data association tests; they do not prove or disprove formal missing-at-random assumptions."
+}

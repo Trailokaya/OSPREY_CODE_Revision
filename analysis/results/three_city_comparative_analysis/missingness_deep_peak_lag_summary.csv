@@ -1,0 +1,10 @@
+city,x_variable,lag_days,lag_interpretation,n_days,spearman_rho,abs_spearman_rho
+Chicago,daily_mean_pm25,12,positive means x from earlier dates; negative means x from later dates,229,0.16354477356591238,0.16354477356591238
+Chicago,daily_spatial_cv,-14,positive means x from earlier dates; negative means x from later dates,227,-0.2071359361837219,0.2071359361837219
+Chicago,daily_spatial_sd,12,positive means x from earlier dates; negative means x from later dates,229,0.21240232481269924,0.21240232481269924
+Dhaka,daily_mean_pm25,-8,positive means x from earlier dates; negative means x from later dates,357,-0.1728357746671771,0.1728357746671771
+Dhaka,daily_spatial_cv,-12,positive means x from earlier dates; negative means x from later dates,353,-0.10957039626596603,0.10957039626596603
+Dhaka,daily_spatial_sd,-8,positive means x from earlier dates; negative means x from later dates,357,-0.19965752456650485,0.19965752456650485
+Lucknow,daily_mean_pm25,11,positive means x from earlier dates; negative means x from later dates,354,0.11343126809996136,0.11343126809996136
+Lucknow,daily_spatial_cv,-5,positive means x from earlier dates; negative means x from later dates,360,0.30372418623403086,0.30372418623403086
+Lucknow,daily_spatial_sd,5,positive means x from earlier dates; negative means x from later dates,360,0.18434139262162824,0.18434139262162824

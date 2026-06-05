@@ -1,0 +1,13 @@
+threshold_set,threshold_label,threshold_ugm3,source,formal_compliance_caveat
+daily_24h,WHO 24h AQG,15.0,WHO 2021 PM2.5 24-hour AQG,WHO short-term guideline is defined using a 99th percentile form; this analysis uses daily binary exceedance only as a decision-support sensitivity.
+daily_24h,WHO 24h IT-4,25.0,WHO 2021 PM2.5 24-hour interim target 4,WHO short-term interim targets use a percentile form; this analysis uses daily binary exceedance only as a decision-support sensitivity.
+daily_24h,EPA 24h NAAQS level,35.0,US EPA PM2.5 24-hour NAAQS level,"US EPA 24-hour PM2.5 NAAQS is based on a 3-year 98th-percentile design value, not single-day binary classification."
+daily_24h,WHO 24h IT-3,37.5,WHO 2021 PM2.5 24-hour interim target 3,WHO short-term interim targets use a percentile form; this analysis uses daily binary exceedance only as a decision-support sensitivity.
+daily_24h,WHO 24h IT-2,50.0,WHO 2021 PM2.5 24-hour interim target 2,WHO short-term interim targets use a percentile form; this analysis uses daily binary exceedance only as a decision-support sensitivity.
+daily_24h,WHO 24h IT-1,75.0,WHO 2021 PM2.5 24-hour interim target 1,WHO short-term interim targets use a percentile form; this analysis uses daily binary exceedance only as a decision-support sensitivity.
+period_mean,WHO annual AQG,5.0,WHO 2021 PM2.5 annual AQG,"This uses the observed study-period network mean, not a formal population exposure or regulatory design value."
+period_mean,EPA annual NAAQS level,9.0,US EPA 2024 annual PM2.5 NAAQS level,"US EPA annual PM2.5 NAAQS is based on a 3-year annual-mean design value, not this study-period network mean."
+period_mean,WHO annual IT-4,10.0,WHO 2021 PM2.5 annual interim target 4,"This uses the observed study-period network mean, not a formal population exposure or regulatory design value."
+period_mean,WHO annual IT-3,15.0,WHO 2021 PM2.5 annual interim target 3,"This uses the observed study-period network mean, not a formal population exposure or regulatory design value."
+period_mean,WHO annual IT-2,25.0,WHO 2021 PM2.5 annual interim target 2,"This uses the observed study-period network mean, not a formal population exposure or regulatory design value."
+period_mean,WHO annual IT-1,35.0,WHO 2021 PM2.5 annual interim target 1,"This uses the observed study-period network mean, not a formal population exposure or regulatory design value."

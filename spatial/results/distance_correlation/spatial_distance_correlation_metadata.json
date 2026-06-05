@@ -1,0 +1,44 @@
+{
+  "purpose": "Spatial distance-correlation and distance-difference analysis by temporal aggregation.",
+  "resolutions": [
+    "highest_hourly",
+    "daily",
+    "weekly",
+    "monthly",
+    "total_period"
+  ],
+  "distance_bins_km": [
+    0,
+    1,
+    2,
+    5,
+    10,
+    20,
+    50,
+    Infinity
+  ],
+  "networks": [
+    {
+      "dataset_key": "dhaka_lcs",
+      "city": "Dhaka",
+      "pm_path": "data/pm/Dhaka_hourly_PM25.csv",
+      "location_path": "data/locations/Dhaka_sensor_locations.csv",
+      "exclude_collocated": false
+    },
+    {
+      "dataset_key": "lucknow_lcs",
+      "city": "Lucknow",
+      "pm_path": "data/pm/Lucknow_hourly_PM25.csv",
+      "location_path": "data/locations/Lucknow_sensor_locations.csv",
+      "exclude_collocated": false
+    },
+    {
+      "dataset_key": "chicago_lcs_corrected_no_collocation",
+      "city": "Chicago",
+      "pm_path": "data/pm/Chicago_LCS_corrected_hourly_PM25.csv",
+      "location_path": "data/locations/Chicago_LCS_corrected_sensor_locations.csv",
+      "exclude_collocated": true
+    }
+  ],
+  "note": "Total-period rows summarize pairwise differences in total-period means; temporal correlations are undefined with one time window."
+}

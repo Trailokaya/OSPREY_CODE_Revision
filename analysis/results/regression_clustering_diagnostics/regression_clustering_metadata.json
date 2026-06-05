@@ -1,0 +1,26 @@
+{
+  "script": "analysis/scripts/build_regression_clustering_diagnostics.py",
+  "master_seed": 20260525,
+  "cluster_seed": 2026052501,
+  "permutation_seed": 2026052502,
+  "inputs": {
+    "daily_metrics": "analysis/results/three_city_comparative_analysis/comparative_daily_city_metrics.csv",
+    "sensor_summary": "analysis/results/three_city_comparative_analysis/comparative_sensor_level_summary.csv",
+    "spatial_support": "analysis/results/three_city_comparative_analysis/comparative_spatial_support_summary.csv",
+    "daily_error": "monte_carlo/plots/figure_data/daily_error_timeseries_selected_n.csv",
+    "period_error": "monte_carlo/plots/figure_data/period_error_curves.csv",
+    "spatial_distance": "spatial/results/distance_correlation/spatial_distance_relation_summary.csv",
+    "spatial_moran": "spatial/results/distance_correlation/spatial_morans_i_summary.csv"
+  },
+  "outputs": {
+    "results_dir": "analysis/results/regression_clustering_diagnostics",
+    "plots_dir": "analysis/plots/regression_clustering_diagnostics"
+  },
+  "method_notes": [
+    "OLS uses least squares via numpy; continuous predictors are standardized before fitting.",
+    "Cross-validation uses deterministic five-fold splits based on dataset/date/sample-size keys.",
+    "K-means uses deterministic k-means++ initializations with multiple starts and silhouette-based k selection.",
+    "Cluster-based city prediction is majority-label accuracy from unsupervised clusters, not a supervised classifier.",
+    "Sensor-density p-values are permutation-based two-sided Spearman tests."
+  ]
+}

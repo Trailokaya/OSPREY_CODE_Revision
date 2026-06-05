@@ -1,0 +1,96 @@
+\section{Performance Metrics}
+\label{sec:si_metrics}
+
+This section defines the performance metrics used to evaluate estimator accuracy across sample sizes.
+
+\paragraph{Metric-to-question mapping.} Because the manuscript uses several distinct metrics that imply different sensor-count recommendations, we provide a compact mapping from each metric to the question it answers. The full mapping is reported in the released analysis outputs; the highlights are:
+
+\begin{itemize}
+ \item \textbf{MdAPE}: ``What is the \emph{typical} percentage error of a random subnetwork relative to the deployed-network mean?'' Design-based, distribution-free, robust to right-skew.
+ \item \textbf{75th / 90th / 95th APE percentile}: ``How bad can a suboptimal random subnetwork be?'' Captures worst-case behavior in the right tail.
+ \item \textbf{Absolute concentration error}: ``What is the typical error in policy-relevant \units?'' Useful for interpreting whether the error is large compared to the relevant guideline value.
+ \item \textbf{Relative standard error (RSE)}: ``What is the expected percentage error under a parametric (normal or lognormal) distributional model?'' Conditional on the assumed family.
+ \item \textbf{Quantile coverage error (QCE)}: ``Do nominal $t$-based confidence intervals attain their stated coverage?'' Tests interval calibration.
+ \item \textbf{Mean relative bias}: ``Does the estimator systematically over- or under-estimate the reference mean?'' Used to characterize the lognormal estimator's small positive bias.
+\end{itemize}
+
+
+\subsection{Metric Definitions}
+\label{sec:si_metric_definitions}
+
+\paragraph{Relative Bias}
+Relative bias indicates whether a given estimator systematically under or over estimates the value of interest. Given the true mean $\mu$ and the estimated mean $\hat{\mu}$, we evaluate:
+\begin{equation} \label{eq:relative_bias}
+ \mathbb{E}\bigg[\frac{\hat{\mu}-\mu}{\mu}\bigg] = \frac{1}{B}\sum_{i=1}^B \frac{\hat{\mu}_i - \mu}{\mu}
+\end{equation}
+Where $B$ refers to the number of replicates in the Monte Carlo simulation. Given that the reference mean is calculated from the arithmetic mean, this metric is used to quantify the extent to which the lognormal estimator is biased with respect to the reference mean. 
+
+\paragraph{Quantile Coverage Error}
+Next, we consider at what sample size we obtain empirical coverage that aligns with the nominal coverage. Specifically, given a set of sub-sampled means and their corresponding confidence intervals, does this set cover the reference mean at the nominal level? To answer this question, we first define the confidence interval for the mean estimate according to the standard Student's t-distribution with a finite population correction, i.e., 
+\begin{equation}
+ I_\alpha (\hat{\mu})=\bigg[\hat{\mu} + t_{n-1, (1-\alpha)/2}\frac{\hat{\sigma}}{\sqrt{n}}\sqrt{\frac{N-n}{N-1}}, \hat{\mu} + t_{n-1, (1+\alpha)/2}\frac{\hat{\sigma}}{\sqrt{n}}\sqrt{\frac{N-n}{N-1}}\bigg],
+\end{equation}
+where $t_{n-1, \cdot}$ refers to the $t$-distribution with $n-1$ degrees of freedom at the lower and upper bounds. We define the quantile coverage error as a function of the sample size for $\alpha \in \{0.68, 0.90, 0.95\}$, corresponding to one standard error, moderate, and high coverage predictive intervals. The empirical coverage is then:
+\begin{equation}
+ EC_\alpha(\hat{\mu}) = \frac{1}{B}\sum_{i=1}^B \mathbf{1}\{\mu \in I_\alpha(\hat{\mu}_i)\}
+\end{equation}
+with $\mathbf{1}$ referring to the indicator function. We then obtain the quantile coverage error as the absolute difference of the empirical coverage and the nominal coverage.
+\begin{equation}
+QC_\alpha(\hat{\mu}) = |\alpha- EC_\alpha(\hat{\mu})|
+\end{equation}
+Lower values indicate empirical coverage closer to the nominal coverage. The empirical coverage definition above assumes that the mean estimate is the sum of independent and identically distributed (i.i.d.) samples, asymptotically approaching a normal distribution under the central limit theorem. 
+
+Note that other techniques for confidence interval estimation may be more appropriate for small sample sizes, specifically because confidence intervals depend on both accurate estimates of location and scale. For example, the median absolute deviation (MAD), $Q_n$ and $S_n$ techniques estimate scale more robustly for small samples than the standard deviation \cite{rousseeuw1993alternatives}. Thus, the procedure outlined above merely evaluates whether the lognormal assumption results in better coverage as an estimator of the mean and standard deviation.
+
+
+
+\subsection{Relative Standard Error Derivations}
+\label{sec:si_rse}
+
+The relative standard error provides information on the precision of an estimate given the sample size, an estimator, and its variance. For the case of a sample mean, the relative standard error (RSE) is defined as:
+\begin{equation}
+ \text{RSE}(\hat{\mu}) = \frac{\text{SE}(\bar{X})}{\hat{\mu}}\times 100\% 
+\end{equation}
+Where $\hat{\mu}$ refers to the estimated mean and $\text{SE}(\hat{\mu})$ is the standard error of the mean (i.e., $\text{SE}(\hat{\mu})=\sqrt{\text{Var}(X)/n}$, with $X$ referring to the data and $n$ the sample size). If we determine a desired relative error threshold $\delta$, such that $\text{RSE}(\hat{\mu}) < \delta$, then we may readily calculate the needed sample size $n$ to obtain that objective. We consider this calculation for $\hat{\mu}$, assuming the data are normally or lognormally distributed.
+
+\subsubsection{Normal Assumption}
+\label{sec:si_rse_normal}
+
+The standard error of the mean for the normal distribution is the standard deviation $\sigma$ divided by the sample size, $\sigma/\sqrt{n}$. Dividing by the mean to obtain the percentage error, we obtain the following objective:
+\begin{equation}
+ \frac{\sigma / \sqrt{n}}{\mu} < \delta
+\end{equation}
+Which simplifies to:
+\begin{equation}
+ n > \frac{\sigma^2}{\delta^2\mu^2}
+\end{equation}
+Of course, we rarely know $\sigma$ and $\mu$ exactly, so we substitute instead $\hat{\mu}$ and $\hat{\sigma}$.
+
+\subsubsection{Lognormal Assumption}
+\label{sec:si_rse_lognormal}
+
+For a lognormally distributed random variable $X$ with location and scale parameters $\mu$ and $\sigma$ (referring to the mean and standard deviation of the logged data):
+\begin{align}
+ \mathbb{E}[X] &= \exp(\mu + \sigma^2 / 2) \\
+ \mathbb{V}[X] &=\big(\exp(\sigma^2) -1\big)\exp(2\mu+\sigma^2)
+\end{align}
+Given that the variance of $\bar{X}$ is $\text{Var}(\bar{X}) = \frac{\text{Var}(X)}{n}$, we have the standard error of the mean:
+\begin{equation}
+ \text{SEM}(\bar{X}) = \frac{\exp(\mu + \sigma^2/2)}{\sqrt{n}}\sqrt{\exp(\sigma^2)-1}
+\end{equation}
+Converting to the percentage error formulation with $<\delta$, we obtain:
+\begin{equation}
+ \frac{\exp(\mu + \sigma^2/2)\sqrt{\exp(\sigma^2)-1}/\sqrt{n}}{\exp(\mu + \sigma^2 / 2)} < \delta
+\end{equation}
+Which cleanly simplifies to:
+\begin{equation}
+ n > \frac{\exp(\sigma^2) - 1}{\delta^2}
+\end{equation}
+Interestingly, the percentage error now no longer depends on the estimate of the logged mean, $\mu$, but merely the variance $\sigma^2$. Using the above formulas, we calculate the number of samples needed each day in \city{Dhaka}, \city{Lucknow}, and \city{Chicago} to achieve an RSE $<10\%$ based on the sufficient statistics from each sensor network for that day. We then sort these numbers in descending order to plot the number of sensors needed as a function of the tolerance for days exceeding this error.
+
+
+
+\subsection{Distributional Comparison}
+\label{sec:si_distributional}
+
+Because the above derivations rely on assumptions of normality and lognormality, we use the Shapiro-Wilk test on the raw and logged data to compare the suitability of these two parametric densities for each of the daily mean densities for \city{Lucknow}, \city{Dhaka}, and \city{Chicago} \cite{shapiro_1965_AnalysisVarianceTest}. Air pollution has a long history of being modeled according to the lognormal density \cite{kahn_1973_NoteDistributionAir,ott_1990_PhysicalExplanationLognormality,andersson_2021_MechanismsLogNormala,bencala_1976_FrequencyDistributionsAir}. Accordingly, on the daily time scale, we expect that the lognormal density better describes the distribution of the observations. The Shapiro-Wilk test allows us to compare the two distributional assumptions by determining the number of days for which we do not reject the null hypothesis for each assumption, for each city.

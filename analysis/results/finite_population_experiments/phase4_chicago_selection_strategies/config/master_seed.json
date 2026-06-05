@@ -1,0 +1,82 @@
+{
+  "phase": 4,
+  "phase_name": "phase4_chicago_selection_strategies",
+  "master_seed": 20260528,
+  "seed_algorithm": "int.from_bytes(sha256('|'.join([master_seed, parts])).digest()[:4], 'big')",
+  "dataset_key": "chicago_lcs_corrected_no_collocation",
+  "target_n_stars": [
+    30,
+    50,
+    70
+  ],
+  "selection_strategies": {
+    "random": {
+      "label": "Random",
+      "outer_draws": 50,
+      "notes": "Uniform random N* finite-population draw."
+    },
+    "equidistant": {
+      "label": "Spatially balanced",
+      "outer_draws": 50,
+      "notes": "Greedy max-min coverage with seed-varying first sensor."
+    },
+    "kmeans_stratified": {
+      "label": "k-means stratified",
+      "outer_draws": 50,
+      "notes": "NumPy Lloyd k-means with one observed sensor nearest each centroid."
+    },
+    "cluster_concentrated": {
+      "label": "Cluster-concentrated",
+      "outer_draws": 20,
+      "notes": "N* nearest sensors to a seed-varying center sensor."
+    },
+    "circumferential": {
+      "label": "Circumferential",
+      "outer_draws": 20,
+      "notes": "Random N* draw from the high-radial-distance boundary ring."
+    },
+    "anti_cluster": {
+      "label": "Anti-cluster",
+      "outer_draws": 20,
+      "notes": "Greedy max-sum-distance dispersion with seed-varying first sensor."
+    }
+  },
+  "inner_draws": 10000,
+  "period_sample_sizes": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "git_commit": "bc064f2caba43e9a7d6ec2a6cb2b8a2ca026a018",
+  "python": "3.12.12 | packaged by conda-forge | (main, Oct 22 2025, 23:34:53) [Clang 19.1.7 ]",
+  "platform": "macOS-26.5-arm64-arm-64bit",
+  "created_at": "2026-06-02T13:17:15",
+  "completed_at": "2026-06-02T13:17:34",
+  "duration_seconds": 18.47441795899067
+}

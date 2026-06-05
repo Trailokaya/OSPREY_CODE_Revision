@@ -1,0 +1,49 @@
+city,dataset_key,resolution,correlation_threshold,first_distance_bin_label,first_bin_pair_count,first_median_distance_km,first_bin_median_correlation
+Chicago,chicago_lcs_corrected_no_collocation,daily,0.95,,,,
+Chicago,chicago_lcs_corrected_no_collocation,daily,0.9,,,,
+Chicago,chicago_lcs_corrected_no_collocation,daily,0.75,,,,
+Chicago,chicago_lcs_corrected_no_collocation,daily,0.5,,,,
+Chicago,chicago_lcs_corrected_no_collocation,highest_hourly,0.95,1-2 km,705.0,1.484721189799429,0.9499805355569204
+Chicago,chicago_lcs_corrected_no_collocation,highest_hourly,0.9,10-20 km,14367.0,14.284922733829534,0.8982558471545079
+Chicago,chicago_lcs_corrected_no_collocation,highest_hourly,0.75,,,,
+Chicago,chicago_lcs_corrected_no_collocation,highest_hourly,0.5,,,,
+Chicago,chicago_lcs_corrected_no_collocation,monthly,0.95,5-10 km,8670.0,7.547156401903341,0.9228382352318656
+Chicago,chicago_lcs_corrected_no_collocation,monthly,0.9,10-20 km,14367.0,14.284922733829534,0.8981790380457138
+Chicago,chicago_lcs_corrected_no_collocation,monthly,0.75,,,,
+Chicago,chicago_lcs_corrected_no_collocation,monthly,0.5,,,,
+Chicago,chicago_lcs_corrected_no_collocation,weekly,0.95,,,,
+Chicago,chicago_lcs_corrected_no_collocation,weekly,0.9,,,,
+Chicago,chicago_lcs_corrected_no_collocation,weekly,0.75,,,,
+Chicago,chicago_lcs_corrected_no_collocation,weekly,0.5,,,,
+Dhaka,dhaka_lcs,daily,0.95,0-1 km,15.0,0.5002149727936732,0.9062548918810548
+Dhaka,dhaka_lcs,daily,0.9,20-50 km,26.0,23.536335023146364,0.8924743082170841
+Dhaka,dhaka_lcs,daily,0.75,,,,
+Dhaka,dhaka_lcs,daily,0.5,,,,
+Dhaka,dhaka_lcs,highest_hourly,0.95,0-1 km,15.0,0.5002149727936732,0.8133173227746477
+Dhaka,dhaka_lcs,highest_hourly,0.9,0-1 km,15.0,0.5002149727936732,0.8133173227746477
+Dhaka,dhaka_lcs,highest_hourly,0.75,20-50 km,26.0,23.536335023146364,0.7423508951123051
+Dhaka,dhaka_lcs,highest_hourly,0.5,,,,
+Dhaka,dhaka_lcs,monthly,0.95,,,,
+Dhaka,dhaka_lcs,monthly,0.9,,,,
+Dhaka,dhaka_lcs,monthly,0.75,,,,
+Dhaka,dhaka_lcs,monthly,0.5,,,,
+Dhaka,dhaka_lcs,weekly,0.95,0-1 km,15.0,0.5002149727936732,0.9368188930349308
+Dhaka,dhaka_lcs,weekly,0.9,,,,
+Dhaka,dhaka_lcs,weekly,0.75,,,,
+Dhaka,dhaka_lcs,weekly,0.5,,,,
+Lucknow,lucknow_lcs,daily,0.95,,,,
+Lucknow,lucknow_lcs,daily,0.9,,,,
+Lucknow,lucknow_lcs,daily,0.75,,,,
+Lucknow,lucknow_lcs,daily,0.5,,,,
+Lucknow,lucknow_lcs,highest_hourly,0.95,0-1 km,3.0,0.929371735520634,0.9352944121003812
+Lucknow,lucknow_lcs,highest_hourly,0.9,10-20 km,900.0,14.007645226808592,0.8973731872937389
+Lucknow,lucknow_lcs,highest_hourly,0.75,,,,
+Lucknow,lucknow_lcs,highest_hourly,0.5,,,,
+Lucknow,lucknow_lcs,monthly,0.95,,,,
+Lucknow,lucknow_lcs,monthly,0.9,,,,
+Lucknow,lucknow_lcs,monthly,0.75,,,,
+Lucknow,lucknow_lcs,monthly,0.5,,,,
+Lucknow,lucknow_lcs,weekly,0.95,,,,
+Lucknow,lucknow_lcs,weekly,0.9,,,,
+Lucknow,lucknow_lcs,weekly,0.75,,,,
+Lucknow,lucknow_lcs,weekly,0.5,,,,

@@ -1,0 +1,48 @@
+{
+  "run_id": "p0_baseline_updated_chicago_may31_plus_madhwal_10000_20260602",
+  "priority": "p0_baseline",
+  "scenario": "S0_baseline",
+  "placement": "random_srswor",
+  "estimator": "arithmetic_mean",
+  "draws": 10000,
+  "top_k": 5,
+  "master_seed": 20260522,
+  "seed_algorithm": "sha256(master_seed + run_id + task_parts) -> uint32",
+  "min_sample_size": 2,
+  "max_daily_n": 50,
+  "max_period_n": 300,
+  "requested_n_jobs": 0,
+  "n_jobs": 12,
+  "compute_resources": {
+    "available_cpu_count": 12,
+    "total_memory_gb": 24.0,
+    "blas_thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1"
+    },
+    "blas_thread_policy": "one BLAS/native thread per worker process to avoid oversubscription"
+  },
+  "dataset_keys": [
+    "dhaka_lcs",
+    "lucknow_lcs",
+    "lucknow_madhwal_lcs",
+    "chicago_lcs_corrected_no_collocation",
+    "chicago_lcs_corrected_all",
+    "chicago_lcs_raw_no_collocation",
+    "chicago_lcs_raw_all",
+    "chicago_aqs"
+  ],
+  "task_count": 1632,
+  "started_at": "2026-06-02T13:08:01",
+  "repo_root": "<repository-root>",
+  "git_commit": "bc064f2caba43e9a7d6ec2a6cb2b8a2ca026a018",
+  "python": "3.12.12 | packaged by conda-forge | (main, Oct 22 2025, 23:34:53) [Clang 19.1.7 ]",
+  "platform": "macOS-26.5-arm64-arm-64bit",
+  "numpy_version": "2.4.5",
+  "pandas_version": "3.0.3",
+  "completed_at": "2026-06-02T13:11:41",
+  "duration_seconds": 220.19582208299835
+}

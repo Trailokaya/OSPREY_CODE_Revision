@@ -1,0 +1,10 @@
+{
+  "script": "analysis/scripts/build_distribution_diagnostics.py",
+  "uses_scipy": true,
+  "scipy_version": "1.17.1",
+  "normality_screen": "Exact Shapiro-Wilk when SciPy is available; Jarque-Bera with analytical chi-square df=2 survival p-value always included",
+  "outputs": {
+    "results_dir": "analysis/results/distribution_diagnostics",
+    "plots_dir": "analysis/plots/distribution_diagnostics"
+  }
+}

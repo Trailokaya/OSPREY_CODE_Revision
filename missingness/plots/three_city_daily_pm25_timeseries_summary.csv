@@ -1,0 +1,4 @@
+dataset_key,label,source_file,source_frequency,days,sensors,sensor_day_count,sensor_day_min_ugm3,sensor_day_p995_ugm3,sensor_day_max_ugm3,daily_mean_p99_ugm3,full_plot_ylim_min,full_plot_ylim_max,zoom_plot_ylim_min,zoom_plot_ylim_max
+dhaka_lcs,Dhaka LCS,Dhaka_hourly_PM25.csv,hourly,365,35,11580,1.7291666666666667,243.4414889705882,595.875,175.65292117958293,0.0,1616.8700000000001,0.0,232.80785294117624
+lucknow_lcs,Lucknow LCS,Lucknow_hourly_PM25.csv,hourly,365,71,20179,1.25,296.8417708333338,1585.1666666666667,224.15269340103688,0.0,1616.8700000000001,0.0,232.80785294117624
+chicago_lcs_corrected,Chicago LCS corrected,Chicago_LCS_corrected_daily_PM25.csv,official_daily,242,286,66818,1.69,28.04,55.21,25.950402160833608,0.0,1616.8700000000001,0.0,232.80785294117624

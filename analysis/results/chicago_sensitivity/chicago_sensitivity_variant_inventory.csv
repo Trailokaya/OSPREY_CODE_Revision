@@ -1,0 +1,8 @@
+variant,sensor_or_group_count,days,valid_day_count,mean_network_pm25_ugm3,median_valid_sensor_count,min_valid_sensor_count
+aqs,10,242,212,9.29264845062893,10.0,0
+corrected_all,286,273,272,10.246371195947013,279.0,0
+corrected_collapsed,280,273,272,10.248088519014987,273.0,0
+corrected_no_collocation,277,273,272,10.248974480572386,270.0,0
+raw_all,286,273,272,17.194190400748507,279.0,0
+raw_collapsed,280,273,272,17.19592563464849,273.0,0
+raw_no_collocation,277,273,272,17.196820493593275,270.0,0

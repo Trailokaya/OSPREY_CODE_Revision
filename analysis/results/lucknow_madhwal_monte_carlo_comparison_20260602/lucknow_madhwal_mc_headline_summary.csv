@@ -1,0 +1,3 @@
+dataset_key,label,daily_evaluated_days,daily_start,daily_end,daily_n10_median_mdape_pct,daily_n10_p95_mdape_pct,daily_n10_median_absolute_error_ugm3,period_reference_mean_ugm3,period_n10_mdape_pct,period_n10_absolute_error_ugm3
+lucknow_lcs,Lucknow canonical,365,2022-04-01,2023-03-31,4.499974208041619,8.020705716440506,1.7746097921434032,61.802242631595966,5.64059527866875,3.486014379989207
+lucknow_madhwal_lcs,Lucknow Madhwal,349,2021-12-17,2022-11-30,3.9107194619123726,8.743992326494984,1.648368433408688,51.46794024618637,2.4679590050504197,1.2702076660197257

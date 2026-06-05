@@ -1,0 +1,13 @@
+{
+  "purpose": "City-specific missingness-handling recommendation based on observed diagnostics.",
+  "source_files": [
+    "three_city_proportional_missingness_rule_check.csv",
+    "lucknow_missingness_filter_search_all_results.csv"
+  ],
+  "outputs": [
+    "three_city_data_driven_missingness_strategy.csv",
+    "three_city_data_driven_missingness_optional_sensitivities.csv",
+    "three_city_data_driven_missingness_strategy.md"
+  ],
+  "note": "This is a data-driven sensitivity strategy, not proof of MCAR/MAR/MNAR."
+}

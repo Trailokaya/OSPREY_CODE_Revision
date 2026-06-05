@@ -1,0 +1,2 @@
+comparison,paired_days,pearson_r,mae_ugm3,rmse_ugm3,bias_lcs_minus_aqs_ugm3,lcs_mean_ugm3,aqs_mean_ugm3
+Chicago corrected LCS no-collocation mean vs AQS mean,212,0.9023306685234274,2.120766163484727,2.7966043333147907,1.5551657040670346,10.847814154695966,9.292648450628931

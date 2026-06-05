@@ -1,0 +1,146 @@
+{
+  "available_cpu_count": 12,
+  "draws": 10000,
+  "effective_jobs": 12,
+  "generated_at": "2026-05-28T07:40:20.049132+00:00",
+  "git_commit": "bc064f2caba43e9a7d6ec2a6cb2b8a2ca026a018",
+  "master_seed": 20260522,
+  "panels": {
+    "chicago_lcs_corrected_no_collocation": {
+      "city": "Chicago",
+      "input_hashes": {
+        "daily_pm": "db36e91b5d43e932e2f20717c11e784b6a39866cdd0535aae0cb23ce1aa6f90a",
+        "hourly_pm": "89c3de4b17a6383ec726bdbcc6493ff730bf38dc023f69bbb6ea3f9a59c4be2d",
+        "locations": "6e2da44a1d3b7ea9225afa3fd4f09854de3fa589112d28d31b492d7b730d4e6c"
+      },
+      "preprocessing": {
+        "daily_date_max": "2026-04-30",
+        "daily_date_min": "2025-09-01",
+        "daily_pm_hash": "db36e91b5d43e932e2f20717c11e784b6a39866cdd0535aae0cb23ce1aa6f90a",
+        "daily_pm_path": "data/pm/Chicago_LCS_corrected_daily_PM25.csv",
+        "daily_rows": 242,
+        "daily_value_source": "official_daily_lcs_corrected",
+        "dropped_all_nan_sensor_count": 0,
+        "dropped_all_nan_sensors": [],
+        "hourly_pm_hash": "89c3de4b17a6383ec726bdbcc6493ff730bf38dc023f69bbb6ea3f9a59c4be2d",
+        "hourly_pm_path": "data/pm/Chicago_LCS_corrected_hourly_PM25.csv",
+        "hourly_timestamp_max": "2026-04-30 18:00:00",
+        "hourly_timestamp_min": "2025-08-31 19:00:00",
+        "location_path": "data/locations/Chicago_LCS_corrected_sensor_locations.csv",
+        "locations_hash": "6e2da44a1d3b7ea9225afa3fd4f09854de3fa589112d28d31b492d7b730d4e6c",
+        "retained_sensor_count": 277,
+        "source_rows": 5808,
+        "source_sensor_columns": 277,
+        "valid_timestamp_rows": 5808
+      },
+      "sensor_count": 277
+    },
+    "dhaka_lcs": {
+      "city": "Dhaka",
+      "input_hashes": {
+        "daily_pm": "790d47a334e027d73c90f529d0d850218ebee0265f0a98c7db1a29bcd3700a95",
+        "hourly_pm": "790d47a334e027d73c90f529d0d850218ebee0265f0a98c7db1a29bcd3700a95",
+        "locations": "188717bb29805009fdbee4a1c24f5f89ee39b94ba9d5616fecb7710d0868b230"
+      },
+      "preprocessing": {
+        "daily_date_max": "2023-03-31",
+        "daily_date_min": "2022-04-01",
+        "daily_pm_hash": "790d47a334e027d73c90f529d0d850218ebee0265f0a98c7db1a29bcd3700a95",
+        "daily_pm_path": "data/pm/Dhaka_hourly_PM25.csv",
+        "daily_rows": 365,
+        "daily_value_source": "hourly_aggregated_mean",
+        "dropped_all_nan_sensor_count": 0,
+        "dropped_all_nan_sensors": [],
+        "hourly_pm_hash": "790d47a334e027d73c90f529d0d850218ebee0265f0a98c7db1a29bcd3700a95",
+        "hourly_pm_path": "data/pm/Dhaka_hourly_PM25.csv",
+        "hourly_timestamp_max": "2023-03-31 23:00:00",
+        "hourly_timestamp_min": "2022-04-01 00:00:00",
+        "location_path": "data/locations/Dhaka_sensor_locations.csv",
+        "locations_hash": "188717bb29805009fdbee4a1c24f5f89ee39b94ba9d5616fecb7710d0868b230",
+        "retained_sensor_count": 35,
+        "source_rows": 8760,
+        "source_sensor_columns": 35,
+        "valid_timestamp_rows": 8760
+      },
+      "sensor_count": 35
+    },
+    "lucknow_lcs": {
+      "city": "Lucknow",
+      "input_hashes": {
+        "daily_pm": "74e3d7265f97f1f33bdc22cc02016470c0592683d753dedf2e0dc0dbefa9b13e",
+        "hourly_pm": "74e3d7265f97f1f33bdc22cc02016470c0592683d753dedf2e0dc0dbefa9b13e",
+        "locations": "a9219a95bcc2d43b5fd5495adbe08a6895616b4502654411c5d624f85325a61e"
+      },
+      "preprocessing": {
+        "daily_date_max": "2023-03-31",
+        "daily_date_min": "2022-04-01",
+        "daily_pm_hash": "74e3d7265f97f1f33bdc22cc02016470c0592683d753dedf2e0dc0dbefa9b13e",
+        "daily_pm_path": "data/pm/Lucknow_hourly_PM25.csv",
+        "daily_rows": 365,
+        "daily_value_source": "hourly_aggregated_mean",
+        "dropped_all_nan_sensor_count": 0,
+        "dropped_all_nan_sensors": [],
+        "hourly_pm_hash": "74e3d7265f97f1f33bdc22cc02016470c0592683d753dedf2e0dc0dbefa9b13e",
+        "hourly_pm_path": "data/pm/Lucknow_hourly_PM25.csv",
+        "hourly_timestamp_max": "2023-03-31 23:00:00",
+        "hourly_timestamp_min": "2022-04-01 00:00:00",
+        "location_path": "data/locations/Lucknow_sensor_locations.csv",
+        "locations_hash": "a9219a95bcc2d43b5fd5495adbe08a6895616b4502654411c5d624f85325a61e",
+        "retained_sensor_count": 71,
+        "source_rows": 8760,
+        "source_sensor_columns": 71,
+        "valid_timestamp_rows": 8760
+      },
+      "sensor_count": 71
+    }
+  },
+  "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+  "requested_jobs": 0,
+  "runtime_seconds": 127.988,
+  "scenarios": {
+    "S0_baseline": {
+      "daily_min_hours": 1,
+      "description": "Use all available daily values; retain all primary sensors.",
+      "drop_gap_gt_hours": null,
+      "period_uptime_min": null
+    },
+    "S1_daily_18h": {
+      "daily_min_hours": 18,
+      "description": "Require at least 18 valid hourly records per sensor-day.",
+      "drop_gap_gt_hours": null,
+      "period_uptime_min": null
+    },
+    "S2_daily_12h": {
+      "daily_min_hours": 12,
+      "description": "Require at least 12 valid hourly records per sensor-day.",
+      "drop_gap_gt_hours": null,
+      "period_uptime_min": null
+    },
+    "S3_period_75pct": {
+      "daily_min_hours": 1,
+      "description": "Retain only sensors with at least 75% hourly uptime over the study period.",
+      "drop_gap_gt_hours": null,
+      "period_uptime_min": 0.75
+    },
+    "S4_daily_18h_period_75pct": {
+      "daily_min_hours": 18,
+      "description": "Combine the 18-hour daily rule with the 75% period-uptime rule.",
+      "drop_gap_gt_hours": null,
+      "period_uptime_min": 0.75
+    },
+    "S5_drop_gap_gt_30d": {
+      "daily_min_hours": 1,
+      "description": "Drop sensors with any continuous missing gap longer than 30 days.",
+      "drop_gap_gt_hours": 720,
+      "period_uptime_min": null
+    },
+    "S6_period_50pct": {
+      "daily_min_hours": 1,
+      "description": "Retain only sensors with at least 50% hourly uptime over the study period.",
+      "drop_gap_gt_hours": null,
+      "period_uptime_min": 0.5
+    }
+  },
+  "script": "analysis/scripts/build_completeness_standardized.py",
+  "total_memory_gb": 24.0
+}

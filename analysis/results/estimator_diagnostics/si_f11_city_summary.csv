@@ -1,0 +1,4 @@
+dataset_key,city,sensors,reference_mean_pm25_ugm3,sensors_ci_excludes_reference,sensors_long_gap_gt_30d,median_daily_presence_pct,median_ar1_effective_n,max_longest_gap_days
+dhaka_lcs,Dhaka,35,55.14721850399361,1,5,92.6027397260274,19.812158011761415,46.0
+lucknow_lcs,Lucknow,71,61.802242631595966,3,37,81.36986301369863,12.827481255261755,326.0
+chicago_lcs_corrected_no_collocation,Chicago,277,10.253490712654873,11,11,99.63369963369964,77.79266359309173,181.0

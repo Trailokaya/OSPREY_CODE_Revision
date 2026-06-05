@@ -1,0 +1,69 @@
+{
+  "purpose": "Completeness-filtered spatial autocorrelation sensitivity for the three primary city networks.",
+  "seed": 20260536,
+  "n_permutations": 199,
+  "alpha": 0.05,
+  "resolutions": [
+    "highest_hourly",
+    "daily"
+  ],
+  "scenarios": [
+    {
+      "name": "baseline_ge_1h",
+      "description": "All sensors; daily value kept when a sensor has at least one valid hourly record that day.",
+      "daily_min_hours": 1,
+      "sensor_filter": "all",
+      "include_highest_hourly": true
+    },
+    {
+      "name": "daily_ge_12h",
+      "description": "All sensors; daily value kept only when a sensor has at least 12 valid hourly records that day.",
+      "daily_min_hours": 12,
+      "sensor_filter": "all",
+      "include_highest_hourly": false
+    },
+    {
+      "name": "daily_ge_18h",
+      "description": "All sensors; daily value kept only when a sensor has at least 18 valid hourly records that day.",
+      "daily_min_hours": 18,
+      "sensor_filter": "all",
+      "include_highest_hourly": false
+    },
+    {
+      "name": "record_uptime_ge_75pct",
+      "description": "Retain sensors with at least 75% valid hourly records; daily value kept with at least one valid hourly record.",
+      "daily_min_hours": 1,
+      "sensor_filter": "record_uptime_ge_75pct",
+      "include_highest_hourly": true
+    },
+    {
+      "name": "daily_ge_18h_record_uptime_ge_75pct",
+      "description": "Retain sensors with at least 75% valid hourly records and require at least 18 valid hourly records per retained sensor-day.",
+      "daily_min_hours": 18,
+      "sensor_filter": "record_uptime_ge_75pct",
+      "include_highest_hourly": false
+    },
+    {
+      "name": "drop_hourly_gap_gt_30d",
+      "description": "Retain sensors whose longest hourly missing run is no more than 30 days; daily value kept with at least one valid hourly record.",
+      "daily_min_hours": 1,
+      "sensor_filter": "hourly_gap_le_30d",
+      "include_highest_hourly": true
+    },
+    {
+      "name": "daily_ge_50pct_gap_le_90d",
+      "description": "Retain sensors with valid daily means on at least 50% of days and longest daily missing run no more than 90 days.",
+      "daily_min_hours": 1,
+      "sensor_filter": "daily_presence_ge_50pct_gap_le_90d",
+      "include_highest_hourly": true
+    },
+    {
+      "name": "daily_ge_50pct_gap_le_25pct_period",
+      "description": "Retain sensors with valid daily means on at least 50% of days and longest daily missing run no more than 25% of the study period.",
+      "daily_min_hours": 1,
+      "sensor_filter": "daily_presence_ge_50pct_gap_le_25pct_period",
+      "include_highest_hourly": true
+    }
+  ],
+  "note": "Highest-hourly uses the canonical aligned hourly matrices; daily valid-hour thresholds apply only to daily aggregation."
+}
