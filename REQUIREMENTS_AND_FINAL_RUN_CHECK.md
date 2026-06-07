@@ -123,4 +123,5 @@ Results:
 | Spatial distance-correlation summary builder | pass |
 | Spatial completeness-sensitivity builder | pass |
 | Paper plot-reference coverage | pass: 28 LaTeX plot references, 28 retained paper PDFs, no missing or extra paper PDFs |
+| Paper PNG companion coverage | pass: 28 retained paper PDFs, 28 same-basename PNG companions, all PNG density metadata at 600 DPI |
 | Strict wording scan | pass: only the requested acknowledgement text in `README.md` remains |

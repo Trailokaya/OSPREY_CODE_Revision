@@ -28,11 +28,11 @@ reviewed the retained package and take full responsibility for its contents.
 
 ## Figure Scope
 
-The paper-facing plot tree, `paper/Manuscript_and_SI/Plots/`, contains only the PDFs referenced by the
-manuscript and SI LaTeX files: 5 main-text figure files, 22 SI figure files, and 1 TOC graphic. Additional
-plots under `analysis/`, `monte_carlo/`, `missingness/`, and `spatial/` are retained source or supporting
-analysis outputs referenced from the manuscript/SI as released analysis outputs; they are not additional
-paper figures.
+The paper-facing plot tree, `paper/Manuscript_and_SI/Plots/`, contains the PDFs referenced by the manuscript
+and SI LaTeX files, plus same-basename 600 DPI PNG copies for ACS ES&T Air submission: 5 main-text figure
+files, 22 SI figure files, and 1 TOC graphic. Additional plots under `analysis/`, `monte_carlo/`,
+`missingness/`, and `spatial/` are retained source or supporting analysis outputs referenced from the
+manuscript/SI as released analysis outputs; they are not additional paper figures.
 
 ## Contents
 
