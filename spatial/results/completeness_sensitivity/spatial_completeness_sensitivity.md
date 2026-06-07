@@ -4,7 +4,7 @@
 
 This sensitivity analysis asks whether stricter completeness handling changes the spatial-autocorrelation conclusions for Dhaka, Lucknow, and Chicago corrected LCS with Chicago collocation sensors excluded.
 
-The daily analysis compares minimum valid-hour thresholds, sensor-level uptime filters, long-gap filters, and the data-driven daily-presence/gap rule identified in the missingness audit. The highest-resolution analysis uses the canonical aligned hourly matrices and only applies sensor-retention filters; daily valid-hour thresholds do not apply to hourly rows.
+The daily analysis compares minimum valid-hour thresholds, sensor-level uptime filters, long-gap filters, and the data-driven daily-presence/gap rule identified in the missingness diagnostics. The highest-resolution analysis uses the canonical aligned hourly matrices and only applies sensor-retention filters; daily valid-hour thresholds do not apply to hourly rows.
 
 Permutation Moran's I uses 199 deterministic permutations per sampled time window with seed 20260536. Daily and hourly windows are deterministically thinned when needed for bounded runtime.
 

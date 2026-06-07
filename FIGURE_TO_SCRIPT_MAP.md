@@ -2,8 +2,8 @@
 
 Every figure and table in the final manuscript and SI is mapped to the script that
 produces it and the data that script reads. The "as-published filename" is what the LaTeX `\includegraphics`
-points to; many scripts emit a different internal stem that is then copied/renamed into the paper's `Plots/`
-tree.
+points to. Many scripts emit a different internal stem during a rerun; the retained paper-facing assets are
+the renamed files under `paper/Manuscript_and_SI/Plots/`.
 
 ## Main text
 
@@ -21,7 +21,7 @@ tree.
 |---|---|---|---|---|
 | 1 | `chicago_pm25_lcs_aqs_daily_period_map.pdf` | `analysis/scripts/build_chicago_si1_pm25_reference_map.py` | `data/pm/Chicago_{LCS_corrected_daily,AQS_daily}_PM25.csv`, `data/locations/Chicago_*`, `data/geo/Chicago_*` | re-run ✓ |
 | 2 | `three_city_empirical_variogram_binned_by_city.pdf` | `spatial/scripts/build_spatial_distance_correlation_analysis.py` | `data/pm/*_hourly_PM25.csv` (3 cities), `data/locations/*` | provenance ✓ |
-| 3 | `three_city_cumulative_pairwise_distance.pdf` | `.../scripts/build_si_plot_consistency_package.py` | `data/locations/*`, `data/pm/*` | re-run ✓ (content; bbox differs, see note) |
+| 3 | `three_city_cumulative_pairwise_distance.pdf` | `.../scripts/build_si_plot_consistency_package.py` | `data/locations/*`, `data/pm/*` | re-run ✓ |
 | 4 | `three_city_daily_morans_i_qq_knn5.pdf` | `.../scripts/build_si_plot_consistency_package.py` | `data/locations/*`, `data/pm/*` | re-run ✓ |
 | 5 | `three_city_hourly_morans_i_qq_knn5.pdf` | `.../scripts/build_si_plot_consistency_package.py` | `data/locations/*`, `data/pm/*` | re-run ✓ |
 | 6 | `three_city_RSE_normal_daily_sensor_requirement.pdf` | `analysis/scripts/build_estimator_diagnostics.py` | `data/pm/*`, `data/locations/*` | re-run ✓ |
@@ -35,14 +35,16 @@ tree.
 | 14 | `period_error_percentile_bands.pdf` | `.../scripts/build_reviewer_requested_figures.py` | `monte_carlo/plots/figure_data/period_best_worst_error_by_city_n.csv` | re-run ✓ |
 | 15 | `chicago_network_with_reference_monitors.pdf` | `maps/scripts/build_exploratory_maps.py` (`chicago_aqs_lcs_combined`) | `data/geo/Chicago_*`, `data/locations/Chicago_{AQS,LCS_corrected,LCS_raw}` | re-run ✓ |
 | 16 | `regional_locator.pdf` | `maps/scripts/build_manuscript_map_package.py` (`build_locator_map`) | none (hardcoded city coords; Natural Earth via cartopy) | re-run ✓ |
-| 17 | `finite_population_size_sensitivity_chicago.pdf` + `..._lucknow_vs_dhaka.pdf` | `monte_carlo/scripts/run_finite_population_experiment.py` (`--phase 2` / `--phase 3`) | phase envelope CSVs + `data/pm/*` (full Monte Carlo) | provenance ✓ (compute-heavy) |
-| 18 | `reference_target_sensitivity_selected_vs_full.pdf` + `..._delta.pdf` | `analysis/scripts/build_dual_reference_monte_carlo_and_audit.py` | phase4 draw tables + phase3 `selected_reference_draw_summaries_n50.parquet` + reference_target_sensitivity `*.parquet` | re-run ✓ |
-| 19 | `seed_stability_phase4_strategy_mdape_n10.pdf` + `..._random_population_mdape_n10.pdf` | `analysis/scripts/run_finite_population_seed_stability.py --plot-only` | `analysis/results/finite_population_experiments/seed_stability_2026-05-29/aggregated/seed_level_metrics.csv` | re-run ✓ |
+| 17 | `finite_population_size_sensitivity_chicago.pdf` + `finite_population_size_sensitivity_lucknow_vs_dhaka.pdf` | `monte_carlo/scripts/run_finite_population_experiment.py` (`--phase 2` / `--phase 3`) | phase envelope CSVs + `data/pm/*` (full Monte Carlo) | provenance ✓ (compute-heavy) |
+| 18 | `reference_target_sensitivity_selected_vs_full.pdf` + `reference_target_sensitivity_delta.pdf` | `analysis/scripts/build_dual_reference_monte_carlo_summary.py` | phase4 draw tables + phase3 `selected_reference_draw_summaries_n50.parquet` + reference_target_sensitivity `*.parquet` | re-run ✓ |
+| 19 | `seed_stability_phase4_strategy_mdape_n10.pdf` | `analysis/scripts/run_finite_population_seed_stability.py --plot-only` | `analysis/results/finite_population_experiments/seed_stability_2026-05-29/aggregated/seed_level_metrics.csv` | re-run ✓ |
 | 20 | `three_city_mdape_vs_cv_slope.pdf` | `analysis/scripts/build_mdape_vs_cv_slope.py` | canonical June 2 Monte Carlo summary + `preprocessed/*_daily_sensor_means.parquet` | re-run ✓ |
 
-> **SI 3 note:** content is identical to the published figure (same CDF curves, reference lines, axes); the
-> current consistency-package code emits a slightly different tight-bbox figure size than the frozen
-> published render. The committed published render matches the paper exactly (mae 0.00000).
+## Table of Contents Graphic
+
+| Asset | As-published file | Source | Key direct inputs | Verified |
+|---|---|---|---|---|
+| TOC | `TOC_v2.pdf` | static manuscript graphic retained in `paper/Manuscript_and_SI/Plots/TOC/` | final paper graphic asset | retained ✓ |
 
 ## Shared helpers (imported, not standalone outputs)
 
@@ -62,7 +64,7 @@ tree.
 | Table | Backing CSV | Producing script |
 |---|---|---|
 | `ci.tex` | `analysis/results/estimator_diagnostics/qce_daily_summary.csv` | `build_estimator_diagnostics.py` |
-| `shapiro.tex` | `analysis/results/distribution_diagnostics/distribution_pvalue_bin_counts.csv` | `build_distribution_diagnostics.py` |
+| `shapiro.tex` | `analysis/results/distribution_diagnostics/distribution_daily_diagnostics.csv` | `build_distribution_diagnostics.py` |
 | `spatial_support.tex` | `analysis/results/three_city_comparative_analysis/comparative_spatial_support_summary.csv` | `build_three_city_comparative_analysis.py` |
 
 The `.tex` files themselves are hand-authored (no generator); numbers are transcribed from these CSVs.

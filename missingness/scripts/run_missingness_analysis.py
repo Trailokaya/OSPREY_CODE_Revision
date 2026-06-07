@@ -866,7 +866,7 @@ def write_report(
         file.write("The final SI run should use the same table structure and may increase rigor with permutation p-values if needed.\n\n")
         file.write(markdown_table(m6, ["network", "filter", "distance_band_km", "days_evaluated", "median_moran_i", "significant_positive_days_pct"], max_rows=40) + "\n\n")
         file.write("![M6 Moran](plots/M6_morans_i_sensitivity.png)\n\n")
-        file.write("## Mechanistic Narrative Draft\n\n")
+        file.write("## Mechanistic Interpretation\n\n")
         file.write(
             "The observed gaps are most plausibly caused by infrastructure and deployment processes "
             "rather than by PM2.5-induced sensor failure. In Dhaka and Lucknow, plausible mechanisms "

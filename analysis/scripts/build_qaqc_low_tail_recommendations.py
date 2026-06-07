@@ -195,7 +195,7 @@ def plot_city_low_tail(summary: pd.DataFrame) -> None:
         ("pm_gt0_lt5_pct_of_valid", "0 < PM2.5 < 5"),
         ("relative_low_observation_pct_of_valid", "<20% of same-time median"),
     ]
-    fig, ax = plt.subplots(figsize=(8.5, 4.2))
+    fig, ax = plt.subplots(figsize=(8.5, 4.8))
     x = np.arange(len(summary))
     width = 0.24
     for offset, (column, label) in zip([-width, 0, width], metrics, strict=True):
@@ -214,7 +214,7 @@ def plot_city_low_tail(summary: pd.DataFrame) -> None:
     ax.set_ylabel("Percent of valid observations")
     ax.set_title("Low-tail PM2.5 screen by city")
     ax.grid(axis="y", color=GRID_COLOR, linewidth=0.7)
-    ax.legend(frameon=False, loc="upper right")
+    ax.legend(frameon=False, loc="upper center", bbox_to_anchor=(0.5, -0.16), ncol=3)
     save_figure(fig, PLOTS_DIR / "S26_low_tail_screen_by_city")
 
 
@@ -294,23 +294,23 @@ def write_qaqc_markdown(summary: pd.DataFrame, sensor_summary: pd.DataFrame) -> 
     (RESULTS_DIR / "qaqc_low_tail_review.md").write_text("\n".join(lines))
 
 
-def write_qaqc_calibration_response(summary: pd.DataFrame) -> None:
+def write_qaqc_calibration_summary(summary: pd.DataFrame) -> None:
     lines = [
-        "# QA/QC And Calibration Response Draft",
+        "# QA/QC And Calibration Summary",
         "",
         f"Generated: {datetime.now().isoformat(timespec='seconds')}",
         "",
-        "## Manuscript-Ready Position",
+        "## Analysis Position",
         "",
         "The analysis uses the cleaned/calibrated PM2.5 values supplied by the deployment data products. Our contribution is not to rederive calibration models; it is to evaluate how random subnetworks reproduce the deployed reference-network mean after the inherited QA/QC/calibration pipeline.",
         "",
-        "## Defensible Wording",
+        "## Retained Data Products",
         "",
         "- Dhaka and Lucknow use inherited calibrated low-cost-sensor PM2.5 matrices from the original manuscript data package.",
         "- Chicago uses corrected low-cost-sensor daily PM2.5 as the primary third-city analysis; raw Chicago LCS and AQS are retained as context/sensitivity, not as the primary finite population.",
         "- Negative, zero, and nonpositive values are absent in the canonical matrices used here.",
-        "- A direct low-tail screen is now generated in `analysis/results/qaqc_low_tail/` to address low-but-nonzero reviewer concerns.",
-        "- The response letter should explicitly state that calibration uncertainty can shift the pollution scale, but the design-based subnetwork reproducibility result is conditional on the calibrated deployed network.",
+        "- The low-tail screen in `analysis/results/qaqc_low_tail/` checks for unusually low but positive values without applying additional filtering.",
+        "- Calibration uncertainty can shift the pollution scale; the design-based subnetwork reproducibility result is conditional on the calibrated deployed network.",
         "",
         "## Current Canonical QA/QC Counts",
         "",
@@ -333,7 +333,7 @@ def write_qaqc_calibration_response(summary: pd.DataFrame) -> None:
         "Full calibration-method details still depend on the deployment-team documentation and source publications. The manuscript should cite those sources and avoid implying that this revision independently validates instrument calibration.",
         "",
     ]
-    (RESULTS_DIR / "qaqc_calibration_response_draft.md").write_text("\n".join(lines))
+    (RESULTS_DIR / "qaqc_calibration_summary.md").write_text("\n".join(lines))
 
 
 def write_recommendations() -> None:
@@ -357,7 +357,7 @@ def write_recommendations() -> None:
             "decision_context": "Missingness language",
             "recommendation": "Use weak/inconsistent evidence language rather than claiming MCAR or MAR.",
             "rationale": "Observed associations with PM2.5 and spatial variability are present but not strong enough for formal missing-at-random claims.",
-            "manuscript_location": "SI missingness and response letter",
+            "manuscript_location": "SI missingness discussion",
             "caveat": "Filtering missing sensors can change the finite-population estimand.",
         },
         {
@@ -398,9 +398,9 @@ def write_recommendations() -> None:
         "",
         markdown_table(table),
         "",
-        "## Short Discussion Paragraph Draft",
+        "## Discussion Guidance",
         "",
-        "For planning, these results should be read as guidance on how many sensors are needed to reproduce a deployed reference-network mean under observed missingness and spatial support, not as a direct estimate of a population- or area-weighted city exposure. The most defensible operational use is therefore staged: maintain calibration and uptime first, report completeness and reference-mean sensitivity, then use the MdAPE and absolute-error curves to choose a subnetwork size matched to the temporal target. Chicago supports transferability to a lower-concentration setting, but only as a nine-month corrected-LCS study-period analysis with regulatory monitors used as context.",
+        "These results should be read as guidance on how many sensors are needed to reproduce a deployed reference-network mean under observed missingness and spatial support, not as a direct estimate of a population- or area-weighted city exposure. The operational interpretation is staged: maintain calibration and uptime first, report completeness and reference-mean sensitivity, then use the MdAPE and absolute-error curves to choose a subnetwork size matched to the temporal target. Chicago supports transferability to a lower-concentration setting as a nine-month corrected-LCS study-period analysis with regulatory monitors used as context.",
         "",
     ]
     (RECOMMENDATIONS_DIR / "practical_recommendations.md").write_text("\n".join(lines))
@@ -453,7 +453,7 @@ def main() -> None:
     plot_city_low_tail(summary)
     plot_top_flagged_sensors(sensor_summary)
     write_qaqc_markdown(summary, sensor_summary)
-    write_qaqc_calibration_response(summary)
+    write_qaqc_calibration_summary(summary)
     write_recommendations()
 
     print(f"Wrote QA/QC low-tail outputs to {RESULTS_DIR.relative_to(REPO_ROOT)}")

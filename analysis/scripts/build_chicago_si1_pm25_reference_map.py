@@ -293,7 +293,7 @@ The period panel fixes the plotted window at {PERIOD_START_DATE} to {PERIOD_END_
 
 {markdown_table(stats)}
 
-## Audit files
+## Output files
 
 - Plot: `manuscript/overleaf_projects/01_manuscript_revision_tracked_working/Plots/Supporting_Information/Figure_SI_1/chicago_pm25_lcs_aqs_daily_period_map.pdf`
 - Plot data: `analysis/results/chicago_si1_pm25_reference_map/chicago_si1_pm25_reference_map_data.csv`

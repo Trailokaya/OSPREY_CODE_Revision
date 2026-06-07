@@ -101,10 +101,11 @@ def plot_time_series(
             fontsize=8,
             bbox={"boxstyle": "round,pad=0.25", "facecolor": "white", "edgecolor": "#d1d5db"},
         )
-    axes[0].legend(frameon=False, loc="upper right", ncol=2)
+    handles, labels = axes[0].get_legend_handles_labels()
+    fig.legend(handles, labels, frameon=False, loc="upper center", bbox_to_anchor=(0.5, 0.958), ncol=2)
     axes[-1].set_xlabel("Date")
     fig.suptitle(f"Daily sensor-level PM2.5 time series, shared y-scale{title_suffix}", y=0.995)
-    fig.tight_layout()
+    fig.tight_layout(rect=(0, 0, 1, 0.94))
     save_figure(fig, output_dir / stem, dpi=OUTPUT_DPI)
 
 

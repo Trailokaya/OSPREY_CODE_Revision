@@ -518,7 +518,7 @@ def build() -> None:
 
 This figure is designed to make the finite-population estimand explicit. The upper row shows a hypothetical continuous PM2.5 field, then the finite point samples observed by a deployed network, then one subnetwork drawn from that finite population. The lower row shows the analogous Chicago data example: actual Jan 1, 2026 samples, actual shared-period mean samples, and the network-mean summaries available from those samples.
 
-## Date-window audit
+## Date-window Check
 
 - Chicago LCS daily corrected data span {lcs_full_period_meta['start_date']} to {lcs_full_period_meta['end_date']} ({lcs_full_period_meta['n_dates']} daily rows) in the current canonical file.
 - Chicago AQS daily data span {aqs_full_period_meta['start_date']} to {aqs_full_period_meta['end_date']} ({aqs_full_period_meta['n_dates']} daily rows) in the current canonical file.

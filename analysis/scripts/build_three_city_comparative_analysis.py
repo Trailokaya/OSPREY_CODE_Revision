@@ -658,7 +658,7 @@ def write_report(
         "",
         "This report compares the current primary manuscript networks: Dhaka LCS, Lucknow LCS, and Chicago corrected LCS with collocation sensors excluded.",
         "",
-        "It is a screening and audit summary, not a proof that missingness is missing-at-random. The missingness section tests whether daily missing fraction is associated with observed daily PM2.5 level or cross-sensor variability.",
+        "It is a screening summary, not a proof that missingness is missing-at-random. The missingness section tests whether daily missing fraction is associated with observed daily PM2.5 level or cross-sensor variability.",
         "",
         "## Key Findings",
         "",

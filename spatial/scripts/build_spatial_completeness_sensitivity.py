@@ -32,9 +32,9 @@ from build_spatial_distance_correlation_analysis import (  # noqa: E402
     save_figure,
     setup_matplotlib,
 )
-from build_spatial_manuscript_audit import (  # noqa: E402
+from build_spatial_distance_correlation_summary import (  # noqa: E402
     ALPHA,
-    AUDIT_SEED,
+    SUMMARY_SEED,
     N_PERMUTATIONS,
     build_weight_schemes,
     distance_matrix_km,
@@ -44,7 +44,7 @@ from build_spatial_manuscript_audit import (  # noqa: E402
 
 OUTPUT_DIR = REPO_ROOT / "spatial/results/completeness_sensitivity"
 PLOT_DIR = REPO_ROOT / "spatial/plots/completeness_sensitivity"
-COMPLETENESS_SEED = AUDIT_SEED + 11
+COMPLETENESS_SEED = SUMMARY_SEED + 11
 RESOLUTION_ORDER = ["highest_hourly", "daily"]
 REPORT_SCHEMES = ["band_5km", "knn_5"]
 
@@ -506,7 +506,7 @@ def write_report(summary: pd.DataFrame, morans: pd.DataFrame) -> None:
         "",
         "This sensitivity analysis asks whether stricter completeness handling changes the spatial-autocorrelation conclusions for Dhaka, Lucknow, and Chicago corrected LCS with Chicago collocation sensors excluded.",
         "",
-        "The daily analysis compares minimum valid-hour thresholds, sensor-level uptime filters, long-gap filters, and the data-driven daily-presence/gap rule identified in the missingness audit. The highest-resolution analysis uses the canonical aligned hourly matrices and only applies sensor-retention filters; daily valid-hour thresholds do not apply to hourly rows.",
+        "The daily analysis compares minimum valid-hour thresholds, sensor-level uptime filters, long-gap filters, and the data-driven daily-presence/gap rule identified in the missingness diagnostics. The highest-resolution analysis uses the canonical aligned hourly matrices and only applies sensor-retention filters; daily valid-hour thresholds do not apply to hourly rows.",
         "",
         f"Permutation Moran's I uses {N_PERMUTATIONS} deterministic permutations per sampled time window with seed {COMPLETENESS_SEED}. Daily and hourly windows are deterministically thinned when needed for bounded runtime.",
         "",

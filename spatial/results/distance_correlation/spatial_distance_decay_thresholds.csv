@@ -3,12 +3,12 @@ Chicago,chicago_lcs_corrected_no_collocation,daily,0.95,,,,
 Chicago,chicago_lcs_corrected_no_collocation,daily,0.9,,,,
 Chicago,chicago_lcs_corrected_no_collocation,daily,0.75,,,,
 Chicago,chicago_lcs_corrected_no_collocation,daily,0.5,,,,
-Chicago,chicago_lcs_corrected_no_collocation,highest_hourly,0.95,1-2 km,705.0,1.484721189799429,0.9499805355569204
-Chicago,chicago_lcs_corrected_no_collocation,highest_hourly,0.9,10-20 km,14367.0,14.284922733829534,0.8982558471545079
+Chicago,chicago_lcs_corrected_no_collocation,highest_hourly,0.95,1-2 km,705.0,1.4847211897994412,0.9478808622103936
+Chicago,chicago_lcs_corrected_no_collocation,highest_hourly,0.9,10-20 km,14367.0,14.284922733998222,0.8939586889155064
 Chicago,chicago_lcs_corrected_no_collocation,highest_hourly,0.75,,,,
 Chicago,chicago_lcs_corrected_no_collocation,highest_hourly,0.5,,,,
-Chicago,chicago_lcs_corrected_no_collocation,monthly,0.95,5-10 km,8670.0,7.547156401903341,0.9228382352318656
-Chicago,chicago_lcs_corrected_no_collocation,monthly,0.9,10-20 km,14367.0,14.284922733829534,0.8981790380457138
+Chicago,chicago_lcs_corrected_no_collocation,monthly,0.95,5-10 km,8670.0,7.547156401855778,0.9304409873462144
+Chicago,chicago_lcs_corrected_no_collocation,monthly,0.9,,,,
 Chicago,chicago_lcs_corrected_no_collocation,monthly,0.75,,,,
 Chicago,chicago_lcs_corrected_no_collocation,monthly,0.5,,,,
 Chicago,chicago_lcs_corrected_no_collocation,weekly,0.95,,,,

@@ -85,6 +85,6 @@ Rows below show selected study-period thresholds and selected n values. Full dat
 - `analysis/plots/threshold_classification/period_threshold_classification_misclassification.*`
 - `analysis/plots/threshold_classification/daily_near_threshold_classification_misclassification_margin2.*`
 
-## Interpretation Rule
+## Interpretation
 
-Use this analysis only if the manuscript keeps any health-guideline or threshold-classification claims. If the revised paper avoids those claims, this output is better kept as internal/SI evidence rather than a main-text result.
+This output is a sensitivity analysis for threshold-classification interpretations and is not a regulatory-compliance analysis. Classification disagreement is most relevant near threshold boundaries and should be interpreted relative to the deployed reference-network mean.

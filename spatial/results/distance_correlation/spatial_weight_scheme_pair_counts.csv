@@ -11,9 +11,9 @@ Lucknow,lucknow_lcs,71,band_10km,distance_band,10,1770,885,2,0.0,29.0,46.0,6.458
 Lucknow,lucknow_lcs,71,knn_4,k_nearest_neighbor,4,284,189,0,4.0,4.0,4.0,2.7484882904901107,10.373426322401496
 Lucknow,lucknow_lcs,71,knn_5,k_nearest_neighbor,5,355,232,0,5.0,5.0,5.0,2.923405005925415,11.728718426419588
 Lucknow,lucknow_lcs,71,knn_8,k_nearest_neighbor,8,568,378,0,8.0,8.0,8.0,3.628797197470226,12.434581282199199
-Chicago,chicago_lcs_corrected_no_collocation,277,band_2km,distance_band,2,1420,710,0,1.0,5.0,9.0,1.483697250852143,1.9777813973505074
-Chicago,chicago_lcs_corrected_no_collocation,277,band_5km,distance_band,5,7676,3838,0,6.0,29.0,39.0,3.2224016766591967,4.498146946886471
-Chicago,chicago_lcs_corrected_no_collocation,277,band_10km,distance_band,10,25016,12508,0,33.0,93.0,128.0,6.371728505137961,9.348616093931527
-Chicago,chicago_lcs_corrected_no_collocation,277,knn_4,k_nearest_neighbor,4,1108,610,0,4.0,4.0,4.0,1.430888009878212,1.9387896999051917
-Chicago,chicago_lcs_corrected_no_collocation,277,knn_5,k_nearest_neighbor,5,1385,786,0,5.0,5.0,5.0,1.4769957188903942,2.1014067791350484
-Chicago,chicago_lcs_corrected_no_collocation,277,knn_8,k_nearest_neighbor,8,2216,1226,0,8.0,8.0,8.0,1.9461085095525967,2.8366857091747497
+Chicago,chicago_lcs_corrected_no_collocation,277,band_2km,distance_band,2,1420,710,0,1.0,5.0,9.0,1.4836972508560398,1.9777813972118294
+Chicago,chicago_lcs_corrected_no_collocation,277,band_5km,distance_band,5,7676,3838,0,6.0,29.0,39.0,3.222401676790501,4.498146946847036
+Chicago,chicago_lcs_corrected_no_collocation,277,band_10km,distance_band,10,25016,12508,0,33.0,93.0,128.0,6.371728505071614,9.348616093859569
+Chicago,chicago_lcs_corrected_no_collocation,277,knn_4,k_nearest_neighbor,4,1108,610,0,4.0,4.0,4.0,1.4308880101900003,1.9387896999389442
+Chicago,chicago_lcs_corrected_no_collocation,277,knn_5,k_nearest_neighbor,5,1385,786,0,5.0,5.0,5.0,1.4769957190880196,2.1014067792947873
+Chicago,chicago_lcs_corrected_no_collocation,277,knn_8,k_nearest_neighbor,8,2216,1226,0,8.0,8.0,8.0,1.9461085095562907,2.8366857091395783

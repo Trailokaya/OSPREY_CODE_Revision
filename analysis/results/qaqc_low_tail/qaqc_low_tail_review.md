@@ -1,6 +1,6 @@
 # QA/QC Low-Tail Screen
 
-Generated: 2026-05-28T13:27:08
+Generated: 2026-06-06T23:16:41
 
 ## Purpose
 
@@ -17,7 +17,7 @@ A value is flagged in two ways:
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | dhaka_lcs | Dhaka | LCS | hourly | 35 | 8760 | 263052 | 43548 | 14.204 | 7853 | 1884 | 0.716 | 345 | 83 | 0.717 | 2 | 1.000 | 4.000 | 6.750 | 33.000 | 170.000 | 1816.667 | 0 | 0.000 | 234 | 0.089 | 5074 | 1.929 |
 | lucknow_lcs | Lucknow | LCS | hourly | 71 | 8760 | 445689 | 176271 | 28.341 | 8090 | 763 | 0.171 | 350 | 28 | 0.139 | 1 | 1.000 | 4.000 | 7.750 | 37.500 | 186.750 | 1883.000 | 0 | 0.000 | 702 | 0.158 | 6640 | 1.490 |
-| chicago_lcs_corrected_no_collocation | Chicago | LCS corrected | official_daily | 277 | 242 | 65147 | 1887 | 2.815 | 109 | 9 | 0.014 | 109 | 9 | 0.014 | 2 | 1.690 | 3.510 | 4.350 | 9.250 | 21.560 | 55.210 | 0 | 0.000 | 3 | 0.005 | 7064 | 10.843 |
+| chicago_lcs_corrected_no_collocation | Chicago | LCS corrected | official_daily | 277 | 273 | 73517 | 2104 | 2.782 | 115 | 9 | 0.012 | 115 | 9 | 0.012 | 2 | 1.690 | 3.562 | 4.370 | 8.840 | 21.020 | 55.210 | 0 | 0.000 | 3 | 0.004 | 7739 | 10.527 |
 
 ## Top Sensor-Level Review Flags
 
@@ -25,9 +25,9 @@ A value is flagged in two ways:
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Dhaka | 81432151072 | 63. Khilkhet | 18.881 | 19.420 | 1.019 | 1.000 | 91.838 | True |
 | Lucknow | 81432144017 | Aziz Nagar | 9.329 | 8.408 | 2.389 | 1.000 | 90.308 | True |
-| Chicago | DAEXF8484 | Mount Greenwood 1 | 2.075 | 2.075 | 1.245 | 1.690 | 99.587 | True |
+| Chicago | DAEXF8484 | Mount Greenwood 1 | 1.838 | 1.838 | 1.103 | 1.690 | 99.634 | True |
 | Dhaka | 81432150006 | 31. Rupnogor high school, Pallabi | 3.798 | 0.330 | 0.329 | 1.000 | 76.336 | True |
-| Chicago | DMMAG3845 | Riverdale 3 | 1.660 | 1.660 | 0.000 | 3.000 | 99.587 | True |
+| Chicago | DMMAG3845 | Riverdale 3 | 1.471 | 1.471 | 0.000 | 3.000 | 99.634 | True |
 | Lucknow | 81432144008 | Chak Ganjaria | 0.000 | 0.000 | 0.721 | 1.000 | 14.247 | False |
 | Dhaka | 81432130035 | 12. Bashundhara RA | 0.056 | 0.578 | 0.019 | 1.500 | 61.701 | False |
 | Dhaka | 81432124031 | 1. Siddeshwari  | 0.100 | 0.288 | 0.112 | 1.000 | 91.655 | False |

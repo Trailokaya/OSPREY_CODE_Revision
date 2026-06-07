@@ -421,7 +421,7 @@ Main Figure 1 is LCS-only. Chicago EPA AQS sites are retained for SI/reference-c
 
 ## Promotion Status
 
-These are manuscript-map products staged for revision. Legacy draft-named files may remain in the folder for audit history, but the final stems above are the promoted assets.
+These are reproducible manuscript-map products. The final stems above are the paper-facing assets retained by this package.
 """
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     (OUTPUT_DIR / "README.md").write_text(readme)

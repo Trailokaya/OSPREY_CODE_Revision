@@ -1,8 +1,17 @@
-# OSPREY Code Revision
+# OSPREY_CODE_Revision
 
-Code and retained analysis outputs for:
+Code and retained analysis outputs for the manuscript:
 
-*How many sensors are needed to estimate daily and annual reference-network mean concentrations?*
+*How many PM2.5 sensors are needed to estimate daily and annual deployed-network mean concentrations in city-scale sensor networks?*
+
+Authors: Trailokaya Raj Bajgain, Zachary D. Calhoun, Sachchida Nand Tripathi, Abdus Salam,
+Vaishali Jain, Sandeep Madhwal, Shahid Uz Zaman, Shatabdi Roy, Michael Bergin, and David Carlson.
+
+Journal: ACS ES&T Air.
+
+Manuscript ID: ea-2026-00035e.
+
+Correspondence: david.carlson@duke.edu and michael.bergin@duke.edu.
 
 This repository is the cleaned review-facing code package. It contains the runnable analysis scripts, direct
 input data, generated plots, retained result tables, and final manuscript/SI figure assets needed to reproduce
@@ -10,6 +19,20 @@ the manuscript-facing outputs. The original working tree was about 46 GB; this G
 650 MiB.
 
 For figure and table provenance, see `FIGURE_TO_SCRIPT_MAP.md`.
+
+## AI Use Note
+
+Some code cleanup and documentation generation during manuscript revision used ChatGPT Codex. The initial
+code drafts, analysis logic, and manuscript results were developed and verified by the authors; the authors
+reviewed the retained package and take full responsibility for its contents.
+
+## Figure Scope
+
+The paper-facing plot tree, `paper/Manuscript_and_SI/Plots/`, contains only the PDFs referenced by the
+manuscript and SI LaTeX files: 5 main-text figure files, 22 SI figure files, and 1 TOC graphic. Additional
+plots under `analysis/`, `monte_carlo/`, `missingness/`, and `spatial/` are retained source or supporting
+analysis outputs referenced from the manuscript/SI as released analysis outputs; they are not additional
+paper figures.
 
 ## Contents
 
@@ -52,7 +75,7 @@ Python 3.10+ is recommended.
 pip install -r requirements.txt
 ```
 
-Key packages are `numpy`, `pandas`, `pyarrow`, `scipy`, `matplotlib`, `cartopy`, and `openpyxl`.
+Key packages are `numpy`, `pandas`, `pyarrow`, `scipy`, `matplotlib`, `cartopy`, `shapely`, and `openpyxl`.
 `cartopy` is needed for the locator map and may download Natural Earth basemap layers on first use. The
 other figure builders run offline once dependencies are installed.
 
@@ -90,6 +113,7 @@ python analysis/scripts/build_temporal_diagnostics.py
 python analysis/scripts/build_regression_clustering_diagnostics.py
 python spatial/scripts/build_spatial_completeness_sensitivity.py
 python missingness/scripts/run_missingness_analysis.py
+python missingness/scripts/plot_three_city_pm25_timeseries.py
 ```
 
 The consolidated SI builders should be run after the estimator and spatial steps above:
@@ -111,7 +135,7 @@ selected-reference rows needed by the dual-reference plot without restoring the 
 The retained plot-only and compact-reference steps can be run with:
 
 ```bash
-python analysis/scripts/build_dual_reference_monte_carlo_and_audit.py
+python analysis/scripts/build_dual_reference_monte_carlo_summary.py
 python analysis/scripts/run_finite_population_seed_stability.py --plot-only
 ```
 
@@ -125,11 +149,11 @@ The SI tables in `paper/Manuscript_and_SI/tables/` are hand-authored LaTeX files
 | Table | Backing CSV | Script |
 |---|---|---|
 | `ci.tex` | `analysis/results/estimator_diagnostics/qce_daily_summary.csv` | `analysis/scripts/build_estimator_diagnostics.py` |
-| `shapiro.tex` | `analysis/results/distribution_diagnostics/distribution_pvalue_bin_counts.csv` | `analysis/scripts/build_distribution_diagnostics.py` |
+| `shapiro.tex` | `analysis/results/distribution_diagnostics/distribution_daily_diagnostics.csv` | `analysis/scripts/build_distribution_diagnostics.py` |
 | `spatial_support.tex` | `analysis/results/three_city_comparative_analysis/comparative_spatial_support_summary.csv` | `analysis/scripts/build_three_city_comparative_analysis.py` |
 
 ## Notes
 
 - The canonical Monte Carlo run is `p0_baseline_updated_chicago_may31_plus_madhwal_10000_20260602`.
 - Script paths are package-relative; they do not depend on the original local working-tree path.
-- Audit-only validation scripts and cleanup reports are not included in this GitHub package.
+- Internal validation scripts and cleanup reports are not included in this GitHub package.

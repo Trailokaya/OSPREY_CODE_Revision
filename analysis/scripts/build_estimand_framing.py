@@ -195,7 +195,7 @@ def write_outputs() -> None:
     glossary.to_csv(RESULTS_DIR / "estimand_glossary.csv", index=False)
 
     lines = [
-        "# Estimand Framing Draft",
+        "# Estimand Framing Summary",
         "",
         f"Generated: {datetime.now().isoformat(timespec='seconds')}",
         "",
@@ -213,15 +213,15 @@ def write_outputs() -> None:
         "| annual Chicago mean | nine-month Chicago study-period mean | Chicago data do not cover a full year. |",
         "| reference monitors in all cities | Chicago AQS context monitors | Dhaka/Lucknow reference markers are not used in the current Figure 1 map package. |",
         "",
-        "## Methods Paragraph Draft",
+        "## Methods Text",
         "",
         "For each city and time window, we defined the target estimand as the arithmetic mean of sensor-level PM2.5 means across the deployed network after the inherited QA/QC and calibration pipeline. We then drew simple random samples without replacement from that finite network and compared each subnetwork estimate with the deployed reference-network mean. The resulting MdAPE and absolute-error curves therefore quantify reference-network mean reproducibility, not population-weighted exposure or regulatory compliance.",
         "",
-        "## Results Paragraph Draft",
+        "## Results Text",
         "",
         "Adding Chicago extends the finite-population reproducibility analysis to a lower-concentration, higher-density low-cost-sensor deployment. Chicago results should be labeled as a nine-month study-period analysis using corrected low-cost sensors with collocation sites excluded from the primary finite population.",
         "",
-        "## Response-Letter Sentence",
+        "## Revision Note",
         "",
         "We revised the framing throughout to clarify that the analysis estimates the reproducibility of a deployed reference-network mean; we do not claim that random subnetworks recover a true city-wide exposure or area-weighted PM2.5 field.",
         "",

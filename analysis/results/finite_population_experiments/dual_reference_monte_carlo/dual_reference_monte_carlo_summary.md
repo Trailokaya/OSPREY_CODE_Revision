@@ -23,7 +23,7 @@ This output joins two reference targets side by side for the same N*=50 selected
 - Lucknow, daily, Random: selected-ref `4.29%` / `1.719` µg/m³; full-ref `4.51%` / `1.784` µg/m³; delta `0.07` pct-pt / `0.025` µg/m³.
 - Lucknow, period, Random: selected-ref `5.44%` / `3.371` µg/m³; full-ref `5.60%` / `3.462` µg/m³; delta `0.09` pct-pt / `0.058` µg/m³.
 
-## Audit Result
+## Retained Output Check
 
 - Checks run: `66`
 - Failed checks: `0`

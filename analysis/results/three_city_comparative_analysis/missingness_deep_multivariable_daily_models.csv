@@ -1,10 +1,10 @@
 city,model,n_days,predictor,coefficient_missing_pct_points_per_1sd,permutation_p_value,model_r_squared
-Chicago,daily_missing_pct ~ daily_mean_pm25 + daily_spatial_cv + calendar_time,241,daily_mean_pm25,-0.03424332440834313,0.4459108178364327,0.013910290566885863
-Chicago,daily_missing_pct ~ daily_mean_pm25 + daily_spatial_cv + calendar_time,241,daily_spatial_cv,0.037293735208386976,0.41131773645270947,0.013910290566885863
-Chicago,daily_missing_pct ~ daily_mean_pm25 + daily_spatial_cv + calendar_time,241,calendar_time,0.038428084588728345,0.365126974605079,0.013910290566885863
-Dhaka,daily_missing_pct ~ daily_mean_pm25 + daily_spatial_cv + calendar_time,365,daily_mean_pm25,-0.6613799972819249,0.4461107778444311,0.07246124284215982
-Dhaka,daily_missing_pct ~ daily_mean_pm25 + daily_spatial_cv + calendar_time,365,daily_spatial_cv,-0.9367647368347979,0.15676864627074585,0.07246124284215982
-Dhaka,daily_missing_pct ~ daily_mean_pm25 + daily_spatial_cv + calendar_time,365,calendar_time,-2.590043483474914,0.001999600079984003,0.07246124284215982
+Chicago,daily_missing_pct ~ daily_mean_pm25 + daily_spatial_cv + calendar_time,272,daily_mean_pm25,-0.03837862561865132,0.35392921415716855,0.01644057393487075
+Chicago,daily_missing_pct ~ daily_mean_pm25 + daily_spatial_cv + calendar_time,272,daily_spatial_cv,0.027339807650625464,0.4921015796840632,0.01644057393487075
+Chicago,daily_missing_pct ~ daily_mean_pm25 + daily_spatial_cv + calendar_time,272,calendar_time,0.04913305863442297,0.1839632073585283,0.01644057393487075
+Dhaka,daily_missing_pct ~ daily_mean_pm25 + daily_spatial_cv + calendar_time,365,daily_mean_pm25,-0.6613799972819249,0.44631073785242953,0.07246124284215982
+Dhaka,daily_missing_pct ~ daily_mean_pm25 + daily_spatial_cv + calendar_time,365,daily_spatial_cv,-0.9367647368347979,0.15576884623075385,0.07246124284215982
+Dhaka,daily_missing_pct ~ daily_mean_pm25 + daily_spatial_cv + calendar_time,365,calendar_time,-2.590043483474914,0.002599480103979204,0.07246124284215982
 Lucknow,daily_missing_pct ~ daily_mean_pm25 + daily_spatial_cv + calendar_time,365,daily_mean_pm25,-2.4763980473693703,0.0001999600079984003,0.3393932210114924
-Lucknow,daily_missing_pct ~ daily_mean_pm25 + daily_spatial_cv + calendar_time,365,daily_spatial_cv,0.5192411822609202,0.1783643271345731,0.3393932210114924
+Lucknow,daily_missing_pct ~ daily_mean_pm25 + daily_spatial_cv + calendar_time,365,daily_spatial_cv,0.5192411822609202,0.1793641271745651,0.3393932210114924
 Lucknow,daily_missing_pct ~ daily_mean_pm25 + daily_spatial_cv + calendar_time,365,calendar_time,4.5020448916178415,0.0001999600079984003,0.3393932210114924

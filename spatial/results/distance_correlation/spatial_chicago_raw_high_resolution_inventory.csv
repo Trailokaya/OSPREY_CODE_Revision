@@ -1,3 +1,3 @@
 dataset,path,exists,row_count,sensor_column_count,timestamp_min,timestamp_max,median_timestamp_gap_seconds,p90_timestamp_gap_seconds,total_non_null_sensor_readings,median_non_null_readings_per_sensor,p10_non_null_readings_per_sensor,p90_non_null_readings_per_sensor
-highest_resolution_individual_lcs_corrected_pm25,data/local_chicago_lcs_wide/highest_resolution_individual_lcs_corrected_pm25.parquet,True,5442031,286,2025-08-31 19:00:05.181000,2026-04-30 18:59:56,2.938,8.596,5773343,20103.0,18945.5,20419.0
-highest_resolution_individual_lcs_raw_pm25,data/local_chicago_lcs_wide/highest_resolution_individual_lcs_raw_pm25.parquet,True,5442031,286,2025-08-31 19:00:05.181000,2026-04-30 18:59:56,2.938,8.596,5773343,20103.0,18945.5,20419.0
+highest_resolution_individual_lcs_corrected_pm25,data/local_chicago_lcs_wide/highest_resolution_individual_lcs_corrected_pm25.parquet,False,0,0,,,,,0,,,
+highest_resolution_individual_lcs_raw_pm25,data/local_chicago_lcs_wide/highest_resolution_individual_lcs_raw_pm25.parquet,False,0,0,,,,,0,,,

@@ -1,4 +1,4 @@
 dataset_key,city,sensor_count,total_missing_cells,top_10pct_sensors_missing_cell_share_pct,top_20pct_sensors_missing_cell_share_pct,sensors_below_90pct_uptime,sensors_below_75pct_uptime,sensors_below_50pct_uptime,sensors_with_gap_gt_30d,sensors_with_gap_gt_90d
 dhaka_lcs,Dhaka,35,43548,26.724533847708276,40.95480848718655,22,4,0,5,0
 lucknow_lcs,Lucknow,71,176271,29.884098915873853,45.405086486149166,55,37,7,37,13
-chicago_lcs_corrected_no_collocation,Chicago,277,1887,84.57869634340223,88.28828828828829,17,11,4,10,3
+chicago_lcs_corrected_no_collocation,Chicago,277,2104,86.02661596958175,89.49619771863118,18,10,4,11,4

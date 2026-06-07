@@ -8,6 +8,7 @@ openpyxl>=3.1
 # Plotting
 matplotlib>=3.8
 cartopy>=0.25.0
+shapely>=2.0
 
 # Notebook execution/review
 jupyter>=1.0

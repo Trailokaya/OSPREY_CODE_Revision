@@ -524,7 +524,7 @@ def write_report(
     ].copy()
 
     lines = [
-        "# Missingness Deep-Dive Audit",
+        "# Missingness Deep-Dive Summary",
         "",
         "## Scope",
         "",
@@ -645,9 +645,9 @@ def write_report(
         "- `missingness_deep_sensor_concentration.csv`",
         "- `missingness_deep_sensor_spatial_moran.csv`",
         "- `missingness_deep_reference_mean_sensitivity.csv`",
-        "- `missingness_deep_dive_audit.md`",
+        "- `missingness_deep_dive_summary.md`",
     ]
-    (OUTPUT_DIR / "missingness_deep_dive_audit.md").write_text("\n".join(lines) + "\n")
+    (OUTPUT_DIR / "missingness_deep_dive_summary.md").write_text("\n".join(lines) + "\n")
 
 
 def main() -> None:
@@ -684,7 +684,7 @@ def main() -> None:
         "random_seed": RANDOM_SEED,
         "n_permutations": N_PERMUTATIONS,
         "high_missing_thresholds": HIGH_MISSING_THRESHOLDS,
-        "outputs": sorted([*outputs.keys(), "missingness_deep_dive_audit.md"]),
+        "outputs": sorted([*outputs.keys(), "missingness_deep_dive_summary.md"]),
         "limitation": "Diagnostics use observed data only and cannot prove formal MCAR/MAR/MNAR mechanisms.",
     }
     (OUTPUT_DIR / "missingness_deep_metadata.json").write_text(json.dumps(metadata, indent=2))
@@ -698,7 +698,7 @@ def main() -> None:
         spatial_moran,
         sensitivity,
     )
-    print(f"Wrote missingness deep-dive audit to {OUTPUT_DIR.relative_to(REPO_ROOT)}")
+    print(f"Wrote missingness deep-dive summary to {OUTPUT_DIR.relative_to(REPO_ROOT)}")
     print(
         multivariable.assign(abs_coeff=multivariable["coefficient_missing_pct_points_per_1sd"].abs())
         .sort_values(["city", "abs_coeff"], ascending=[True, False])
