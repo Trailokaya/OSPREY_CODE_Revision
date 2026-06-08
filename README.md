@@ -7,8 +7,6 @@ Code and retained analysis outputs for the manuscript:
 Authors: Trailokaya Raj Bajgain, Zachary D. Calhoun, Sachchida Nand Tripathi, Abdus Salam,
 Vaishali Jain, Sandeep Madhwal, Shahid Uz Zaman, Shatabdi Roy, Michael Bergin, and David Carlson.
 
-Journal: ACS ES&T Air.
-
 Manuscript ID: ea-2026-00035e.
 
 Correspondence: david.carlson@duke.edu and michael.bergin@duke.edu.
@@ -29,7 +27,7 @@ reviewed the retained package and take full responsibility for its contents.
 ## Figure Scope
 
 The paper-facing plot tree, `paper/Manuscript_and_SI/Plots/`, contains the PDFs referenced by the manuscript
-and SI LaTeX files, plus same-basename 600 DPI PNG copies for ACS ES&T Air submission: 5 main-text figure
+and SI LaTeX files, plus same-basename 600 DPI PNG copies for submission requirements: 5 main-text figure
 files, 22 SI figure files, and 1 TOC graphic. Additional plots under `analysis/`, `monte_carlo/`,
 `missingness/`, and `spatial/` are retained source or supporting analysis outputs referenced from the
 manuscript/SI as released analysis outputs; they are not additional paper figures.

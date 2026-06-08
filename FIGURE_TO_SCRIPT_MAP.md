@@ -1,13 +1,13 @@
 # Figure / Table → Script → Data Traceability
 
 Every figure and table in the final manuscript and SI is mapped to the script that
-produces it and the data that script reads. The "as-published filename" is what the LaTeX `\includegraphics`
+produces it and the data that script reads. The "paper-facing filename" is what the LaTeX `\includegraphics`
 points to. Many scripts emit a different internal stem during a rerun; the retained paper-facing assets are
 the renamed files under `paper/Manuscript_and_SI/Plots/`.
 
 ## Main text
 
-| Fig | As-published file | Canonical script | Internal stem | Key direct inputs | Verified |
+| Fig | Paper-facing file | Canonical script | Internal stem | Key direct inputs | Verified |
 |---|---|---|---|---|---|
 | 1 | `three_city_sensor_network_reference_monitor_map.pdf` | `maps/scripts/build_manuscript_map_package.py` | `F1_sensor_network_reference_monitor_map` | `data/locations/*`, `data/geo/*` | re-run ✓ |
 | 2a | `period_mdape_vs_sample_size.pdf` | `monte_carlo/scripts/plot_main_monte_carlo.py` | `F2A_period_mdape_common_n2_30` | `monte_carlo/results/runs/p0_baseline_updated_chicago_may31_plus_madhwal_10000_20260602/mc_summary/p0_baseline_summary.parquet` | re-run ✓ |
@@ -17,7 +17,7 @@ the renamed files under `paper/Manuscript_and_SI/Plots/`.
 
 ## Supporting Information
 
-| SI | As-published file | Canonical script | Key direct inputs | Verified |
+| SI | Paper-facing file | Canonical script | Key direct inputs | Verified |
 |---|---|---|---|---|
 | 1 | `chicago_pm25_lcs_aqs_daily_period_map.pdf` | `analysis/scripts/build_chicago_si1_pm25_reference_map.py` | `data/pm/Chicago_{LCS_corrected_daily,AQS_daily}_PM25.csv`, `data/locations/Chicago_*`, `data/geo/Chicago_*` | re-run ✓ |
 | 2 | `three_city_empirical_variogram_binned_by_city.pdf` | `spatial/scripts/build_spatial_distance_correlation_analysis.py` | `data/pm/*_hourly_PM25.csv` (3 cities), `data/locations/*` | provenance ✓ |
@@ -42,9 +42,9 @@ the renamed files under `paper/Manuscript_and_SI/Plots/`.
 
 ## Table of Contents Graphic
 
-| Asset | As-published file | Source | Key direct inputs | Verified |
+| Asset | Paper-facing file | Source | Key direct inputs | Verified |
 |---|---|---|---|---|
-| TOC | `TOC_v2.pdf` | static manuscript graphic retained in `paper/Manuscript_and_SI/Plots/TOC/` | final paper graphic asset | retained ✓ |
+| TOC | `TOC_v2.pdf` + `TOC_v2.png` | `paper/Manuscript_and_SI/Plots/TOC/build_toc_graphic_v2.py` | `monte_carlo/plots/figure_data/period_error_curves.csv`; `analysis/results/three_city_comparative_analysis/comparative_sensor_level_summary.csv` | re-run ✓ |
 
 ## Shared helpers (imported, not standalone outputs)
 

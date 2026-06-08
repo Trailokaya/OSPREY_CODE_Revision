@@ -1,5 +1,5 @@
 """
-Generate reviewer-requested figures for the ACS ES&T Air revision.
+Generate reviewer-requested figures for the manuscript revision.
 
 Creates:
   Figure SI 12 - Estimand-framing schematic (Reviewer 3 #19)
