@@ -119,9 +119,9 @@ This report adds the missing three-city estimator diagnostics needed before fina
 
 ```json
 {
-  "created_at": "2026-06-08T12:05:18",
-  "completed_at": "2026-06-08T12:06:12",
-  "duration_seconds": 53.91515908399742,
+  "created_at": "2026-06-08T16:20:19",
+  "completed_at": "2026-06-08T16:21:15",
+  "duration_seconds": 55.78552537500218,
   "draws": 10000,
   "master_seed": 20260522,
   "qce_sample_sizes": [
@@ -244,6 +244,6 @@ This report adds the missing three-city estimator diagnostics needed before fina
       }
     }
   },
-  "git_commit": "dac2bfb32a8b9e577adc209e444d1af060e8f5ba"
+  "git_commit": "accb6e0f4120ace5cc1c4ff37346ac12f24f1aae"
 }
 ```

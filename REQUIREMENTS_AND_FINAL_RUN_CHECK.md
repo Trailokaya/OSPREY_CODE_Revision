@@ -156,3 +156,40 @@ Additional checks:
 | Manuscript plot mirrors | pass: regenerated paper PDF/PNG copies match retained analysis outputs for updated figures |
 | Markdown stale-value scan | pass: no tracked Markdown retains the old sensor-count range, old SI-F11 counts, old GLS caveat, or obsolete Dhaka division-boundary reference |
 | Dhaka boundary files | pass: retained plot scripts use `Dhaka_City_admin6.geojson` for shading and `Dhaka_District_admin5.geojson` for outline |
+
+## June 8 Full Rerun For Updated Plot Files
+
+The canonical Monte Carlo run and downstream manuscript-facing builders were rerun before pushing the updated
+plot files. The Monte Carlo command used the retained manuscript seed and run ID:
+
+```bash
+../Manuscript\ Revision/.venv/bin/python monte_carlo/scripts/run_main_monte_carlo.py \
+  --run-id p0_baseline_updated_chicago_may31_plus_madhwal_10000_20260602 \
+  --datasets dhaka_lcs,lucknow_lcs,lucknow_madhwal_lcs,chicago_lcs_corrected_no_collocation,chicago_lcs_corrected_all,chicago_lcs_raw_no_collocation,chicago_lcs_raw_all,chicago_aqs \
+  --draws 10000 \
+  --master-seed 20260522 \
+  --max-daily-n 50 \
+  --max-period-n 300 \
+  --n-jobs 0 \
+  --overwrite
+```
+
+The main README figure, SI, missingness, spatial, stationarity, finite-population plot-only, and consolidated
+SI builders were then rerun with the same project environment.
+
+Final verification results:
+
+| Check | Result |
+|---|---|
+| Canonical Monte Carlo run | pass: run ID `p0_baseline_updated_chicago_may31_plus_madhwal_10000_20260602`, master seed `20260522`, 100,221 summary rows |
+| Figure 2 period MdAPE at `n=10` | pass: Dhaka 3.893408%, Lucknow 5.640595%, Chicago 1.904133% |
+| Figure 3 across-day median daily MdAPE at `n=10` | pass: Dhaka 5.752410%, Lucknow 4.499974%, Chicago 2.606671% |
+| Placement fixed-random period MdAPE at `n=10` | pass: Dhaka 3.924346%, Lucknow 5.583475%, Chicago 1.921026% |
+| SI-F11 Bonferroni exclusions | pass: Dhaka 2/35, Lucknow 4/71, Chicago 12/277 |
+| Period model-based RSE `<=10%` | pass: Dhaka `n=5`, Lucknow `n=8`, Chicago `n=2` |
+| Paper plot PDF/PNG coverage | pass: 28 same-basename PDF/PNG pairs |
+| Paper PNG density metadata | pass: all retained paper PNGs report 600 DPI |
+| Source-to-paper plot mirrors | pass for regenerated main Monte Carlo, SI-F11, and SI-20 spot checks |
+
+The rerun also generated large draw-extreme outputs under the Monte Carlo run directory. Those files were
+deleted after verification because they are reproducible and are not part of the retained GitHub package.

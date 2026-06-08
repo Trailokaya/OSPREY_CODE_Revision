@@ -2,36 +2,36 @@
   "available_cpu_count": 12,
   "draws": 10000,
   "effective_jobs": 12,
-  "generated_at": "2026-05-28T07:40:20.049132+00:00",
-  "git_commit": "bc064f2caba43e9a7d6ec2a6cb2b8a2ca026a018",
+  "generated_at": "2026-06-08T10:26:27.035346+00:00",
+  "git_commit": "accb6e0f4120ace5cc1c4ff37346ac12f24f1aae",
   "master_seed": 20260522,
   "panels": {
     "chicago_lcs_corrected_no_collocation": {
       "city": "Chicago",
       "input_hashes": {
-        "daily_pm": "db36e91b5d43e932e2f20717c11e784b6a39866cdd0535aae0cb23ce1aa6f90a",
-        "hourly_pm": "89c3de4b17a6383ec726bdbcc6493ff730bf38dc023f69bbb6ea3f9a59c4be2d",
-        "locations": "6e2da44a1d3b7ea9225afa3fd4f09854de3fa589112d28d31b492d7b730d4e6c"
+        "daily_pm": "3ee4e821cb90da5ca9b1a5c5079c34a4a3f486f699ada94f061f727b0a75e2e0",
+        "hourly_pm": "12e2e8182818b9610841b9636deebeeb77860509fbc1d095f88913c18cae8696",
+        "locations": "67d4ecc273939ca8f1af56b39f4098d2ed19c2a177577b58bda2eecb44d3d89b"
       },
       "preprocessing": {
-        "daily_date_max": "2026-04-30",
+        "daily_date_max": "2026-05-31",
         "daily_date_min": "2025-09-01",
-        "daily_pm_hash": "db36e91b5d43e932e2f20717c11e784b6a39866cdd0535aae0cb23ce1aa6f90a",
+        "daily_pm_hash": "3ee4e821cb90da5ca9b1a5c5079c34a4a3f486f699ada94f061f727b0a75e2e0",
         "daily_pm_path": "data/pm/Chicago_LCS_corrected_daily_PM25.csv",
-        "daily_rows": 242,
+        "daily_rows": 273,
         "daily_value_source": "official_daily_lcs_corrected",
         "dropped_all_nan_sensor_count": 0,
         "dropped_all_nan_sensors": [],
-        "hourly_pm_hash": "89c3de4b17a6383ec726bdbcc6493ff730bf38dc023f69bbb6ea3f9a59c4be2d",
+        "hourly_pm_hash": "12e2e8182818b9610841b9636deebeeb77860509fbc1d095f88913c18cae8696",
         "hourly_pm_path": "data/pm/Chicago_LCS_corrected_hourly_PM25.csv",
-        "hourly_timestamp_max": "2026-04-30 18:00:00",
+        "hourly_timestamp_max": "2026-05-31 23:00:00",
         "hourly_timestamp_min": "2025-08-31 19:00:00",
         "location_path": "data/locations/Chicago_LCS_corrected_sensor_locations.csv",
-        "locations_hash": "6e2da44a1d3b7ea9225afa3fd4f09854de3fa589112d28d31b492d7b730d4e6c",
+        "locations_hash": "67d4ecc273939ca8f1af56b39f4098d2ed19c2a177577b58bda2eecb44d3d89b",
         "retained_sensor_count": 277,
-        "source_rows": 5808,
+        "source_rows": 6557,
         "source_sensor_columns": 277,
-        "valid_timestamp_rows": 5808
+        "valid_timestamp_rows": 6557
       },
       "sensor_count": 277
     },
@@ -94,9 +94,9 @@
       "sensor_count": 71
     }
   },
-  "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+  "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
   "requested_jobs": 0,
-  "runtime_seconds": 127.988,
+  "runtime_seconds": 146.655,
   "scenarios": {
     "S0_baseline": {
       "daily_min_hours": 1,

@@ -8,7 +8,7 @@
     "chicago_lcs_raw_no_collocation": "raw_no_collocation"
   },
   "draws": 10000,
-  "generated_at": "2026-06-08T06:25:31.430273+00:00",
+  "generated_at": "2026-06-08T10:27:41.553357+00:00",
   "input_hashes": {
     "aqs_daily": "fd06547ab290361621d7b2cb696b2bd4c3eb1cf2154688d1ba81c2c89cb6972b",
     "corrected_daily": "3ee4e821cb90da5ca9b1a5c5079c34a4a3f486f699ada94f061f727b0a75e2e0",
@@ -16,6 +16,6 @@
     "raw_daily": "07b78a967ea33f228ead5e26d182cdad25033d01f1b83d44b86008d67d4bedf1"
   },
   "master_seed": 20260522,
-  "runtime_seconds": 54.065,
+  "runtime_seconds": 53.769,
   "script": "analysis/scripts/build_chicago_sensitivity.py"
 }

@@ -8,6 +8,6 @@
     20
   ],
   "baseline_run": "monte_carlo/results/runs/p0_baseline_updated_chicago_may31_plus_madhwal_10000_20260602",
-  "git_commit": "dac2bfb32a8b9e577adc209e444d1af060e8f5ba",
-  "created_at": "2026-06-08T12:18:01"
+  "git_commit": "accb6e0f4120ace5cc1c4ff37346ac12f24f1aae",
+  "created_at": "2026-06-08T16:08:58"
 }

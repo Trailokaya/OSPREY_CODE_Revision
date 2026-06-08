@@ -1,6 +1,6 @@
 # Practical Recommendations
 
-Generated: 2026-06-06T23:16:41
+Generated: 2026-06-08T16:11:47
 
 | decision_context | recommendation | rationale | manuscript_location | caveat |
 | --- | --- | --- | --- | --- |

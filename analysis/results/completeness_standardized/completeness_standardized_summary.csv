@@ -1,11 +1,11 @@
 dataset_key,city,scenario,description,retained_sensors,period_sensors_with_values,period_required_n_mdape_le_5,daily_required_n_95pct_days_mdape_le_10,median_daily_valid_sensors,min_daily_valid_sensors,p05_daily_valid_sensors,mean_daily_missing_fraction,m5_seed
-chicago_lcs_corrected_no_collocation,Chicago,S0_baseline,Use all available daily values; retain all primary sensors.,277,277,2,2,270.0,0,268.0,0.028269236506847272,2289085951
-chicago_lcs_corrected_no_collocation,Chicago,S1_daily_18h,Require at least 18 valid hourly records per sensor-day.,277,277,2,2,269.0,0,260.05,0.03528060387266164,197582826
-chicago_lcs_corrected_no_collocation,Chicago,S2_daily_12h,Require at least 12 valid hourly records per sensor-day.,277,277,2,2,269.0,0,261.0,0.03450487812155026,639655522
-chicago_lcs_corrected_no_collocation,Chicago,S3_period_75pct,Retain only sensors with at least 75% hourly uptime over the study period.,269,269,2,2,266.0,0,264.0,0.01445512918983688,1089743133
-chicago_lcs_corrected_no_collocation,Chicago,S4_daily_18h_period_75pct,Combine the 18-hour daily rule with the 75% period-uptime rule.,269,269,2,2,265.0,0,258.0,0.02055362683953425,3889303512
-chicago_lcs_corrected_no_collocation,Chicago,S5_drop_gap_gt_30d,Drop sensors with any continuous missing gap longer than 30 days.,267,267,2,2,265.0,0,262.0,0.012690748135079106,4268346594
-chicago_lcs_corrected_no_collocation,Chicago,S6_period_50pct,Retain only sensors with at least 50% hourly uptime over the study period.,274,274,2,2,269.0,0,267.0,0.021008023164625696,3112069151
+chicago_lcs_corrected_no_collocation,Chicago,S0_baseline,Use all available daily values; retain all primary sensors.,277,277,2,2,270.0,0,268.0,0.0279287499504106,2289085951
+chicago_lcs_corrected_no_collocation,Chicago,S1_daily_18h,Require at least 18 valid hourly records per sensor-day.,277,277,2,2,269.0,0,261.0,0.034514222239854,197582826
+chicago_lcs_corrected_no_collocation,Chicago,S2_daily_12h,Require at least 12 valid hourly records per sensor-day.,277,277,2,2,269.0,0,261.6,0.03376046336335145,639655522
+chicago_lcs_corrected_no_collocation,Chicago,S3_period_75pct,Retain only sensors with at least 75% hourly uptime over the study period.,269,269,2,2,266.0,0,264.0,0.014120947206449089,1089743133
+chicago_lcs_corrected_no_collocation,Chicago,S4_daily_18h_period_75pct,Combine the 18-hour daily rule with the 75% period-uptime rule.,269,269,2,2,265.0,0,258.0,0.019731198169859895,3889303512
+chicago_lcs_corrected_no_collocation,Chicago,S5_drop_gap_gt_30d,Drop sensors with any continuous missing gap longer than 30 days.,266,266,2,2,264.0,0,261.0,0.012063124845079747,4268346594
+chicago_lcs_corrected_no_collocation,Chicago,S6_period_50pct,Retain only sensors with at least 50% hourly uptime over the study period.,274,274,2,2,269.0,0,267.0,0.020694633833319973,3112069151
 dhaka_lcs,Dhaka,S0_baseline,Use all available daily values; retain all primary sensors.,35,35,10,10,33.0,15,16.0,0.09354207436399216,2987818385
 dhaka_lcs,Dhaka,S1_daily_18h,Require at least 18 valid hourly records per sensor-day.,35,35,10,10,30.0,7,14.0,0.16227005870841488,1262914664
 dhaka_lcs,Dhaka,S2_daily_12h,Require at least 12 valid hourly records per sensor-day.,35,35,7,10,32.0,14,16.0,0.11295499021526419,3154025242

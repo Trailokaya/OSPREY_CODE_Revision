@@ -36,13 +36,13 @@
     "chicago_aqs"
   ],
   "task_count": 1632,
-  "started_at": "2026-06-02T13:08:01",
+  "started_at": "2026-06-08T16:01:33",
   "repo_root": "<repository-root>",
-  "git_commit": "bc064f2caba43e9a7d6ec2a6cb2b8a2ca026a018",
-  "python": "3.12.12 | packaged by conda-forge | (main, Oct 22 2025, 23:34:53) [Clang 19.1.7 ]",
-  "platform": "macOS-26.5-arm64-arm-64bit",
-  "numpy_version": "2.4.5",
+  "git_commit": "accb6e0f4120ace5cc1c4ff37346ac12f24f1aae",
+  "python": "3.14.2 (main, Dec  5 2025, 16:49:16) [Clang 17.0.0 (clang-1700.4.4.1)]",
+  "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "numpy_version": "2.4.6",
   "pandas_version": "3.0.3",
-  "completed_at": "2026-06-02T13:11:41",
-  "duration_seconds": 220.19582208299835
+  "completed_at": "2026-06-08T16:05:12",
+  "duration_seconds": 218.71425629100122
 }

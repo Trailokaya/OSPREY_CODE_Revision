@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08T12:09:37",
+  "generated_at": "2026-06-08T16:20:18",
   "bonferroni_alpha": 0.05,
   "method": "source-resolution AR(1) effective-n Bonferroni normal CI",
   "datasets": {
