@@ -8,7 +8,7 @@ This report adds the missing three-city estimator diagnostics needed before fina
 
 - Student-t critical values use a Cornish-Fisher approximation because SciPy is not a repository dependency.
 - Lognormal confidence intervals use a delta-method interval for `log(mean) = log_mu + log_sigma²/2` with finite-population correction.
-- SI-F11 CIs use daily sensor means with an AR(1) effective-sample-size approximation, not a full GLS fit.
+- SI-F11 CIs use daily sensor means with a gap-aware AR(1) GLS mean and variance.
 
 ## Selected 95% Daily QCE
 
@@ -100,28 +100,28 @@ This report adds the missing three-city estimator diagnostics needed before fina
 
 ## SI-F11 City Summary
 
-| dataset_key | city | sensors | reference_mean_pm25_ugm3 | sensors_ci_excludes_reference | sensors_long_gap_gt_30d | median_daily_presence_pct | median_ar1_effective_n | max_longest_gap_days |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| dhaka_lcs | Dhaka | 35 | 55.147 | 1 | 5 | 92.603 | 19.812 | 46.000 |
-| lucknow_lcs | Lucknow | 71 | 61.802 | 3 | 37 | 81.370 | 12.827 | 326.000 |
-| chicago_lcs_corrected_no_collocation | Chicago | 277 | 10.253 | 11 | 11 | 99.634 | 77.793 | 181.000 |
+| dataset_key | city | sensors | reference_mean_pm25_ugm3 | sensors_ci_excludes_reference | sensors_long_gap_gt_30d | median_daily_presence_pct | median_ar1_effective_n | median_gls_effective_n | max_longest_gap_days |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| dhaka_lcs | Dhaka | 35 | 55.147 | 2 | 5 | 92.603 | 19.812 | 22.056 | 46.000 |
+| lucknow_lcs | Lucknow | 71 | 61.802 | 4 | 37 | 81.370 | 12.827 | 15.645 | 326.000 |
+| chicago_lcs_corrected_no_collocation | Chicago | 277 | 10.253 | 12 | 11 | 99.634 | 77.793 | 78.759 | 181.000 |
 
 
 ## Plot Files
 
-- `analysis/plots/estimator_diagnostics/Table1_QCE_daily_median_by_city_estimator.png` and `.pdf`
-- `analysis/plots/estimator_diagnostics/SI_F6_RSE_normal_daily_sensor_requirement.png` and `.pdf`
-- `analysis/plots/estimator_diagnostics/SI_F7_RSE_lognormal_daily_sensor_requirement.png` and `.pdf`
-- `analysis/plots/estimator_diagnostics/SI_F8_RSE_exceedance_curves.png` and `.pdf`
-- `analysis/plots/estimator_diagnostics/SI_F11_period_sensor_means_bonferroni_ci.png` and `.pdf`
+- `/Users/guru/Documents/Macbook Pro/Manuscript Final Codes/OSPREY_CODE_Revision/analysis/plots/estimator_diagnostics/Table1_QCE_daily_median_by_city_estimator.png` and `.pdf`
+- `/Users/guru/Documents/Macbook Pro/Manuscript Final Codes/OSPREY_CODE_Revision/analysis/plots/estimator_diagnostics/SI_F6_RSE_normal_daily_sensor_requirement.png` and `.pdf`
+- `/Users/guru/Documents/Macbook Pro/Manuscript Final Codes/OSPREY_CODE_Revision/analysis/plots/estimator_diagnostics/SI_F7_RSE_lognormal_daily_sensor_requirement.png` and `.pdf`
+- `/Users/guru/Documents/Macbook Pro/Manuscript Final Codes/OSPREY_CODE_Revision/analysis/plots/estimator_diagnostics/SI_F8_RSE_exceedance_curves.png` and `.pdf`
+- `/Users/guru/Documents/Macbook Pro/Manuscript Final Codes/OSPREY_CODE_Revision/analysis/plots/estimator_diagnostics/SI_F11_period_sensor_means_bonferroni_ci.png` and `.pdf`
 
 ## Metadata
 
 ```json
 {
-  "created_at": "2026-06-02T14:36:09",
-  "completed_at": "2026-06-02T14:36:22",
-  "duration_seconds": 12.749205290994723,
+  "created_at": "2026-06-08T12:05:18",
+  "completed_at": "2026-06-08T12:06:12",
+  "duration_seconds": 53.91515908399742,
   "draws": 10000,
   "master_seed": 20260522,
   "qce_sample_sizes": [
@@ -135,16 +135,17 @@ This report adds the missing three-city estimator diagnostics needed before fina
     0.9,
     0.95
   ],
+  "skip_qce": false,
   "rse_target": 0.1,
   "bonferroni_alpha": 0.05,
-  "requested_jobs": 0,
-  "effective_jobs": 12,
+  "requested_jobs": 1,
+  "effective_jobs": 1,
   "compute_resources": {
-    "requested_jobs": 0,
-    "effective_jobs": 12,
+    "requested_jobs": 1,
+    "effective_jobs": 1,
     "available_cpu_count": 12,
     "total_memory_gb": 24.0,
-    "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
     "blas_thread_environment": {
       "OMP_NUM_THREADS": "1",
       "OPENBLAS_NUM_THREADS": "1",
@@ -156,7 +157,7 @@ This report adds the missing three-city estimator diagnostics needed before fina
   },
   "critical_value_method": "Cornish-Fisher Student-t approximation",
   "lognormal_ci_method": "delta method on lognormal mean with finite-population correction",
-  "si_f11_ci_method": "Bonferroni normal critical value on daily sensor means with AR(1) effective sample size",
+  "si_f11_ci_method": "Bonferroni normal critical value on daily sensor means with gap-aware AR(1) GLS variance",
   "datasets": {
     "dhaka_lcs": {
       "spec": {
@@ -243,6 +244,6 @@ This report adds the missing three-city estimator diagnostics needed before fina
       }
     }
   },
-  "git_commit": "bc064f2caba43e9a7d6ec2a6cb2b8a2ca026a018",
+  "git_commit": "dac2bfb32a8b9e577adc209e444d1af060e8f5ba"
 }
 ```

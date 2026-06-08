@@ -377,11 +377,9 @@ def summarize_estimates(
     rse_normal = np.nan
     if reference_mean != 0 and np.isfinite(reference_sd):
         rse_normal = reference_sd / math.sqrt(sample_size) * fpc / abs(reference_mean) * 100.0
-    positive_estimates = sample_estimates[sample_estimates > 0]
-    rse_lognormal = np.nan
-    if len(positive_estimates) > 1:
-        log_sd = float(np.nanstd(np.log(positive_estimates), ddof=1))
-        rse_lognormal = math.sqrt(max(math.exp(log_sd**2) - 1.0, 0.0)) * fpc * 100.0
+    empirical_estimator_rse = np.nan
+    if reference_mean != 0 and len(sample_estimates) > 1:
+        empirical_estimator_rse = np.nanstd(sample_estimates, ddof=1) / abs(reference_mean) * 100.0
     estimate_quantiles = np.nanquantile(sample_estimates, [0.25, 0.5, 0.75, 0.95])
     bias_ugm3 = float(np.nanmean(sample_estimates) - reference_mean)
     bias_pct = np.nan
@@ -411,7 +409,9 @@ def summarize_estimates(
         "bias_ugm3": bias_ugm3,
         "bias_pct": float(bias_pct) if np.isfinite(bias_pct) else np.nan,
         "rse_normal_pct": float(rse_normal) if np.isfinite(rse_normal) else np.nan,
-        "rse_lognormal_pct": float(rse_lognormal) if np.isfinite(rse_lognormal) else np.nan,
+        "empirical_estimator_rse_pct": (
+            float(empirical_estimator_rse) if np.isfinite(empirical_estimator_rse) else np.nan
+        ),
     }
 
 

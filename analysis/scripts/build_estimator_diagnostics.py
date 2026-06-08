@@ -622,6 +622,38 @@ def effective_sample_size_ar1(n_observed: int, rho: float) -> float:
     return float(np.clip(estimate, 2.0, n_observed))
 
 
+def gap_aware_ar1_gls(
+    values: np.ndarray,
+    sd: float,
+    rho: float,
+) -> tuple[float, float, float]:
+    finite = np.isfinite(values)
+    observed = values[finite]
+    day_index = np.flatnonzero(finite)
+    n_observed = int(len(observed))
+    if n_observed < 2 or not np.isfinite(sd):
+        return float("nan"), float("nan"), float("nan")
+
+    distances = np.abs(day_index[:, None] - day_index[None, :])
+    correlation = rho ** distances
+    ones = np.ones(n_observed, dtype=np.float64)
+    try:
+        precision_ones = np.linalg.solve(correlation, ones)
+        precision_values = np.linalg.solve(correlation, observed)
+    except np.linalg.LinAlgError:
+        precision = np.linalg.pinv(correlation)
+        precision_ones = precision @ ones
+        precision_values = precision @ observed
+
+    information = float(ones @ precision_ones)
+    if not np.isfinite(information) or information <= 0:
+        return float(np.nanmean(observed)), float("nan"), float("nan")
+
+    mean = float(ones @ precision_values / information)
+    variance = float(sd**2 / information)
+    return mean, variance, information
+
+
 def build_sensor_ci(bundle: DatasetBundle) -> pd.DataFrame:
     sensor_count = len(bundle.sensor_ids)
     z_bonf = normal_quantile(1.0 - BONFERRONI_ALPHA / (2.0 * sensor_count))
@@ -633,11 +665,13 @@ def build_sensor_ci(bundle: DatasetBundle) -> pd.DataFrame:
         values = ci_values[:, idx]
         valid = values[np.isfinite(values)]
         n_observed = int(len(valid))
-        mean = float(np.nanmean(values)) if n_observed else np.nan
+        arithmetic_mean = float(np.nanmean(values)) if n_observed else np.nan
         sd = float(np.nanstd(values, ddof=1)) if n_observed > 1 else np.nan
         rho = lag1_autocorrelation(values)
-        n_eff = effective_sample_size_ar1(n_observed, rho) if n_observed > 1 else np.nan
-        se = sd / math.sqrt(n_eff) if np.isfinite(sd) and np.isfinite(n_eff) and n_eff > 0 else np.nan
+        ar1_n_eff = effective_sample_size_ar1(n_observed, rho) if n_observed > 1 else np.nan
+        gls_mean, gls_variance, gls_effective_n = gap_aware_ar1_gls(values, sd, rho)
+        mean = gls_mean if np.isfinite(gls_mean) else arithmetic_mean
+        se = math.sqrt(gls_variance) if np.isfinite(gls_variance) and gls_variance >= 0 else np.nan
         half_width = z_bonf * se if np.isfinite(se) else np.nan
         longest_gap_steps = longest_missing_gap(values)
         longest_gap_days = float(longest_gap_steps)
@@ -651,13 +685,15 @@ def build_sensor_ci(bundle: DatasetBundle) -> pd.DataFrame:
                 "sensor_id": sensor_id,
                 "station_name": bundle.station_names[idx],
                 "period_mean_pm25_ugm3": mean,
+                "arithmetic_period_mean_pm25_ugm3": arithmetic_mean,
                 "reference_mean_pm25_ugm3": reference_mean,
                 "mean_minus_reference_ugm3": mean - reference_mean if np.isfinite(mean) else np.nan,
-                "ci_basis": "daily_sensor_means",
+                "ci_basis": "daily_sensor_means_gap_aware_ar1_gls",
                 "daily_means_observed": n_observed,
                 "daily_presence_pct": daily_presence,
                 "lag1_autocorrelation": rho,
-                "ar1_effective_n": n_eff,
+                "ar1_effective_n": ar1_n_eff,
+                "gls_effective_n": gls_effective_n,
                 "sd_pm25_ugm3": sd,
                 "bonferroni_z": z_bonf,
                 "ci_low_ugm3": ci_low,
@@ -689,6 +725,7 @@ def build_sensor_ci_summary(sensor_ci: pd.DataFrame) -> pd.DataFrame:
                 "sensors_long_gap_gt_30d": int(frame["long_gap_gt_30d"].sum()),
                 "median_daily_presence_pct": float(frame["daily_presence_pct"].median()),
                 "median_ar1_effective_n": float(frame["ar1_effective_n"].median()),
+                "median_gls_effective_n": float(frame["gls_effective_n"].median()),
                 "max_longest_gap_days": float(frame["longest_missing_gap_days"].max()),
             }
         )
@@ -937,19 +974,30 @@ def write_report(
     sensor_ci_summary: pd.DataFrame,
     metadata: dict[str, Any],
 ) -> None:
-    selected_qce = qce_summary[
-        (qce_summary["nominal_coverage"] == 0.95)
-        & (qce_summary["sample_size"].isin([5, 10, 20]))
-    ][
-        [
-            "city",
-            "sample_size",
-            "estimator",
-            "days_evaluated",
-            "median_empirical_coverage",
-            "median_qce_pct_points",
-        ]
-    ].sort_values(["city", "sample_size", "estimator"])
+    selected_qce_columns = [
+        "city",
+        "sample_size",
+        "estimator",
+        "days_evaluated",
+        "median_empirical_coverage",
+        "median_qce_pct_points",
+    ]
+    qce_summary_required = set(selected_qce_columns) | {"nominal_coverage"}
+    qce_available = not qce_summary.empty and qce_summary_required.issubset(qce_summary.columns)
+    if qce_available:
+        selected_qce = qce_summary[
+            (qce_summary["nominal_coverage"] == 0.95)
+            & (qce_summary["sample_size"].isin([5, 10, 20]))
+        ][selected_qce_columns].sort_values(["city", "sample_size", "estimator"])
+    else:
+        selected_qce = pd.DataFrame(columns=selected_qce_columns)
+
+    qce_period_sort_columns = ["city", "sample_size", "estimator", "nominal_coverage"]
+    if not qce_period.empty and set(qce_period_sort_columns).issubset(qce_period.columns):
+        qce_period_display = qce_period.sort_values(qce_period_sort_columns)
+    else:
+        qce_period_display = qce_period
+
     exceedance_n20 = rse_exceedance[
         (rse_exceedance["n"] == 20)
         & (rse_exceedance["model"].isin(["normal", "lognormal"]))
@@ -969,15 +1017,15 @@ def write_report(
         "",
         "- Student-t critical values use a Cornish-Fisher approximation because SciPy is not a repository dependency.",
         "- Lognormal confidence intervals use a delta-method interval for `log(mean) = log_mu + log_sigma²/2` with finite-population correction.",
-        "- SI-F11 CIs use daily sensor means with an AR(1) effective-sample-size approximation, not a full GLS fit.",
+        "- SI-F11 CIs use daily sensor means with a gap-aware AR(1) GLS mean and variance.",
         "",
         "## Selected 95% Daily QCE",
         "",
-        markdown_table(selected_qce, max_rows=40),
+        markdown_table(selected_qce, max_rows=40) if qce_available else "_QCE was skipped for this run._\n",
         "",
         "## Period QCE",
         "",
-        markdown_table(qce_period.sort_values(["city", "sample_size", "estimator", "nominal_coverage"]), max_rows=40),
+        markdown_table(qce_period_display, max_rows=40) if qce_available else "_QCE was skipped for this run._\n",
         "",
         "## RSE Exceedance At n=20",
         "",
@@ -1107,6 +1155,7 @@ def main() -> None:
         "master_seed": args.master_seed,
         "qce_sample_sizes": list(args.qce_sample_sizes),
         "coverage_levels": list(DEFAULT_COVERAGE_LEVELS),
+        "skip_qce": bool(args.skip_qce),
         "rse_target": RSE_TARGET,
         "bonferroni_alpha": BONFERRONI_ALPHA,
         "requested_jobs": requested_jobs,
@@ -1114,7 +1163,7 @@ def main() -> None:
         "compute_resources": compute_resource_metadata(requested_jobs, jobs),
         "critical_value_method": "Cornish-Fisher Student-t approximation",
         "lognormal_ci_method": "delta method on lognormal mean with finite-population correction",
-        "si_f11_ci_method": "Bonferroni normal critical value on daily sensor means with AR(1) effective sample size",
+        "si_f11_ci_method": "Bonferroni normal critical value on daily sensor means with gap-aware AR(1) GLS variance",
         "datasets": {
             key: {
                 "spec": asdict(bundle.spec),

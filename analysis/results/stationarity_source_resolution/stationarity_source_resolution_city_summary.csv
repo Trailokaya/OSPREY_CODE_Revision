@@ -1,4 +1,4 @@
 dataset_key,city,network,source_frequency,sensors,reference_mean_pm25_ugm3,sensors_ci_excludes_reference,sensors_long_gap_gt_30d,median_source_record_uptime_pct,median_source_ar1_effective_n,median_source_lag1_autocorrelation,max_longest_gap_days
 dhaka_lcs,Dhaka,LCS,hourly,35,55.14721850399361,10,5,87.63698630136986,242.93968351967285,0.9349607416705893,46.5
 lucknow_lcs,Lucknow,LCS,hourly,71,61.802242631595966,23,37,73.21917808219177,177.05128205128221,0.9591714228638181,326.7083333333333
-chicago_lcs_corrected_no_collocation,Chicago,LCS corrected,official_daily,277,10.564665761550287,11,10,99.58677685950413,69.65846273521414,0.5509605047671954,150.0
+chicago_lcs_corrected_no_collocation,Chicago,LCS corrected,official_daily,277,10.253490712654873,11,11,99.63369963369964,77.79266359309173,0.5542528942011004,181.0

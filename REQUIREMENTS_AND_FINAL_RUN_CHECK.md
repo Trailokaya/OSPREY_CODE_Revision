@@ -1,6 +1,6 @@
 # Requirements And Final Environment Check
 
-Date: 2026-06-07
+Date: 2026-06-07; updated 2026-06-08
 
 ## Scope
 
@@ -125,3 +125,34 @@ Results:
 | Paper plot-reference coverage | pass: 28 LaTeX plot references, 28 retained paper PDFs, no missing or extra paper PDFs |
 | Paper PNG companion coverage | pass: 28 retained paper PDFs, 28 same-basename PNG companions, all PNG density metadata at 600 DPI |
 | Strict wording scan | pass: only the requested acknowledgement text in `README.md` remains |
+
+## June 8 Targeted Rerun And Markdown Check
+
+After the retained estimator and missingness diagnostics were touched up, the affected scripts were rerun with
+the project scientific Python environment at `../Manuscript Revision/.venv/bin/python`.
+
+Commands run:
+
+```bash
+../Manuscript\ Revision/.venv/bin/python analysis/scripts/build_estimator_diagnostics.py --jobs 1
+../Manuscript\ Revision/.venv/bin/python analysis/scripts/build_stationarity_source_resolution.py
+../Manuscript\ Revision/.venv/bin/python monte_carlo/scripts/plot_main_monte_carlo.py
+../Manuscript\ Revision/.venv/bin/python analysis/scripts/build_mdape_vs_cv_slope.py
+../Manuscript\ Revision/.venv/bin/python analysis/scripts/build_chicago_sensitivity.py
+../Manuscript\ Revision/.venv/bin/python analysis/scripts/build_lucknow_madhwal_monte_carlo_comparison.py --run-dir monte_carlo/results/runs/p0_baseline_updated_chicago_may31_plus_madhwal_10000_20260602 --output-dir analysis/results/lucknow_madhwal_monte_carlo_comparison_20260602
+../Manuscript\ Revision/.venv/bin/python missingness/scripts/run_missingness_analysis.py
+../Manuscript\ Revision/.venv/bin/python missingness/scripts/plot_three_city_pm25_timeseries.py
+```
+
+Additional checks:
+
+| Check | Result |
+|---|---|
+| Compile affected Python scripts | pass |
+| Estimator diagnostics `--skip-qce` smoke test | pass |
+| SI-F11 Bonferroni exclusions | pass: Dhaka 2/35, Lucknow 4/71, Chicago 12/277 |
+| Period model-based RSE text values | pass: Dhaka n=5, Lucknow n=8, Chicago n=2 |
+| Monte Carlo figure data RSE columns | pass: removed the obsolete lognormal-RSE column, retained `rse_normal_pct`, added `empirical_estimator_rse_pct` |
+| Manuscript plot mirrors | pass: regenerated paper PDF/PNG copies match retained analysis outputs for updated figures |
+| Markdown stale-value scan | pass: no tracked Markdown retains the old sensor-count range, old SI-F11 counts, old GLS caveat, or obsolete Dhaka division-boundary reference |
+| Dhaka boundary files | pass: retained plot scripts use `Dhaka_City_admin6.geojson` for shading and `Dhaka_District_admin5.geojson` for outline |

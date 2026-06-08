@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "data_root": "data",
-    "output_root": "missingness",
+    "data_root": "/Users/guru/Documents/Macbook Pro/Manuscript Final Codes/OSPREY_CODE_Revision/data",
+    "output_root": "/Users/guru/Documents/Macbook Pro/Manuscript Final Codes/OSPREY_CODE_Revision/missingness",
     "bootstrap_iterations": 10000,
     "monte_carlo_iterations_period": 10000,
     "monte_carlo_iterations_daily": 10000,
@@ -58,7 +58,7 @@
       "effective_jobs": 12,
       "available_cpu_count": 12,
       "total_memory_gb": 24.0,
-      "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+      "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
       "blas_thread_environment": {
         "OMP_NUM_THREADS": "1",
         "OPENBLAS_NUM_THREADS": "1",
@@ -212,90 +212,90 @@
       "analysis": "M1_missingness_vs_mean_concentration",
       "x": "frac_missing",
       "y": "mean_conc",
-      "n": 243,
-      "pearson_r": -0.13696118391043058,
-      "pearson_p_approx": 0.032743695833047815,
-      "pearson_ci_low": -0.21650377593051529,
-      "pearson_ci_high": -0.05104103615866604,
-      "spearman_rho": -0.10030326386242128,
-      "spearman_p_approx": 0.11896460441610213,
-      "spearman_ci_low": -0.20770593759226771,
-      "spearman_ci_high": 0.011769272721908978
+      "n": 274,
+      "pearson_r": -0.026969484289844733,
+      "pearson_p_approx": 0.6569837097023963,
+      "pearson_ci_low": -0.11341071361029019,
+      "pearson_ci_high": 0.08529950749297684,
+      "spearman_rho": 0.015498901208840616,
+      "spearman_p_approx": 0.7985960116997022,
+      "spearman_ci_low": -0.09419244870916303,
+      "spearman_ci_high": 0.12411077800781299
     },
     {
       "network": "chicago_lcs_corrected",
       "analysis": "M2_missingness_vs_cross_sensor_sd",
       "x": "frac_missing",
       "y": "sd_conc",
-      "n": 243,
-      "pearson_r": -0.1117362859233059,
-      "pearson_p_approx": 0.08216334880998089,
-      "pearson_ci_low": -0.20783437925579226,
-      "pearson_ci_high": -0.016598393930521545,
-      "spearman_rho": -0.12630942451789565,
-      "spearman_p_approx": 0.049150462476347245,
-      "spearman_ci_low": -0.24754173023003806,
-      "spearman_ci_high": -0.0051210728131676694
+      "n": 274,
+      "pearson_r": -0.1628089044293839,
+      "pearson_p_approx": 0.006846131536545341,
+      "pearson_ci_low": -0.25233149091849494,
+      "pearson_ci_high": -0.05312372398640266,
+      "spearman_rho": -0.09194968466542733,
+      "spearman_p_approx": 0.12902182219074465,
+      "spearman_ci_low": -0.21055432162393178,
+      "spearman_ci_high": 0.025673115333755953
     },
     {
       "network": "chicago_lcs_corrected",
       "analysis": "M2_missingness_vs_cross_sensor_cv",
       "x": "frac_missing",
       "y": "cv_conc",
-      "n": 243,
-      "pearson_r": 0.041130542405614576,
-      "pearson_p_approx": 0.5237658024798995,
-      "pearson_ci_low": -0.07043414892481302,
-      "pearson_ci_high": 0.16157888662883488,
-      "spearman_rho": -0.018818910769069414,
-      "spearman_p_approx": 0.7706110295977373,
-      "spearman_ci_low": -0.14400787131628937,
-      "spearman_ci_high": 0.10639184418039911
+      "n": 274,
+      "pearson_r": -0.17784904777580565,
+      "pearson_p_approx": 0.0030840591320075994,
+      "pearson_ci_low": -0.2590818108077652,
+      "pearson_ci_high": -0.09817316417285517,
+      "spearman_rho": -0.15153871841419536,
+      "spearman_p_approx": 0.011936864387707358,
+      "spearman_ci_low": -0.26527676068639033,
+      "spearman_ci_high": -0.02968747555220338
     },
     {
       "network": "chicago_lcs_raw",
       "analysis": "M1_missingness_vs_mean_concentration",
       "x": "frac_missing",
       "y": "mean_conc",
-      "n": 243,
-      "pearson_r": -0.1738209561743551,
-      "pearson_p_approx": 0.006519406759874613,
-      "pearson_ci_low": -0.25181075095388983,
-      "pearson_ci_high": -0.09080291804666159,
-      "spearman_rho": -0.13574313430944795,
-      "spearman_p_approx": 0.034346117717121594,
-      "spearman_ci_low": -0.24872551941681856,
-      "spearman_ci_high": -0.02018269220094887
+      "n": 274,
+      "pearson_r": -0.05729012496459473,
+      "pearson_p_approx": 0.3450938505845951,
+      "pearson_ci_low": -0.13900807302890433,
+      "pearson_ci_high": 0.04892965734377693,
+      "spearman_rho": -0.006773695418401113,
+      "spearman_p_approx": 0.911211297614535,
+      "spearman_ci_low": -0.11522264026306546,
+      "spearman_ci_high": 0.10084042307996784
     },
     {
       "network": "chicago_lcs_raw",
       "analysis": "M2_missingness_vs_cross_sensor_sd",
       "x": "frac_missing",
       "y": "sd_conc",
-      "n": 243,
-      "pearson_r": -0.09451739040691863,
-      "pearson_p_approx": 0.1419301962675572,
-      "pearson_ci_low": -0.19086561401319124,
-      "pearson_ci_high": 0.0020084430037638442,
-      "spearman_rho": -0.11426292963934398,
-      "spearman_p_approx": 0.07541726928589187,
-      "spearman_ci_low": -0.23480412001433235,
-      "spearman_ci_high": 0.008692026086506922
+      "n": 274,
+      "pearson_r": -0.13529310843923045,
+      "pearson_p_approx": 0.025029575170153695,
+      "pearson_ci_low": -0.22294599845040114,
+      "pearson_ci_high": -0.022449942348483794,
+      "spearman_rho": -0.05191805194705002,
+      "spearman_p_approx": 0.39230308579028117,
+      "spearman_ci_low": -0.1644344226900175,
+      "spearman_ci_high": 0.06430032312824817
     },
     {
       "network": "chicago_lcs_raw",
       "analysis": "M2_missingness_vs_cross_sensor_cv",
       "x": "frac_missing",
       "y": "cv_conc",
-      "n": 243,
-      "pearson_r": 0.11880910109835548,
-      "pearson_p_approx": 0.06441204001861345,
-      "pearson_ci_low": 0.005448196477671787,
-      "pearson_ci_high": 0.2450962150625719,
-      "spearman_rho": 0.06626722176639603,
-      "spearman_p_approx": 0.3038961653867287,
-      "spearman_ci_low": -0.05755466251307087,
-      "spearman_ci_high": 0.18881781078749862
+      "n": 274,
+      "pearson_r": -0.08053704523054468,
+      "pearson_p_approx": 0.18395198546309732,
+      "pearson_ci_low": -0.16494951836867128,
+      "pearson_ci_high": -0.004342864081649112,
+      "spearman_rho": -0.07463404106539763,
+      "spearman_p_approx": 0.21835267807035685,
+      "spearman_ci_low": -0.18579382873360226,
+      "spearman_ci_high": 0.03914340512290361
     }
   ],
   "M3_seasonal_missingness": [
@@ -387,57 +387,57 @@
       "network": "chicago_lcs_corrected",
       "season": "fall",
       "days": 91,
-      "missingness_pct": 4.1826823062521,
+      "missingness_pct": 4.165719863660367,
       "median_sensor_uptime_pct": 100.0
     },
     {
       "network": "chicago_lcs_corrected",
       "season": "spring",
-      "days": 61,
-      "missingness_pct": 2.1633716078160523,
-      "median_sensor_uptime_pct": 99.93141289437585
+      "days": 92,
+      "missingness_pct": 2.157946267597378,
+      "median_sensor_uptime_pct": 99.77344811961939
     },
     {
       "network": "chicago_lcs_corrected",
       "season": "summer",
       "days": 1,
-      "missingness_pct": 5.384615384615385,
+      "missingness_pct": 5.244755244755245,
       "median_sensor_uptime_pct": 100.0
     },
     {
       "network": "chicago_lcs_corrected",
       "season": "winter",
       "days": 90,
-      "missingness_pct": 4.212801087801088,
-      "median_sensor_uptime_pct": 98.6574074074074
+      "missingness_pct": 2.806105931105931,
+      "median_sensor_uptime_pct": 100.0
     },
     {
       "network": "chicago_lcs_raw",
       "season": "fall",
       "days": 91,
-      "missingness_pct": 4.1826823062521,
+      "missingness_pct": 4.165719863660367,
       "median_sensor_uptime_pct": 100.0
     },
     {
       "network": "chicago_lcs_raw",
       "season": "spring",
-      "days": 61,
-      "missingness_pct": 2.1633716078160523,
-      "median_sensor_uptime_pct": 99.93141289437585
+      "days": 92,
+      "missingness_pct": 2.157946267597378,
+      "median_sensor_uptime_pct": 99.77344811961939
     },
     {
       "network": "chicago_lcs_raw",
       "season": "summer",
       "days": 1,
-      "missingness_pct": 5.384615384615385,
+      "missingness_pct": 5.244755244755245,
       "median_sensor_uptime_pct": 100.0
     },
     {
       "network": "chicago_lcs_raw",
       "season": "winter",
       "days": 90,
-      "missingness_pct": 4.212801087801088,
-      "median_sensor_uptime_pct": 98.6574074074074
+      "missingness_pct": 2.806105931105931,
+      "median_sensor_uptime_pct": 100.0
     }
   ],
   "M3_tests": [
@@ -467,17 +467,17 @@
     },
     {
       "network": "chicago_lcs_corrected",
-      "winter_vs_nonwinter_ks_stat": 0.15555555555555556,
-      "winter_vs_nonwinter_ks_p_approx": 0.12883282430185686,
-      "chi_square_stat": 3515.3552963234115,
+      "winter_vs_nonwinter_ks_stat": 0.16799516908212553,
+      "winter_vs_nonwinter_ks_p_approx": 0.06598958386048802,
+      "chi_square_stat": 4350.2759545307545,
       "chi_square_df": 3,
       "chi_square_p_approx": 0.0
     },
     {
       "network": "chicago_lcs_raw",
-      "winter_vs_nonwinter_ks_stat": 0.15555555555555556,
-      "winter_vs_nonwinter_ks_p_approx": 0.12883282430185686,
-      "chi_square_stat": 3515.3552963234115,
+      "winter_vs_nonwinter_ks_stat": 0.16799516908212553,
+      "winter_vs_nonwinter_ks_p_approx": 0.06598958386048802,
+      "chi_square_stat": 4350.2759545307545,
       "chi_square_df": 3,
       "chi_square_p_approx": 0.0
     }
@@ -527,31 +527,31 @@
     },
     {
       "network": "chicago_lcs_corrected",
-      "gap_count": 7868,
-      "mean_gap_hours": 7.786095577020844,
-      "median_gap_hours": 2.0,
+      "gap_count": 3527,
+      "mean_gap_hours": 16.178905585483413,
+      "median_gap_hours": 3.0,
       "p75_gap_hours": 3.0,
-      "p95_gap_hours": 3.0,
-      "max_gap_hours": 3600,
-      "missing_hours_le_24h_pct": 28.838902401201416,
-      "missing_hours_1_7d_pct": 5.458611514666754,
-      "missing_hours_7_30d_pct": 6.486998253374904,
-      "missing_hours_gt_30d_pct": 59.21548783075693,
-      "gap_gt_30d_count": 23
+      "p95_gap_hours": 5.0,
+      "max_gap_hours": 4349,
+      "missing_hours_le_24h_pct": 17.461402309727845,
+      "missing_hours_1_7d_pct": 5.034786113593747,
+      "missing_hours_7_30d_pct": 6.958975167796996,
+      "missing_hours_gt_30d_pct": 70.54483640888142,
+      "gap_gt_30d_count": 25
     },
     {
       "network": "chicago_lcs_raw",
-      "gap_count": 7868,
-      "mean_gap_hours": 7.786095577020844,
-      "median_gap_hours": 2.0,
+      "gap_count": 3527,
+      "mean_gap_hours": 16.178905585483413,
+      "median_gap_hours": 3.0,
       "p75_gap_hours": 3.0,
-      "p95_gap_hours": 3.0,
-      "max_gap_hours": 3600,
-      "missing_hours_le_24h_pct": 28.838902401201416,
-      "missing_hours_1_7d_pct": 5.458611514666754,
-      "missing_hours_7_30d_pct": 6.486998253374904,
-      "missing_hours_gt_30d_pct": 59.21548783075693,
-      "gap_gt_30d_count": 23
+      "p95_gap_hours": 5.0,
+      "max_gap_hours": 4349,
+      "missing_hours_le_24h_pct": 17.461402309727845,
+      "missing_hours_1_7d_pct": 5.034786113593747,
+      "missing_hours_7_30d_pct": 6.958975167796996,
+      "missing_hours_gt_30d_pct": 70.54483640888142,
+      "gap_gt_30d_count": 25
     }
   ],
   "M4_long_gaps_gt_30d": [
@@ -570,23 +570,34 @@
       "network": "chicago_lcs_corrected",
       "sensor_id": "DJJWX4142",
       "start_timestamp": "2025-12-01 18:00:00-06:00",
-      "end_timestamp": "2026-04-30 18:00:00-05:00",
-      "duration_hours": 3600,
-      "season_midpoint": "winter",
-      "network_mean_during_gap": 11.27247945280403,
-      "overall_network_mean": 10.566066470726813,
-      "gap_minus_overall_network_mean": 0.7064129820772163
+      "end_timestamp": "2026-05-31 23:00:00-05:00",
+      "duration_hours": 4349,
+      "season_midpoint": "spring",
+      "network_mean_during_gap": 10.67060316996721,
+      "overall_network_mean": 10.250722671982864,
+      "gap_minus_overall_network_mean": 0.41988049798434623
     },
     {
       "network": "chicago_lcs_corrected",
       "sensor_id": "DMAEX1156",
       "start_timestamp": "2025-12-10 13:00:00-06:00",
-      "end_timestamp": "2026-04-30 18:00:00-05:00",
-      "duration_hours": 3389,
-      "season_midpoint": "winter",
-      "network_mean_during_gap": 10.90932356312213,
-      "overall_network_mean": 10.566066470726813,
-      "gap_minus_overall_network_mean": 0.34325709239531754
+      "end_timestamp": "2026-05-31 23:00:00-05:00",
+      "duration_hours": 4138,
+      "season_midpoint": "spring",
+      "network_mean_during_gap": 10.344567827879143,
+      "overall_network_mean": 10.250722671982864,
+      "gap_minus_overall_network_mean": 0.09384515589627895
+    },
+    {
+      "network": "chicago_lcs_corrected",
+      "sensor_id": "DEYGE9157",
+      "start_timestamp": "2026-02-10 20:00:00-06:00",
+      "end_timestamp": "2026-05-31 23:00:00-05:00",
+      "duration_hours": 2643,
+      "season_midpoint": "spring",
+      "network_mean_during_gap": 9.794397658033578,
+      "overall_network_mean": 10.250722671982864,
+      "gap_minus_overall_network_mean": -0.4563250139492858
     },
     {
       "network": "chicago_lcs_corrected",
@@ -595,9 +606,9 @@
       "end_timestamp": "2025-12-13 09:00:00-06:00",
       "duration_hours": 2488,
       "season_midpoint": "fall",
-      "network_mean_during_gap": 10.241076003163856,
-      "overall_network_mean": 10.566066470726813,
-      "gap_minus_overall_network_mean": -0.3249904675629569
+      "network_mean_during_gap": 10.24204392269627,
+      "overall_network_mean": 10.250722671982864,
+      "gap_minus_overall_network_mean": -0.008678749286593401
     },
     {
       "network": "chicago_lcs_corrected",
@@ -606,20 +617,9 @@
       "end_timestamp": "2026-03-07 09:00:00-06:00",
       "duration_hours": 1952,
       "season_midpoint": "winter",
-      "network_mean_during_gap": 12.058763651406462,
-      "overall_network_mean": 10.566066470726813,
-      "gap_minus_overall_network_mean": 1.4926971806796487
-    },
-    {
-      "network": "chicago_lcs_corrected",
-      "sensor_id": "DEYGE9157",
-      "start_timestamp": "2026-02-10 20:00:00-06:00",
-      "end_timestamp": "2026-04-30 18:00:00-05:00",
-      "duration_hours": 1894,
-      "season_midpoint": "spring",
-      "network_mean_during_gap": 10.56294830001587,
-      "overall_network_mean": 10.566066470726813,
-      "gap_minus_overall_network_mean": -0.0031181707109428913
+      "network_mean_during_gap": 12.01927228834893,
+      "overall_network_mean": 10.250722671982864,
+      "gap_minus_overall_network_mean": 1.768549616366066
     },
     {
       "network": "chicago_lcs_corrected",
@@ -628,9 +628,9 @@
       "end_timestamp": "2026-04-11 14:00:00-05:00",
       "duration_hours": 1881,
       "season_midpoint": "spring",
-      "network_mean_during_gap": 11.336574801942755,
-      "overall_network_mean": 10.566066470726813,
-      "gap_minus_overall_network_mean": 0.7705083312159413
+      "network_mean_during_gap": 11.331765432846389,
+      "overall_network_mean": 10.250722671982864,
+      "gap_minus_overall_network_mean": 1.0810427608635251
     },
     {
       "network": "chicago_lcs_corrected",
@@ -639,9 +639,9 @@
       "end_timestamp": "2025-12-13 06:00:00-06:00",
       "duration_hours": 1646,
       "season_midpoint": "fall",
-      "network_mean_during_gap": 9.956190808535318,
-      "overall_network_mean": 10.566066470726813,
-      "gap_minus_overall_network_mean": -0.6098756621914951
+      "network_mean_during_gap": 9.95766750614329,
+      "overall_network_mean": 10.250722671982864,
+      "gap_minus_overall_network_mean": -0.2930551658395739
     },
     {
       "network": "chicago_lcs_corrected",
@@ -650,9 +650,9 @@
       "end_timestamp": "2025-11-07 11:00:00-06:00",
       "duration_hours": 1626,
       "season_midpoint": "fall",
-      "network_mean_during_gap": 9.099089779675785,
-      "overall_network_mean": 10.566066470726813,
-      "gap_minus_overall_network_mean": -1.4669766910510287
+      "network_mean_during_gap": 9.099191256562461,
+      "overall_network_mean": 10.250722671982864,
+      "gap_minus_overall_network_mean": -1.1515314154204024
     },
     {
       "network": "chicago_lcs_corrected",
@@ -661,9 +661,9 @@
       "end_timestamp": "2025-11-07 11:00:00-06:00",
       "duration_hours": 1626,
       "season_midpoint": "fall",
-      "network_mean_during_gap": 9.099089779675785,
-      "overall_network_mean": 10.566066470726813,
-      "gap_minus_overall_network_mean": -1.4669766910510287
+      "network_mean_during_gap": 9.099191256562461,
+      "overall_network_mean": 10.250722671982864,
+      "gap_minus_overall_network_mean": -1.1515314154204024
     },
     {
       "network": "chicago_lcs_corrected",
@@ -672,31 +672,9 @@
       "end_timestamp": "2025-11-07 11:00:00-06:00",
       "duration_hours": 1626,
       "season_midpoint": "fall",
-      "network_mean_during_gap": 9.099089779675785,
-      "overall_network_mean": 10.566066470726813,
-      "gap_minus_overall_network_mean": -1.4669766910510287
-    },
-    {
-      "network": "chicago_lcs_corrected",
-      "sensor_id": "DIPDE7442",
-      "start_timestamp": "2025-08-31 19:00:00-05:00",
-      "end_timestamp": "2025-11-05 10:00:00-06:00",
-      "duration_hours": 1577,
-      "season_midpoint": "fall",
-      "network_mean_during_gap": 9.104850631654173,
-      "overall_network_mean": 10.566066470726813,
-      "gap_minus_overall_network_mean": -1.46121583907264
-    },
-    {
-      "network": "chicago_lcs_corrected",
-      "sensor_id": "DLAIF4030",
-      "start_timestamp": "2025-08-31 19:00:00-05:00",
-      "end_timestamp": "2025-11-05 10:00:00-06:00",
-      "duration_hours": 1577,
-      "season_midpoint": "fall",
-      "network_mean_during_gap": 9.104850631654173,
-      "overall_network_mean": 10.566066470726813,
-      "gap_minus_overall_network_mean": -1.46121583907264
+      "network_mean_during_gap": 9.099191256562461,
+      "overall_network_mean": 10.250722671982864,
+      "gap_minus_overall_network_mean": -1.1515314154204024
     },
     {
       "network": "chicago_lcs_corrected",
@@ -705,9 +683,31 @@
       "end_timestamp": "2025-11-05 10:00:00-06:00",
       "duration_hours": 1577,
       "season_midpoint": "fall",
-      "network_mean_during_gap": 9.104850631654173,
-      "overall_network_mean": 10.566066470726813,
-      "gap_minus_overall_network_mean": -1.46121583907264
+      "network_mean_during_gap": 9.104942632517577,
+      "overall_network_mean": 10.250722671982864,
+      "gap_minus_overall_network_mean": -1.1457800394652864
+    },
+    {
+      "network": "chicago_lcs_corrected",
+      "sensor_id": "DIPDE7442",
+      "start_timestamp": "2025-08-31 19:00:00-05:00",
+      "end_timestamp": "2025-11-05 09:00:00-06:00",
+      "duration_hours": 1576,
+      "season_midpoint": "fall",
+      "network_mean_during_gap": 9.101045837925842,
+      "overall_network_mean": 10.250722671982864,
+      "gap_minus_overall_network_mean": -1.149676834057022
+    },
+    {
+      "network": "chicago_lcs_corrected",
+      "sensor_id": "DLAIF4030",
+      "start_timestamp": "2025-08-31 19:00:00-05:00",
+      "end_timestamp": "2025-11-05 09:00:00-06:00",
+      "duration_hours": 1576,
+      "season_midpoint": "fall",
+      "network_mean_during_gap": 9.101045837925842,
+      "overall_network_mean": 10.250722671982864,
+      "gap_minus_overall_network_mean": -1.149676834057022
     },
     {
       "network": "chicago_lcs_corrected",
@@ -716,130 +716,163 @@
       "end_timestamp": "2025-12-13 08:00:00-06:00",
       "duration_hours": 1569,
       "season_midpoint": "fall",
-      "network_mean_during_gap": 10.155181889226583,
-      "overall_network_mean": 10.566066470726813,
-      "gap_minus_overall_network_mean": -0.41088458150023044
+      "network_mean_during_gap": 10.156725902080549,
+      "overall_network_mean": 10.250722671982864,
+      "gap_minus_overall_network_mean": -0.09399676990231498
     },
     {
       "network": "chicago_lcs_corrected",
       "sensor_id": "DYDVV6312",
       "start_timestamp": "2025-08-31 19:00:00-05:00",
-      "end_timestamp": "2025-10-29 08:00:00-05:00",
-      "duration_hours": 1406,
+      "end_timestamp": "2025-10-29 07:00:00-05:00",
+      "duration_hours": 1405,
       "season_midpoint": "fall",
-      "network_mean_during_gap": 9.210484440264624,
-      "overall_network_mean": 10.566066470726813,
-      "gap_minus_overall_network_mean": -1.3555820304621893
+      "network_mean_during_gap": 9.213397767925604,
+      "overall_network_mean": 10.250722671982864,
+      "gap_minus_overall_network_mean": -1.0373249040572592
     },
     {
       "network": "chicago_lcs_corrected",
       "sensor_id": "DFQDK6326",
       "start_timestamp": "2025-10-01 07:00:00-05:00",
-      "end_timestamp": "2025-11-22 16:00:00-06:00",
-      "duration_hours": 1259,
+      "end_timestamp": "2025-11-22 15:00:00-06:00",
+      "duration_hours": 1258,
       "season_midpoint": "fall",
-      "network_mean_during_gap": 8.277475462186606,
-      "overall_network_mean": 10.566066470726813,
-      "gap_minus_overall_network_mean": -2.288591008540207
+      "network_mean_during_gap": 8.273964362645463,
+      "overall_network_mean": 10.250722671982864,
+      "gap_minus_overall_network_mean": -1.9767583093374004
+    },
+    {
+      "network": "chicago_lcs_corrected",
+      "sensor_id": "DFQDK6326",
+      "start_timestamp": "2026-04-24 10:00:00-05:00",
+      "end_timestamp": "2026-05-31 23:00:00-05:00",
+      "duration_hours": 902,
+      "season_midpoint": "spring",
+      "network_mean_during_gap": 7.820378399758224,
+      "overall_network_mean": 10.250722671982864,
+      "gap_minus_overall_network_mean": -2.43034427222464
+    },
+    {
+      "network": "chicago_lcs_corrected",
+      "sensor_id": "DMLRY2750",
+      "start_timestamp": "2026-04-26 23:00:00-05:00",
+      "end_timestamp": "2026-05-31 23:00:00-05:00",
+      "duration_hours": 841,
+      "season_midpoint": "spring",
+      "network_mean_during_gap": 7.772203349879958,
+      "overall_network_mean": 10.250722671982864,
+      "gap_minus_overall_network_mean": -2.4785193221029056
     },
     {
       "network": "chicago_lcs_corrected",
       "sensor_id": "DFIBC1899",
       "start_timestamp": "2025-08-31 19:00:00-05:00",
-      "end_timestamp": "2025-10-04 09:00:00-05:00",
-      "duration_hours": 807,
+      "end_timestamp": "2025-10-04 08:00:00-05:00",
+      "duration_hours": 806,
       "season_midpoint": "fall",
-      "network_mean_during_gap": 10.796942439879718,
-      "overall_network_mean": 10.566066470726813,
-      "gap_minus_overall_network_mean": 0.23087596915290476
+      "network_mean_during_gap": 10.792932637358174,
+      "overall_network_mean": 10.250722671982864,
+      "gap_minus_overall_network_mean": 0.5422099653753101
     },
     {
       "network": "chicago_lcs_corrected",
       "sensor_id": "DJJWX4142",
       "start_timestamp": "2025-08-31 19:00:00-05:00",
-      "end_timestamp": "2025-10-04 08:00:00-05:00",
-      "duration_hours": 806,
+      "end_timestamp": "2025-10-04 07:00:00-05:00",
+      "duration_hours": 805,
       "season_midpoint": "fall",
-      "network_mean_during_gap": 10.79295442547351,
-      "overall_network_mean": 10.566066470726813,
-      "gap_minus_overall_network_mean": 0.22688795474669732
+      "network_mean_during_gap": 10.787939240618723,
+      "overall_network_mean": 10.250722671982864,
+      "gap_minus_overall_network_mean": 0.5372165686358592
     },
     {
       "network": "chicago_lcs_corrected",
       "sensor_id": "DUVHI0112",
       "start_timestamp": "2025-08-31 19:00:00-05:00",
-      "end_timestamp": "2025-10-04 08:00:00-05:00",
-      "duration_hours": 806,
+      "end_timestamp": "2025-10-04 07:00:00-05:00",
+      "duration_hours": 805,
       "season_midpoint": "fall",
-      "network_mean_during_gap": 10.79295442547351,
-      "overall_network_mean": 10.566066470726813,
-      "gap_minus_overall_network_mean": 0.22688795474669732
+      "network_mean_during_gap": 10.787939240618723,
+      "overall_network_mean": 10.250722671982864,
+      "gap_minus_overall_network_mean": 0.5372165686358592
     },
     {
       "network": "chicago_lcs_corrected",
       "sensor_id": "DXHCB5919",
       "start_timestamp": "2025-08-31 19:00:00-05:00",
-      "end_timestamp": "2025-10-04 08:00:00-05:00",
-      "duration_hours": 806,
+      "end_timestamp": "2025-10-04 07:00:00-05:00",
+      "duration_hours": 805,
       "season_midpoint": "fall",
-      "network_mean_during_gap": 10.79295442547351,
-      "overall_network_mean": 10.566066470726813,
-      "gap_minus_overall_network_mean": 0.22688795474669732
+      "network_mean_during_gap": 10.787939240618723,
+      "overall_network_mean": 10.250722671982864,
+      "gap_minus_overall_network_mean": 0.5372165686358592
     },
     {
       "network": "chicago_lcs_corrected",
       "sensor_id": "DEQFM3089",
       "start_timestamp": "2025-08-31 19:00:00-05:00",
-      "end_timestamp": "2025-10-03 12:00:00-05:00",
-      "duration_hours": 786,
+      "end_timestamp": "2025-10-03 11:00:00-05:00",
+      "duration_hours": 785,
       "season_midpoint": "fall",
-      "network_mean_during_gap": 10.712556751047186,
-      "overall_network_mean": 10.566066470726813,
-      "gap_minus_overall_network_mean": 0.14649028032037315
+      "network_mean_during_gap": 10.710399052063162,
+      "overall_network_mean": 10.250722671982864,
+      "gap_minus_overall_network_mean": 0.4596763800802979
     },
     {
       "network": "chicago_lcs_corrected",
       "sensor_id": "DFNHF0256",
       "start_timestamp": "2025-08-31 19:00:00-05:00",
-      "end_timestamp": "2025-10-03 12:00:00-05:00",
-      "duration_hours": 786,
+      "end_timestamp": "2025-10-03 11:00:00-05:00",
+      "duration_hours": 785,
       "season_midpoint": "fall",
-      "network_mean_during_gap": 10.712556751047186,
-      "overall_network_mean": 10.566066470726813,
-      "gap_minus_overall_network_mean": 0.14649028032037315
+      "network_mean_during_gap": 10.710399052063162,
+      "overall_network_mean": 10.250722671982864,
+      "gap_minus_overall_network_mean": 0.4596763800802979
     },
     {
       "network": "chicago_lcs_corrected",
       "sensor_id": "DVYCN4987",
       "start_timestamp": "2025-08-31 19:00:00-05:00",
-      "end_timestamp": "2025-10-03 12:00:00-05:00",
-      "duration_hours": 786,
+      "end_timestamp": "2025-10-03 11:00:00-05:00",
+      "duration_hours": 785,
       "season_midpoint": "fall",
-      "network_mean_during_gap": 10.712556751047186,
-      "overall_network_mean": 10.566066470726813,
-      "gap_minus_overall_network_mean": 0.14649028032037315
+      "network_mean_during_gap": 10.710399052063162,
+      "overall_network_mean": 10.250722671982864,
+      "gap_minus_overall_network_mean": 0.4596763800802979
     },
     {
       "network": "chicago_lcs_raw",
       "sensor_id": "DJJWX4142",
       "start_timestamp": "2025-12-01 18:00:00-06:00",
-      "end_timestamp": "2026-04-30 18:00:00-05:00",
-      "duration_hours": 3600,
-      "season_midpoint": "winter",
-      "network_mean_during_gap": 20.137564248039503,
-      "overall_network_mean": 18.162221545871304,
-      "gap_minus_overall_network_mean": 1.9753427021681986
+      "end_timestamp": "2026-05-31 23:00:00-05:00",
+      "duration_hours": 4349,
+      "season_midpoint": "spring",
+      "network_mean_during_gap": 18.32056687086454,
+      "overall_network_mean": 17.191336222226308,
+      "gap_minus_overall_network_mean": 1.1292306486382309
     },
     {
       "network": "chicago_lcs_raw",
       "sensor_id": "DMAEX1156",
       "start_timestamp": "2025-12-10 13:00:00-06:00",
-      "end_timestamp": "2026-04-30 18:00:00-05:00",
-      "duration_hours": 3389,
-      "season_midpoint": "winter",
-      "network_mean_during_gap": 19.01051247997026,
-      "overall_network_mean": 18.162221545871304,
-      "gap_minus_overall_network_mean": 0.8482909340989551
+      "end_timestamp": "2026-05-31 23:00:00-05:00",
+      "duration_hours": 4138,
+      "season_midpoint": "spring",
+      "network_mean_during_gap": 17.31178278344146,
+      "overall_network_mean": 17.191336222226308,
+      "gap_minus_overall_network_mean": 0.12044656121515018
+    },
+    {
+      "network": "chicago_lcs_raw",
+      "sensor_id": "DEYGE9157",
+      "start_timestamp": "2026-02-10 20:00:00-06:00",
+      "end_timestamp": "2026-05-31 23:00:00-05:00",
+      "duration_hours": 2643,
+      "season_midpoint": "spring",
+      "network_mean_during_gap": 15.473561871615312,
+      "overall_network_mean": 17.191336222226308,
+      "gap_minus_overall_network_mean": -1.7177743506109966
     },
     {
       "network": "chicago_lcs_raw",
@@ -848,9 +881,9 @@
       "end_timestamp": "2025-12-13 09:00:00-06:00",
       "duration_hours": 2488,
       "season_midpoint": "fall",
-      "network_mean_during_gap": 17.3489839671829,
-      "overall_network_mean": 18.162221545871304,
-      "gap_minus_overall_network_mean": -0.8132375786884047
+      "network_mean_during_gap": 17.35025311522309,
+      "overall_network_mean": 17.191336222226308,
+      "gap_minus_overall_network_mean": 0.1589168929967819
     },
     {
       "network": "chicago_lcs_raw",
@@ -859,20 +892,9 @@
       "end_timestamp": "2026-03-07 09:00:00-06:00",
       "duration_hours": 1952,
       "season_midpoint": "winter",
-      "network_mean_during_gap": 22.13116755323082,
-      "overall_network_mean": 18.162221545871304,
-      "gap_minus_overall_network_mean": 3.9689460073595164
-    },
-    {
-      "network": "chicago_lcs_raw",
-      "sensor_id": "DEYGE9157",
-      "start_timestamp": "2026-02-10 20:00:00-06:00",
-      "end_timestamp": "2026-04-30 18:00:00-05:00",
-      "duration_hours": 1894,
-      "season_midpoint": "spring",
-      "network_mean_during_gap": 17.713227811191388,
-      "overall_network_mean": 18.162221545871304,
-      "gap_minus_overall_network_mean": -0.44899373467991666
+      "network_mean_during_gap": 22.014026597523642,
+      "overall_network_mean": 17.191336222226308,
+      "gap_minus_overall_network_mean": 4.822690375297334
     },
     {
       "network": "chicago_lcs_raw",
@@ -881,9 +903,9 @@
       "end_timestamp": "2026-04-11 14:00:00-05:00",
       "duration_hours": 1881,
       "season_midpoint": "spring",
-      "network_mean_during_gap": 19.484969556267487,
-      "overall_network_mean": 18.162221545871304,
-      "gap_minus_overall_network_mean": 1.3227480103961824
+      "network_mean_during_gap": 19.45050565132641,
+      "overall_network_mean": 17.191336222226308,
+      "gap_minus_overall_network_mean": 2.259169429100101
     },
     {
       "network": "chicago_lcs_raw",
@@ -892,9 +914,9 @@
       "end_timestamp": "2025-12-13 06:00:00-06:00",
       "duration_hours": 1646,
       "season_midpoint": "fall",
-      "network_mean_during_gap": 17.462120914684302,
-      "overall_network_mean": 18.162221545871304,
-      "gap_minus_overall_network_mean": -0.7001006311870022
+      "network_mean_during_gap": 17.464028789898887,
+      "overall_network_mean": 17.191336222226308,
+      "gap_minus_overall_network_mean": 0.27269256767257843
     },
     {
       "network": "chicago_lcs_raw",
@@ -903,9 +925,9 @@
       "end_timestamp": "2025-11-07 11:00:00-06:00",
       "duration_hours": 1626,
       "season_midpoint": "fall",
-      "network_mean_during_gap": 13.621382498857038,
-      "overall_network_mean": 18.162221545871304,
-      "gap_minus_overall_network_mean": -4.540839047014266
+      "network_mean_during_gap": 13.621519338730437,
+      "overall_network_mean": 17.191336222226308,
+      "gap_minus_overall_network_mean": -3.5698168834958715
     },
     {
       "network": "chicago_lcs_raw",
@@ -914,9 +936,9 @@
       "end_timestamp": "2025-11-07 11:00:00-06:00",
       "duration_hours": 1626,
       "season_midpoint": "fall",
-      "network_mean_during_gap": 13.621382498857038,
-      "overall_network_mean": 18.162221545871304,
-      "gap_minus_overall_network_mean": -4.540839047014266
+      "network_mean_during_gap": 13.621519338730437,
+      "overall_network_mean": 17.191336222226308,
+      "gap_minus_overall_network_mean": -3.5698168834958715
     },
     {
       "network": "chicago_lcs_raw",
@@ -925,31 +947,9 @@
       "end_timestamp": "2025-11-07 11:00:00-06:00",
       "duration_hours": 1626,
       "season_midpoint": "fall",
-      "network_mean_during_gap": 13.621382498857038,
-      "overall_network_mean": 18.162221545871304,
-      "gap_minus_overall_network_mean": -4.540839047014266
-    },
-    {
-      "network": "chicago_lcs_raw",
-      "sensor_id": "DIPDE7442",
-      "start_timestamp": "2025-08-31 19:00:00-05:00",
-      "end_timestamp": "2025-11-05 10:00:00-06:00",
-      "duration_hours": 1577,
-      "season_midpoint": "fall",
-      "network_mean_during_gap": 13.677629796704917,
-      "overall_network_mean": 18.162221545871304,
-      "gap_minus_overall_network_mean": -4.484591749166388
-    },
-    {
-      "network": "chicago_lcs_raw",
-      "sensor_id": "DLAIF4030",
-      "start_timestamp": "2025-08-31 19:00:00-05:00",
-      "end_timestamp": "2025-11-05 10:00:00-06:00",
-      "duration_hours": 1577,
-      "season_midpoint": "fall",
-      "network_mean_during_gap": 13.677629796704917,
-      "overall_network_mean": 18.162221545871304,
-      "gap_minus_overall_network_mean": -4.484591749166388
+      "network_mean_during_gap": 13.621519338730437,
+      "overall_network_mean": 17.191336222226308,
+      "gap_minus_overall_network_mean": -3.5698168834958715
     },
     {
       "network": "chicago_lcs_raw",
@@ -958,9 +958,31 @@
       "end_timestamp": "2025-11-05 10:00:00-06:00",
       "duration_hours": 1577,
       "season_midpoint": "fall",
-      "network_mean_during_gap": 13.677629796704917,
-      "overall_network_mean": 18.162221545871304,
-      "gap_minus_overall_network_mean": -4.484591749166388
+      "network_mean_during_gap": 13.677754633458848,
+      "overall_network_mean": 17.191336222226308,
+      "gap_minus_overall_network_mean": -3.51358158876746
+    },
+    {
+      "network": "chicago_lcs_raw",
+      "sensor_id": "DIPDE7442",
+      "start_timestamp": "2025-08-31 19:00:00-05:00",
+      "end_timestamp": "2025-11-05 09:00:00-06:00",
+      "duration_hours": 1576,
+      "season_midpoint": "fall",
+      "network_mean_during_gap": 13.670457338867712,
+      "overall_network_mean": 17.191336222226308,
+      "gap_minus_overall_network_mean": -3.5208788833585967
+    },
+    {
+      "network": "chicago_lcs_raw",
+      "sensor_id": "DLAIF4030",
+      "start_timestamp": "2025-08-31 19:00:00-05:00",
+      "end_timestamp": "2025-11-05 09:00:00-06:00",
+      "duration_hours": 1576,
+      "season_midpoint": "fall",
+      "network_mean_during_gap": 13.670457338867712,
+      "overall_network_mean": 17.191336222226308,
+      "gap_minus_overall_network_mean": -3.5208788833585967
     },
     {
       "network": "chicago_lcs_raw",
@@ -969,108 +991,130 @@
       "end_timestamp": "2025-12-13 08:00:00-06:00",
       "duration_hours": 1569,
       "season_midpoint": "fall",
-      "network_mean_during_gap": 17.972180617455948,
-      "overall_network_mean": 18.162221545871304,
-      "gap_minus_overall_network_mean": -0.1900409284153568
+      "network_mean_during_gap": 17.974169436116142,
+      "overall_network_mean": 17.191336222226308,
+      "gap_minus_overall_network_mean": 0.782833213889834
     },
     {
       "network": "chicago_lcs_raw",
       "sensor_id": "DYDVV6312",
       "start_timestamp": "2025-08-31 19:00:00-05:00",
-      "end_timestamp": "2025-10-29 08:00:00-05:00",
-      "duration_hours": 1406,
+      "end_timestamp": "2025-10-29 07:00:00-05:00",
+      "duration_hours": 1405,
       "season_midpoint": "fall",
-      "network_mean_during_gap": 13.8662816447133,
-      "overall_network_mean": 18.162221545871304,
-      "gap_minus_overall_network_mean": -4.295939901158004
+      "network_mean_during_gap": 13.872176758405656,
+      "overall_network_mean": 17.191336222226308,
+      "gap_minus_overall_network_mean": -3.319159463820652
     },
     {
       "network": "chicago_lcs_raw",
       "sensor_id": "DFQDK6326",
       "start_timestamp": "2025-10-01 07:00:00-05:00",
-      "end_timestamp": "2025-11-22 16:00:00-06:00",
-      "duration_hours": 1259,
+      "end_timestamp": "2025-11-22 15:00:00-06:00",
+      "duration_hours": 1258,
       "season_midpoint": "fall",
-      "network_mean_during_gap": 12.218597650261508,
-      "overall_network_mean": 18.162221545871304,
-      "gap_minus_overall_network_mean": -5.943623895609797
+      "network_mean_during_gap": 12.209279180238362,
+      "overall_network_mean": 17.191336222226308,
+      "gap_minus_overall_network_mean": -4.982057041987947
+    },
+    {
+      "network": "chicago_lcs_raw",
+      "sensor_id": "DFQDK6326",
+      "start_timestamp": "2026-04-24 10:00:00-05:00",
+      "end_timestamp": "2026-05-31 23:00:00-05:00",
+      "duration_hours": 902,
+      "season_midpoint": "spring",
+      "network_mean_during_gap": 10.408891865741255,
+      "overall_network_mean": 17.191336222226308,
+      "gap_minus_overall_network_mean": -6.782444356485053
+    },
+    {
+      "network": "chicago_lcs_raw",
+      "sensor_id": "DMLRY2750",
+      "start_timestamp": "2026-04-26 23:00:00-05:00",
+      "end_timestamp": "2026-05-31 23:00:00-05:00",
+      "duration_hours": 841,
+      "season_midpoint": "spring",
+      "network_mean_during_gap": 10.074676281563542,
+      "overall_network_mean": 17.191336222226308,
+      "gap_minus_overall_network_mean": -7.116659940662766
     },
     {
       "network": "chicago_lcs_raw",
       "sensor_id": "DFIBC1899",
       "start_timestamp": "2025-08-31 19:00:00-05:00",
-      "end_timestamp": "2025-10-04 09:00:00-05:00",
-      "duration_hours": 807,
+      "end_timestamp": "2025-10-04 08:00:00-05:00",
+      "duration_hours": 806,
       "season_midpoint": "fall",
-      "network_mean_during_gap": 17.27047064868669,
-      "overall_network_mean": 18.162221545871304,
-      "gap_minus_overall_network_mean": -0.8917508971846146
+      "network_mean_during_gap": 17.263267151335672,
+      "overall_network_mean": 17.191336222226308,
+      "gap_minus_overall_network_mean": 0.07193092910936372
     },
     {
       "network": "chicago_lcs_raw",
       "sensor_id": "DJJWX4142",
       "start_timestamp": "2025-08-31 19:00:00-05:00",
-      "end_timestamp": "2025-10-04 08:00:00-05:00",
-      "duration_hours": 806,
+      "end_timestamp": "2025-10-04 07:00:00-05:00",
+      "duration_hours": 805,
       "season_midpoint": "fall",
-      "network_mean_during_gap": 17.263229210785468,
-      "overall_network_mean": 18.162221545871304,
-      "gap_minus_overall_network_mean": -0.8989923350858362
+      "network_mean_during_gap": 17.251218138066868,
+      "overall_network_mean": 17.191336222226308,
+      "gap_minus_overall_network_mean": 0.059881915840559685
     },
     {
       "network": "chicago_lcs_raw",
       "sensor_id": "DUVHI0112",
       "start_timestamp": "2025-08-31 19:00:00-05:00",
-      "end_timestamp": "2025-10-04 08:00:00-05:00",
-      "duration_hours": 806,
+      "end_timestamp": "2025-10-04 07:00:00-05:00",
+      "duration_hours": 805,
       "season_midpoint": "fall",
-      "network_mean_during_gap": 17.263229210785468,
-      "overall_network_mean": 18.162221545871304,
-      "gap_minus_overall_network_mean": -0.8989923350858362
+      "network_mean_during_gap": 17.251218138066868,
+      "overall_network_mean": 17.191336222226308,
+      "gap_minus_overall_network_mean": 0.059881915840559685
     },
     {
       "network": "chicago_lcs_raw",
       "sensor_id": "DXHCB5919",
       "start_timestamp": "2025-08-31 19:00:00-05:00",
-      "end_timestamp": "2025-10-04 08:00:00-05:00",
-      "duration_hours": 806,
+      "end_timestamp": "2025-10-04 07:00:00-05:00",
+      "duration_hours": 805,
       "season_midpoint": "fall",
-      "network_mean_during_gap": 17.263229210785468,
-      "overall_network_mean": 18.162221545871304,
-      "gap_minus_overall_network_mean": -0.8989923350858362
+      "network_mean_during_gap": 17.251218138066868,
+      "overall_network_mean": 17.191336222226308,
+      "gap_minus_overall_network_mean": 0.059881915840559685
     },
     {
       "network": "chicago_lcs_raw",
       "sensor_id": "DEQFM3089",
       "start_timestamp": "2025-08-31 19:00:00-05:00",
-      "end_timestamp": "2025-10-03 12:00:00-05:00",
-      "duration_hours": 786,
+      "end_timestamp": "2025-10-03 11:00:00-05:00",
+      "duration_hours": 785,
       "season_midpoint": "fall",
-      "network_mean_during_gap": 17.145676356039218,
-      "overall_network_mean": 18.162221545871304,
-      "gap_minus_overall_network_mean": -1.0165451898320867
+      "network_mean_during_gap": 17.14775215062488,
+      "overall_network_mean": 17.191336222226308,
+      "gap_minus_overall_network_mean": -0.04358407160142974
     },
     {
       "network": "chicago_lcs_raw",
       "sensor_id": "DFNHF0256",
       "start_timestamp": "2025-08-31 19:00:00-05:00",
-      "end_timestamp": "2025-10-03 12:00:00-05:00",
-      "duration_hours": 786,
+      "end_timestamp": "2025-10-03 11:00:00-05:00",
+      "duration_hours": 785,
       "season_midpoint": "fall",
-      "network_mean_during_gap": 17.145676356039218,
-      "overall_network_mean": 18.162221545871304,
-      "gap_minus_overall_network_mean": -1.0165451898320867
+      "network_mean_during_gap": 17.14775215062488,
+      "overall_network_mean": 17.191336222226308,
+      "gap_minus_overall_network_mean": -0.04358407160142974
     },
     {
       "network": "chicago_lcs_raw",
       "sensor_id": "DVYCN4987",
       "start_timestamp": "2025-08-31 19:00:00-05:00",
-      "end_timestamp": "2025-10-03 12:00:00-05:00",
-      "duration_hours": 786,
+      "end_timestamp": "2025-10-03 11:00:00-05:00",
+      "duration_hours": 785,
       "season_midpoint": "fall",
-      "network_mean_during_gap": 17.145676356039218,
-      "overall_network_mean": 18.162221545871304,
-      "gap_minus_overall_network_mean": -1.0165451898320867
+      "network_mean_during_gap": 17.14775215062488,
+      "overall_network_mean": 17.191336222226308,
+      "gap_minus_overall_network_mean": -0.04358407160142974
     },
     {
       "network": "dhaka_lcs",
@@ -1751,9 +1795,9 @@
       "retained_sensors": 286,
       "period_required_n_mdape_le_5": 2,
       "daily_required_n_95pct_days_mdape_le_10": 2,
-      "median_daily_valid_sensors": 278.0,
+      "median_daily_valid_sensors": 279.0,
       "min_daily_valid_sensors": 0,
-      "p05_daily_valid_sensors": 268.0,
+      "p05_daily_valid_sensors": 269.0,
       "m5_seed": 3860260243
     },
     {
@@ -1764,40 +1808,40 @@
       "daily_required_n_95pct_days_mdape_le_10": 2,
       "median_daily_valid_sensors": 279.0,
       "min_daily_valid_sensors": 0,
-      "p05_daily_valid_sensors": 268.1,
+      "p05_daily_valid_sensors": 269.0,
       "m5_seed": 2870091628
     },
     {
       "network": "chicago_lcs_corrected",
       "scenario": "S3_annual_75pct",
-      "retained_sensors": 272,
+      "retained_sensors": 278,
       "period_required_n_mdape_le_5": 2,
       "daily_required_n_95pct_days_mdape_le_10": 2,
-      "median_daily_valid_sensors": 271.0,
+      "median_daily_valid_sensors": 277.0,
       "min_daily_valid_sensors": 264,
-      "p05_daily_valid_sensors": 266.0,
+      "p05_daily_valid_sensors": 265.0,
       "m5_seed": 4062788251
     },
     {
       "network": "chicago_lcs_corrected",
       "scenario": "S4_daily_18h_annual_75pct",
-      "retained_sensors": 272,
+      "retained_sensors": 278,
       "period_required_n_mdape_le_5": 2,
       "daily_required_n_95pct_days_mdape_le_10": 2,
-      "median_daily_valid_sensors": 269.0,
+      "median_daily_valid_sensors": 275.0,
       "min_daily_valid_sensors": 0,
-      "p05_daily_valid_sensors": 262.1,
+      "p05_daily_valid_sensors": 265.0,
       "m5_seed": 1231750058
     },
     {
       "network": "chicago_lcs_corrected",
       "scenario": "S5_drop_gap_gt_30d",
-      "retained_sensors": 267,
+      "retained_sensors": 266,
       "period_required_n_mdape_le_5": 2,
       "daily_required_n_95pct_days_mdape_le_10": 2,
-      "median_daily_valid_sensors": 266.0,
-      "min_daily_valid_sensors": 264,
-      "p05_daily_valid_sensors": 264.0,
+      "median_daily_valid_sensors": 265.0,
+      "min_daily_valid_sensors": 263,
+      "p05_daily_valid_sensors": 263.65,
       "m5_seed": 2541556961
     },
     {
@@ -1816,10 +1860,10 @@
       "scenario": "S1_daily_18h",
       "retained_sensors": 286,
       "period_required_n_mdape_le_5": 3,
-      "daily_required_n_95pct_days_mdape_le_10": 10,
-      "median_daily_valid_sensors": 278.0,
+      "daily_required_n_95pct_days_mdape_le_10": 15,
+      "median_daily_valid_sensors": 279.0,
       "min_daily_valid_sensors": 0,
-      "p05_daily_valid_sensors": 268.0,
+      "p05_daily_valid_sensors": 269.0,
       "m5_seed": 63240004
     },
     {
@@ -1830,40 +1874,40 @@
       "daily_required_n_95pct_days_mdape_le_10": 10,
       "median_daily_valid_sensors": 279.0,
       "min_daily_valid_sensors": 0,
-      "p05_daily_valid_sensors": 268.1,
+      "p05_daily_valid_sensors": 269.0,
       "m5_seed": 842467058
     },
     {
       "network": "chicago_lcs_raw",
       "scenario": "S3_annual_75pct",
-      "retained_sensors": 272,
+      "retained_sensors": 278,
       "period_required_n_mdape_le_5": 3,
       "daily_required_n_95pct_days_mdape_le_10": 10,
-      "median_daily_valid_sensors": 271.0,
+      "median_daily_valid_sensors": 277.0,
       "min_daily_valid_sensors": 264,
-      "p05_daily_valid_sensors": 266.0,
+      "p05_daily_valid_sensors": 265.0,
       "m5_seed": 1231693774
     },
     {
       "network": "chicago_lcs_raw",
       "scenario": "S4_daily_18h_annual_75pct",
-      "retained_sensors": 272,
+      "retained_sensors": 278,
       "period_required_n_mdape_le_5": 3,
       "daily_required_n_95pct_days_mdape_le_10": 10,
-      "median_daily_valid_sensors": 269.0,
+      "median_daily_valid_sensors": 275.0,
       "min_daily_valid_sensors": 0,
-      "p05_daily_valid_sensors": 262.1,
+      "p05_daily_valid_sensors": 265.0,
       "m5_seed": 3505125387
     },
     {
       "network": "chicago_lcs_raw",
       "scenario": "S5_drop_gap_gt_30d",
-      "retained_sensors": 267,
+      "retained_sensors": 266,
       "period_required_n_mdape_le_5": 3,
       "daily_required_n_95pct_days_mdape_le_10": 10,
-      "median_daily_valid_sensors": 266.0,
-      "min_daily_valid_sensors": 264,
-      "p05_daily_valid_sensors": 264.0,
+      "median_daily_valid_sensors": 265.0,
+      "min_daily_valid_sensors": 263,
+      "p05_daily_valid_sensors": 263.65,
       "m5_seed": 817020983
     },
     {
@@ -2166,109 +2210,109 @@
       "network": "chicago_lcs_corrected",
       "filter": "baseline_ge_1h",
       "distance_band_km": 2,
-      "days_evaluated": 243,
-      "median_moran_i": 0.11585283543732058,
-      "positive_moran_i_days_pct": 95.88477366255144,
-      "significant_positive_days_pct": 74.07407407407408
+      "days_evaluated": 274,
+      "median_moran_i": 0.11879927753790329,
+      "positive_moran_i_days_pct": 96.71532846715328,
+      "significant_positive_days_pct": 77.37226277372264
     },
     {
       "network": "chicago_lcs_corrected",
       "filter": "baseline_ge_1h",
       "distance_band_km": 5,
-      "days_evaluated": 243,
-      "median_moran_i": 0.08045641430492485,
-      "positive_moran_i_days_pct": 95.88477366255144,
-      "significant_positive_days_pct": 83.9506172839506
+      "days_evaluated": 274,
+      "median_moran_i": 0.08599635107988696,
+      "positive_moran_i_days_pct": 94.52554744525547,
+      "significant_positive_days_pct": 83.57664233576642
     },
     {
       "network": "chicago_lcs_corrected",
       "filter": "baseline_ge_1h",
       "distance_band_km": 10,
-      "days_evaluated": 243,
-      "median_moran_i": 0.04634196907636518,
-      "positive_moran_i_days_pct": 91.35802469135803,
-      "significant_positive_days_pct": 84.36213991769547
+      "days_evaluated": 274,
+      "median_moran_i": 0.04951510691751185,
+      "positive_moran_i_days_pct": 91.24087591240875,
+      "significant_positive_days_pct": 84.30656934306569
     },
     {
       "network": "chicago_lcs_corrected",
       "filter": "filtered_ge_18h",
       "distance_band_km": 2,
-      "days_evaluated": 242,
-      "median_moran_i": 0.11150267130371413,
-      "positive_moran_i_days_pct": 92.97520661157024,
-      "significant_positive_days_pct": 73.96694214876032
+      "days_evaluated": 273,
+      "median_moran_i": 0.11659363687792075,
+      "positive_moran_i_days_pct": 95.6043956043956,
+      "significant_positive_days_pct": 76.19047619047619
     },
     {
       "network": "chicago_lcs_corrected",
       "filter": "filtered_ge_18h",
       "distance_band_km": 5,
-      "days_evaluated": 242,
-      "median_moran_i": 0.0869527797907321,
-      "positive_moran_i_days_pct": 96.28099173553719,
-      "significant_positive_days_pct": 87.19008264462809
+      "days_evaluated": 273,
+      "median_moran_i": 0.08684184005106971,
+      "positive_moran_i_days_pct": 94.87179487179486,
+      "significant_positive_days_pct": 85.34798534798534
     },
     {
       "network": "chicago_lcs_corrected",
       "filter": "filtered_ge_18h",
       "distance_band_km": 10,
-      "days_evaluated": 242,
-      "median_moran_i": 0.051962060671304225,
-      "positive_moran_i_days_pct": 93.80165289256198,
-      "significant_positive_days_pct": 86.36363636363636
+      "days_evaluated": 273,
+      "median_moran_i": 0.04824974926080915,
+      "positive_moran_i_days_pct": 91.94139194139194,
+      "significant_positive_days_pct": 84.98168498168498
     },
     {
       "network": "chicago_lcs_raw",
       "filter": "baseline_ge_1h",
       "distance_band_km": 2,
-      "days_evaluated": 243,
-      "median_moran_i": 0.22614622812317833,
+      "days_evaluated": 274,
+      "median_moran_i": 0.22665702392912598,
       "positive_moran_i_days_pct": 100.0,
-      "significant_positive_days_pct": 98.76543209876543
+      "significant_positive_days_pct": 98.90510948905109
     },
     {
       "network": "chicago_lcs_raw",
       "filter": "baseline_ge_1h",
       "distance_band_km": 5,
-      "days_evaluated": 243,
-      "median_moran_i": 0.1458504031584304,
-      "positive_moran_i_days_pct": 99.58847736625515,
-      "significant_positive_days_pct": 96.70781893004116
+      "days_evaluated": 274,
+      "median_moran_i": 0.14832461302234953,
+      "positive_moran_i_days_pct": 99.63503649635037,
+      "significant_positive_days_pct": 96.71532846715328
     },
     {
       "network": "chicago_lcs_raw",
       "filter": "baseline_ge_1h",
       "distance_band_km": 10,
-      "days_evaluated": 243,
-      "median_moran_i": 0.06897541884122205,
-      "positive_moran_i_days_pct": 98.76543209876543,
-      "significant_positive_days_pct": 96.29629629629629
+      "days_evaluated": 274,
+      "median_moran_i": 0.07164626680504463,
+      "positive_moran_i_days_pct": 98.54014598540147,
+      "significant_positive_days_pct": 94.52554744525547
     },
     {
       "network": "chicago_lcs_raw",
       "filter": "filtered_ge_18h",
       "distance_band_km": 2,
-      "days_evaluated": 242,
-      "median_moran_i": 0.23021949959653382,
+      "days_evaluated": 273,
+      "median_moran_i": 0.23024497222318369,
       "positive_moran_i_days_pct": 100.0,
-      "significant_positive_days_pct": 98.7603305785124
+      "significant_positive_days_pct": 98.9010989010989
     },
     {
       "network": "chicago_lcs_raw",
       "filter": "filtered_ge_18h",
       "distance_band_km": 5,
-      "days_evaluated": 242,
-      "median_moran_i": 0.14654571388969245,
-      "positive_moran_i_days_pct": 100.0,
-      "significant_positive_days_pct": 96.69421487603306
+      "days_evaluated": 273,
+      "median_moran_i": 0.14806385554889068,
+      "positive_moran_i_days_pct": 99.63369963369964,
+      "significant_positive_days_pct": 97.06959706959707
     },
     {
       "network": "chicago_lcs_raw",
       "filter": "filtered_ge_18h",
       "distance_band_km": 10,
-      "days_evaluated": 242,
-      "median_moran_i": 0.07237776681294136,
-      "positive_moran_i_days_pct": 98.7603305785124,
-      "significant_positive_days_pct": 97.52066115702479
+      "days_evaluated": 273,
+      "median_moran_i": 0.07251526455645949,
+      "positive_moran_i_days_pct": 98.9010989010989,
+      "significant_positive_days_pct": 95.6043956043956
     }
   ]
 }

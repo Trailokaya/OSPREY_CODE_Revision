@@ -355,9 +355,13 @@ def mirror_plots(phase_dir: Path) -> None:
         if plot_file.suffix.lower() in {".pdf", ".png"}:
             (PLOT_MIRROR / plot_file.name).write_bytes(plot_file.read_bytes())
     source_pdf = phase_dir / "plots" / "three_city_mdape_vs_cv_slope.pdf"
+    source_png = phase_dir / "plots" / "three_city_mdape_vs_cv_slope.png"
     if source_pdf.exists():
         MANUSCRIPT_FIGURE_DIR.mkdir(parents=True, exist_ok=True)
         (MANUSCRIPT_FIGURE_DIR / source_pdf.name).write_bytes(source_pdf.read_bytes())
+    if source_png.exists():
+        MANUSCRIPT_FIGURE_DIR.mkdir(parents=True, exist_ok=True)
+        (MANUSCRIPT_FIGURE_DIR / source_png.name).write_bytes(source_png.read_bytes())
 
 
 def run(args: argparse.Namespace) -> None:

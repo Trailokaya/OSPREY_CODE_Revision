@@ -70,12 +70,12 @@ K-means clustering of the daily descriptor profiles separates the three cities a
 
 As an interpretable complement to the multivariable model above, we report the per-city slope of daily MdAPE at $n=10$ regressed on the daily cross-sensor coefficient of variation. The slope is a single-number summary of how strongly day-to-day cross-sensor heterogeneity translates into subnetwork error, separately for each city. Source data are in the released analysis outputs.
 
-Across the three networks, the slopes are distinct and the $95\%$ confidence intervals do not overlap: \city{Dhaka} $\beta=0.203$ (CI $0.199$, $0.206$), $R^2=0.97$, $365$ days; \city{Lucknow} $\beta=0.156$ (CI $0.153$, $0.159$), $R^2=0.96$, $365$ days; \city{Chicago} $\beta=0.108$ (CI $0.099$, $0.118$), $R^2=0.63$, $272$ days. At matched cross-sensor heterogeneity, the South Asian networks therefore translate that heterogeneity into subnetwork error roughly twice as steeply as the \city{Chicago} network. Figure~\ref{fig:si_cv_slope} shows the three-city scatter with fits and shaded $95\%$ confidence bands.
+Across the three networks, the point estimates are ordered from \city{Dhaka} to \city{Lucknow} to \city{Chicago}: \city{Dhaka} $\beta=0.203$ (conventional OLS CI $0.199$, $0.206$), $R^2=0.97$, $365$ days; \city{Lucknow} $\beta=0.156$ (CI $0.153$, $0.159$), $R^2=0.96$, $365$ days; \city{Chicago} $\beta=0.108$ (CI $0.099$, $0.118$), $R^2=0.63$, $272$ days. We interpret this as a directional sensitivity comparison rather than a formal cross-city hypothesis test. At matched cross-sensor heterogeneity, the South Asian networks translate that heterogeneity into subnetwork error more steeply than the \city{Chicago} network. Figure~\ref{fig:si_cv_slope} shows the three-city scatter with fits and shaded $95\%$ confidence bands.
 
 \begin{figure}[H]
  \centering
  \includegraphics[width=0.7\textwidth]{Plots/Supporting_Information/Figure_SI_20/three_city_mdape_vs_cv_slope.pdf}
- \caption{Daily $n=10$ MdAPE vs.\ daily cross-sensor coefficient of variation, with city-specific ordinary-least-squares fits and shaded $95\%$ confidence bands. Per-city slopes (with non-overlapping $95\%$ confidence intervals) quantify how strongly cross-sensor heterogeneity translates into subnetwork error in each network: $\beta_{\mathrm{Dhaka}}=0.203$, $\beta_{\mathrm{Lucknow}}=0.156$, $\beta_{\mathrm{Chicago}}=0.108$.}
+ \caption{Daily $n=10$ MdAPE vs.\ daily cross-sensor coefficient of variation, with city-specific ordinary-least-squares fits and shaded $95\%$ confidence bands. Per-city slopes quantify how strongly cross-sensor heterogeneity translates into subnetwork error in each network: $\beta_{\mathrm{Dhaka}}=0.203$, $\beta_{\mathrm{Lucknow}}=0.156$, $\beta_{\mathrm{Chicago}}=0.108$.}
  \label{fig:si_cv_slope}
 \end{figure}
 

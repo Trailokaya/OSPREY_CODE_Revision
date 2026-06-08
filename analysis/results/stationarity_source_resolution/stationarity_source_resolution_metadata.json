@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-28T13:29:04",
+  "generated_at": "2026-06-08T12:09:37",
   "bonferroni_alpha": 0.05,
   "method": "source-resolution AR(1) effective-n Bonferroni normal CI",
   "datasets": {
@@ -29,8 +29,8 @@
       "pm_path": "data/pm/Chicago_LCS_corrected_daily_PM25.csv",
       "location_path": "data/locations/Chicago_LCS_corrected_sensor_locations.csv",
       "input_hashes": {
-        "pm_matrix": "db36e91b5d43e932e2f20717c11e784b6a39866cdd0535aae0cb23ce1aa6f90a",
-        "locations": "6e2da44a1d3b7ea9225afa3fd4f09854de3fa589112d28d31b492d7b730d4e6c"
+        "pm_matrix": "3ee4e821cb90da5ca9b1a5c5079c34a4a3f486f699ada94f061f727b0a75e2e0",
+        "locations": "67d4ecc273939ca8f1af56b39f4098d2ed19c2a177577b58bda2eecb44d3d89b"
       }
     }
   }

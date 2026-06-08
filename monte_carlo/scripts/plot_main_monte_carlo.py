@@ -139,7 +139,15 @@ def prepare_period(summary: pd.DataFrame) -> pd.DataFrame:
             "absolute_error_p95_ugm3": "absolute_p95",
         }
     )
-    return period
+    return clean_rse_columns(period)
+
+
+def clean_rse_columns(frame: pd.DataFrame) -> pd.DataFrame:
+    frame = frame.drop(columns=["rse_lognormal_pct"], errors="ignore").copy()
+    if "empirical_estimator_rse_pct" not in frame.columns:
+        reference = frame["reference_mean_ugm3"].abs()
+        frame["empirical_estimator_rse_pct"] = frame["subnet_mean_sd_ugm3"] / reference * 100.0
+    return frame
 
 
 def reference_text(period: pd.DataFrame) -> str:
@@ -237,6 +245,7 @@ def prepare_daily(summary: pd.DataFrame, selected_sample_sizes: tuple[int, ...])
         (summary["time_aggregation"] == "daily")
         & (summary["sample_size"].isin(selected_sample_sizes))
     ].copy()
+    daily = clean_rse_columns(daily)
     daily["date"] = pd.to_datetime(daily["time_index"], errors="coerce")
     daily = daily.dropna(subset=["date"])
     return daily.sort_values(["dataset_key", "sample_size", "date"])

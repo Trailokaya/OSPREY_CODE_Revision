@@ -1,6 +1,6 @@
 # Source-Resolution Stationarity Screen
 
-Generated: 2026-05-28T13:29:05
+Generated: 2026-06-08T12:09:38
 
 ## Purpose
 
@@ -12,33 +12,34 @@ This diagnostic complements the existing SI-F11 daily AR(1) screen by estimating
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | dhaka_lcs | Dhaka | LCS | hourly | 35 | 55.147 | 10 | 5 | 87.637 | 242.940 | 0.935 | 46.500 |
 | lucknow_lcs | Lucknow | LCS | hourly | 71 | 61.802 | 23 | 37 | 73.219 | 177.051 | 0.959 | 326.708 |
-| chicago_lcs_corrected_no_collocation | Chicago | LCS corrected | official_daily | 277 | 10.565 | 11 | 10 | 99.587 | 69.658 | 0.551 | 150.000 |
+| chicago_lcs_corrected_no_collocation | Chicago | LCS corrected | official_daily | 277 | 10.253 | 11 | 11 | 99.634 | 77.793 | 0.554 | 181.000 |
 
 ## Flagged Or Long-Gap Sensors
 
 | city | sensor_id | station_name | period_mean_pm25_ugm3 | reference_mean_pm25_ugm3 | mean_minus_reference_ugm3 | source_record_uptime_pct | lag1_autocorrelation_source_resolution | ar1_effective_n_source_resolution | ci_excludes_reference | longest_missing_gap_days | long_gap_gt_30d |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Chicago | DYWWS0378 | Uptown 4 | 7.679 | 10.565 | -2.886 | 90.909 | 0.390 | 96.646 | True | 21.000 | False |
-| Chicago | DWGYM0810 | Avalon Park 1 | 19.208 | 10.565 | 8.644 | 88.430 | 0.474 | 76.324 | True | 7.000 | False |
-| Chicago | DWBTT8209 | Edison Park 1 | 7.866 | 10.565 | -2.699 | 98.347 | 0.583 | 62.743 | True | 2.000 | False |
-| Chicago | DMIYV7889 | O'Hare 2 | 8.323 | 10.565 | -2.242 | 97.521 | 0.570 | 64.705 | True | 2.000 | False |
-| Chicago | DKIJX6114 | Lincoln Square 1 | 8.539 | 10.565 | -2.026 | 98.760 | 0.555 | 68.368 | True | 2.000 | False |
-| Chicago | DMMAG3845 | Riverdale 3 | 5.021 | 10.565 | -5.544 | 99.587 | 0.374 | 109.925 | True | 1.000 | False |
-| Chicago | DGHRH9009 | Gage Park 1 | 7.448 | 10.565 | -3.117 | 99.587 | 0.615 | 57.491 | True | 1.000 | False |
-| Chicago | DJKZD4256 | Morgan Park 3 | 7.727 | 10.565 | -2.837 | 99.587 | 0.528 | 74.508 | True | 1.000 | False |
-| Chicago | DRUBP9408 | South Deering 2 | 8.480 | 10.565 | -2.085 | 99.587 | 0.341 | 118.341 | True | 1.000 | False |
-| Chicago | DMARJ5120 | Hyde Park 1 | 8.489 | 10.565 | -2.076 | 99.587 | 0.504 | 79.435 | True | 1.000 | False |
-| Chicago | DZLAV7766 | Austin 4 | 13.889 | 10.565 | 3.324 | 99.587 | 0.568 | 66.479 | True | 1.000 | False |
-| Chicago | DJJWX4142 | South Lawndale 4 | 8.617 | 10.565 | -1.948 | 23.967 | 0.540 | 17.322 | False | 150.000 | True |
-| Chicago | DMAEX1156 | South Deering 9 | 9.957 | 10.565 | -0.608 | 41.736 | 0.619 | 23.793 | False | 141.000 | True |
-| Chicago | DSSQU9498 | Near North Side 4 | 10.957 | 10.565 | 0.392 | 56.198 | 0.563 | 38.029 | False | 104.000 | True |
-| Chicago | DDVZB7943 | Hyde Park 2 | 8.683 | 10.565 | -1.882 | 66.529 | 0.476 | 57.153 | False | 80.000 | True |
-| Chicago | DEYGE9157 | South Deering 10 | 8.781 | 10.565 | -1.784 | 60.331 | 0.611 | 35.248 | False | 78.000 | True |
-| Chicago | DUVHI0112 | Loop 1 | 10.010 | 10.565 | -0.554 | 26.860 | 0.677 | 12.520 | False | 77.000 | True |
-| Chicago | DXHCB5919 | Uptown 2 | 9.888 | 10.565 | -0.677 | 57.025 | 0.560 | 38.907 | False | 69.000 | True |
-| Chicago | DYDVV6312 | Humboldt Park 2 | 11.764 | 10.565 | 1.199 | 75.207 | 0.534 | 55.321 | False | 59.000 | True |
-| Chicago | DFQDK6326 | Beverly 1 | 11.849 | 10.565 | 1.285 | 74.793 | 0.505 | 59.540 | False | 52.000 | True |
-| Chicago | DFIBC1899 | South Deering 7 | 11.075 | 10.565 | 0.510 | 74.380 | 0.621 | 42.059 | False | 34.000 | True |
+| Chicago | DYWWS0378 | Uptown 4 | 7.392 | 10.253 | -2.861 | 91.941 | 0.425 | 101.397 | True | 21.000 | False |
+| Chicago | DWGYM0810 | Avalon Park 1 | 18.998 | 10.253 | 8.745 | 87.912 | 0.491 | 81.868 | True | 7.000 | False |
+| Chicago | DWBTT8209 | Edison Park 1 | 7.682 | 10.253 | -2.571 | 98.535 | 0.580 | 71.518 | True | 2.000 | False |
+| Chicago | DMIYV7889 | O'Hare 2 | 8.080 | 10.253 | -2.173 | 97.802 | 0.568 | 73.510 | True | 2.000 | False |
+| Chicago | DKIJX6114 | Lincoln Square 1 | 8.364 | 10.253 | -1.889 | 98.901 | 0.551 | 78.100 | True | 2.000 | False |
+| Chicago | DMMAG3845 | Riverdale 3 | 4.922 | 10.253 | -5.331 | 99.634 | 0.388 | 119.961 | True | 1.000 | False |
+| Chicago | DGHRH9009 | Gage Park 1 | 7.318 | 10.253 | -2.935 | 99.634 | 0.608 | 66.265 | True | 1.000 | False |
+| Chicago | DJKZD4256 | Morgan Park 3 | 7.646 | 10.253 | -2.607 | 99.634 | 0.520 | 85.898 | True | 1.000 | False |
+| Chicago | DRUBP9408 | South Deering 2 | 8.174 | 10.253 | -2.079 | 99.634 | 0.381 | 121.970 | True | 1.000 | False |
+| Chicago | DMARJ5120 | Hyde Park 1 | 8.282 | 10.253 | -1.972 | 99.634 | 0.510 | 88.370 | True | 1.000 | False |
+| Chicago | DZLAV7766 | Austin 4 | 13.428 | 10.253 | 3.175 | 99.634 | 0.577 | 73.044 | True | 1.000 | False |
+| Chicago | DJJWX4142 | South Lawndale 4 | 8.617 | 10.253 | -1.637 | 21.245 | 0.540 | 17.322 | False | 181.000 | True |
+| Chicago | DMAEX1156 | South Deering 9 | 9.957 | 10.253 | -0.296 | 36.996 | 0.619 | 23.793 | False | 172.000 | True |
+| Chicago | DEYGE9157 | South Deering 10 | 8.781 | 10.253 | -1.472 | 53.480 | 0.611 | 35.248 | False | 109.000 | True |
+| Chicago | DSSQU9498 | Near North Side 4 | 10.498 | 10.253 | 0.244 | 61.172 | 0.562 | 46.794 | False | 104.000 | True |
+| Chicago | DDVZB7943 | Hyde Park 2 | 8.411 | 10.253 | -1.842 | 70.330 | 0.479 | 67.608 | False | 80.000 | True |
+| Chicago | DUVHI0112 | Loop 1 | 9.187 | 10.253 | -1.066 | 35.165 | 0.645 | 20.742 | False | 77.000 | True |
+| Chicago | DXHCB5919 | Uptown 2 | 9.426 | 10.253 | -0.828 | 61.905 | 0.560 | 47.679 | False | 69.000 | True |
+| Chicago | DYDVV6312 | Humboldt Park 2 | 11.201 | 10.253 | 0.947 | 78.022 | 0.550 | 61.807 | False | 59.000 | True |
+| Chicago | DFQDK6326 | Beverly 1 | 11.849 | 10.253 | 1.596 | 66.300 | 0.505 | 59.540 | False | 52.000 | True |
+| Chicago | DMLRY2750 | North Park 1 | 9.156 | 10.253 | -1.097 | 86.447 | 0.514 | 75.791 | False | 35.000 | True |
+| Chicago | DFIBC1899 | South Deering 7 | 10.740 | 10.253 | 0.486 | 77.289 | 0.615 | 50.364 | False | 34.000 | True |
 | Dhaka | 81432151072 | 63. Khilkhet | 25.026 | 55.147 | -30.121 | 91.838 | 0.908 | 386.238 | True | 20.667 | False |
 | Dhaka | 81432151014 | 64. Satarkul | 86.452 | 55.147 | 31.305 | 85.137 | 0.911 | 347.208 | True | 20.667 | False |
 | Dhaka | 81432150006 | 31. Rupnogor high school, Pallabi | 36.829 | 55.147 | -18.318 | 76.336 | 0.879 | 431.216 | True | 20.542 | False |
